@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-14 11:00:07 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-14 11:30:03 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -685,11 +685,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">5</span></h2>
+        <h2>Run History <span class="count">6</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-14T11:30:03</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-04-14T11:00:06</td>
                 <td>0</td>
                 <td>0</td>
@@ -910,18 +920,12 @@
         <button class="log-filter-btn" onclick="filterLog('error')">Errors</button>
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
-            <span>144 lines</span>
+            <span>145 lines</span>
             <span class="err-count">5 errors</span>
-            <span class="warn-count">3 warnings</span>
+            <span class="warn-count">2 warnings</span>
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-raw">```</div>
-<div class="log-line log-warning log-warn">2026-04-14 10:23:49,706 WARNING src.risk_manager.position_limits: Error reading bets log for position check: Error tokenizing data. C error: Expected 26 fields in line 29, saw 31</div>
-<div class="log-line log-general">2026-04-14 10:23:49,706 INFO src.executor.kalshi_executor: PAPER BET: basketball_nba | Miami Heat @ Charlotte Hornets | totals | side=under | $12.00</div>
-<div class="log-line log-bet">2026-04-14 10:23:49,707 INFO src.executor.bet_logger: Logged bet: basketball_nba under 25f53495c4044a1d8fb682e3715eb7b3 $12.00</div>
-<div class="log-line log-general">2026-04-14 10:23:50,411 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-general">2026-04-14 10:23:50,412 INFO main: BET PLACED [paper]: basketball_nba | Miami Heat @ Charlotte Hornets | under=? | $12.00 | edge=4.8%</div>
 <div class="log-line log-risk log-error">2026-04-14 10:23:50,420 ERROR src.risk_manager.kill_switch: Error reading bets log for kill switch: Error tokenizing data. C error: Expected 26 fields in line 29, saw 31</div>
 <div class="log-line log-haiku">2026-04-14 10:23:50,420 INFO src.analyzer.claude_analyzer: Calling Haiku for icehockey_nhl | New Jersey Devils @ Boston Bruins | spreads</div>
 <div class="log-line log-general">2026-04-14 10:23:55,194 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
@@ -1060,6 +1064,13 @@
 <div class="log-line log-general">2026-04-14 11:00:06,730 INFO main: ============================================================</div>
 <div class="log-line log-risk">2026-04-14 11:00:06,757 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-14 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
 <div class="log-line log-general">2026-04-14 11:00:06,777 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-14 11:00:07,008 INFO scripts.publish_dashboard: Generated 69255 chars of HTML</div>
+<div class="log-line log-general">2026-04-14 11:00:09,975 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-14 11:30:03,742 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-14 11:30:03,743 INFO main: DaftKings Bot cycle starting | run_id=20260414_113003 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-14 11:30:03,743 INFO main: ============================================================</div>
+<div class="log-line log-risk">2026-04-14 11:30:03,765 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-14 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
+<div class="log-line log-general">2026-04-14 11:30:03,784 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
