@@ -3,6 +3,9 @@
 Generates the dashboard HTML from local CSV data and pushes it
 to the gh-pages branch for GitHub Pages hosting.
 
+Works by creating a local worktree for gh-pages, writing index.html,
+committing and pushing — all using the main repo's credentials.
+
 Usage:
     python scripts/publish_dashboard.py
 
@@ -14,11 +17,8 @@ Called by:
 from __future__ import annotations
 
 import logging
-import os
-import shutil
 import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
 # Add Bot/ to path so dashboard module is importable
@@ -31,20 +31,52 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 PROJECT_ROOT = BOT_ROOT.parent
-REPO_URL_FALLBACK = "https://github.com/FructifyMe/DaftKings.git"
+PAGES_DIR = PROJECT_ROOT / "_gh-pages"
+REPO_URL = "https://github.com/FructifyMe/DaftKings.git"
 
 
-def get_repo_url() -> str:
-    """Get the remote origin URL from the main repo."""
-    try:
-        result = subprocess.run(
-            ["git", "remote", "get-url", "origin"],
-            cwd=str(PROJECT_ROOT),
-            capture_output=True, text=True, check=True,
-        )
-        return result.stdout.strip()
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        return REPO_URL_FALLBACK
+def _run(cmd: list[str], cwd: str | None = None, check: bool = True) -> subprocess.CompletedProcess:
+    """Run a git command, suppressing interactive prompts."""
+    env_override = {"GIT_TERMINAL_PROMPT": "0"}
+    import os
+    env = {**os.environ, **env_override}
+    return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, check=check, env=env)
+
+
+def _ensure_pages_branch() -> Path:
+    """Ensure we have a local checkout of the gh-pages branch."""
+    if PAGES_DIR.exists():
+        # Already exists — just pull latest
+        try:
+            _run(["git", "pull", "origin", "gh-pages", "--ff-only"], cwd=str(PAGES_DIR), check=False)
+        except Exception:
+            pass
+        return PAGES_DIR
+
+    # Check if gh-pages branch exists on remote
+    result = _run(
+        ["git", "ls-remote", "--heads", "origin", "gh-pages"],
+        cwd=str(PROJECT_ROOT), check=False,
+    )
+
+    if result.stdout.strip():
+        # Branch exists — clone it
+        _run([
+            "git", "clone", "--branch", "gh-pages", "--single-branch",
+            "--depth", "1", REPO_URL, str(PAGES_DIR),
+        ])
+    else:
+        # Create orphan gh-pages branch
+        PAGES_DIR.mkdir(parents=True)
+        _run(["git", "init"], cwd=str(PAGES_DIR))
+        _run(["git", "checkout", "--orphan", "gh-pages"], cwd=str(PAGES_DIR))
+        _run(["git", "remote", "add", "origin", REPO_URL], cwd=str(PAGES_DIR))
+
+    # Configure git user in this checkout
+    _run(["git", "config", "user.name", "Mike"], cwd=str(PAGES_DIR))
+    _run(["git", "config", "user.email", "fructifyme@gmail.com"], cwd=str(PAGES_DIR))
+
+    return PAGES_DIR
 
 
 def publish() -> bool:
@@ -53,70 +85,36 @@ def publish() -> bool:
     html = generate_html()
     logger.info("Generated %d chars of HTML", len(html))
 
-    repo_url = get_repo_url()
-    logger.info("Repo URL: %s", repo_url)
+    pages_dir = _ensure_pages_branch()
 
-    # Work in a temp directory to avoid messing with the main repo
-    with tempfile.TemporaryDirectory() as tmpdir:
-        tmp = Path(tmpdir)
+    # Write index.html
+    (pages_dir / "index.html").write_text(html, encoding="utf-8")
+    (pages_dir / ".nojekyll").touch()
 
-        # Try to clone the gh-pages branch; if it doesn't exist, create it
-        clone_result = subprocess.run(
-            ["git", "clone", "--branch", "gh-pages", "--single-branch",
-             "--depth", "1", repo_url, str(tmp / "pages")],
-            capture_output=True, text=True,
-        )
+    # Stage
+    _run(["git", "add", "-A"], cwd=str(pages_dir))
 
-        if clone_result.returncode != 0:
-            # Branch doesn't exist yet — create orphan
-            logger.info("gh-pages branch not found, creating...")
-            pages_dir = tmp / "pages"
-            pages_dir.mkdir()
-            subprocess.run(["git", "init"], cwd=str(pages_dir), check=True,
-                           capture_output=True)
-            subprocess.run(["git", "checkout", "--orphan", "gh-pages"],
-                           cwd=str(pages_dir), check=True, capture_output=True)
-            subprocess.run(["git", "remote", "add", "origin", repo_url],
-                           cwd=str(pages_dir), check=True, capture_output=True)
-        else:
-            pages_dir = tmp / "pages"
-
-        # Write the dashboard HTML as index.html
-        index_path = pages_dir / "index.html"
-        index_path.write_text(html, encoding="utf-8")
-
-        # Also write a .nojekyll file so GitHub serves raw HTML
-        (pages_dir / ".nojekyll").touch()
-
-        # Stage, commit, push
-        subprocess.run(["git", "add", "-A"], cwd=str(pages_dir), check=True,
-                       capture_output=True)
-
-        # Check if there are changes
-        status = subprocess.run(
-            ["git", "status", "--porcelain"],
-            cwd=str(pages_dir), capture_output=True, text=True,
-        )
-        if not status.stdout.strip():
-            logger.info("No changes to dashboard — skipping push")
-            return True
-
-        subprocess.run(
-            ["git", "commit", "-m", "Update dashboard"],
-            cwd=str(pages_dir), check=True, capture_output=True,
-        )
-
-        push_result = subprocess.run(
-            ["git", "push", "origin", "gh-pages", "--force"],
-            cwd=str(pages_dir), capture_output=True, text=True,
-        )
-
-        if push_result.returncode != 0:
-            logger.error("Push failed: %s", push_result.stderr)
-            return False
-
-        logger.info("Dashboard published to gh-pages successfully")
+    # Check if there are changes
+    status = _run(["git", "status", "--porcelain"], cwd=str(pages_dir), check=False)
+    if not status.stdout.strip():
+        logger.info("No changes to dashboard — skipping push")
         return True
+
+    # Commit
+    _run(["git", "commit", "-m", "Update dashboard"], cwd=str(pages_dir))
+
+    # Push
+    push = _run(
+        ["git", "push", "origin", "gh-pages", "--force"],
+        cwd=str(pages_dir), check=False,
+    )
+
+    if push.returncode != 0:
+        logger.error("Push failed: %s", push.stderr)
+        return False
+
+    logger.info("Dashboard published to gh-pages successfully")
+    return True
 
 
 if __name__ == "__main__":

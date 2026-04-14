@@ -37,6 +37,9 @@ htmlcov/
 # Dashboard snapshots (generated, not source)
 dashboard_snapshot.html
 
+# GitHub Pages checkout
+_gh-pages/
+
 # Claude internal
 .claude/.env
 .claude/
