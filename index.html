@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-14 15:00:05 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-14 15:30:05 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -685,11 +685,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">13</span></h2>
+        <h2>Run History <span class="count">14</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-14T15:30:04</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-04-14T15:00:05</td>
                 <td>0</td>
                 <td>0</td>
@@ -771,16 +781,6 @@
                 <td><span class="status-ok">OK</span></td>
             </tr><tr>
                 <td>2026-04-14T11:00:06</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-14T10:30:04</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -960,18 +960,12 @@
         <button class="log-filter-btn" onclick="filterLog('error')">Errors</button>
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
-            <span>147 lines</span>
+            <span>148 lines</span>
             <span class="err-count">3 errors</span>
-            <span class="warn-count">2 warnings</span>
+            <span class="warn-count">1 warnings</span>
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;Pittsburgh is a strong favorite with elite pitching (Keller) vs a struggling opponent&#x27;s pitcher (Mikolas 12.41 ERA, 0-3). The Pirates&#x27; recent form (7-3 L10, 16-5 vs this team) combined with Keller&#x27;s exceptional performance (1.00 ERA, clean last 3 starts) creates a genuine edge. The -2.5 at +170 is mispriced; cross-book variance and arbitrage signal suggest true probability is ~46%, making the 37% implied probability at +170 valuable. Estimated edge is 8.9%.&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-warning log-warn">2026-04-14 10:23:59,645 WARNING src.risk_manager.position_limits: Error reading bets log for position check: Error tokenizing data. C error: Expected 26 fields in line 29, saw 31</div>
-<div class="log-line log-general">2026-04-14 10:23:59,645 INFO src.executor.kalshi_executor: PAPER BET: baseball_mlb | Washington Nationals @ Pittsburgh Pirates | spreads | side=home | $22.00</div>
-<div class="log-line log-bet">2026-04-14 10:23:59,646 INFO src.executor.bet_logger: Logged bet: baseball_mlb home d5bcde6808790e2d31facdd85fadb43e $22.00</div>
 <div class="log-line log-general">2026-04-14 10:24:00,359 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-general">2026-04-14 10:24:00,360 INFO main: BET PLACED [paper]: baseball_mlb | Washington Nationals @ Pittsburgh Pirates | home=? | $22.00 | edge=8.9%</div>
 <div class="log-line log-risk log-error">2026-04-14 10:24:00,367 ERROR src.risk_manager.kill_switch: Error reading bets log for kill switch: Error tokenizing data. C error: Expected 26 fields in line 29, saw 31</div>
@@ -1113,6 +1107,13 @@
 <div class="log-line log-general">2026-04-14 15:00:05,703 INFO main: ============================================================</div>
 <div class="log-line log-risk">2026-04-14 15:00:05,730 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-14 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
 <div class="log-line log-general">2026-04-14 15:00:05,754 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-14 15:00:05,836 INFO scripts.publish_dashboard: Generated 71485 chars of HTML</div>
+<div class="log-line log-general">2026-04-14 15:00:08,056 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-14 15:30:04,927 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-14 15:30:04,927 INFO main: DaftKings Bot cycle starting | run_id=20260414_153004 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-14 15:30:04,927 INFO main: ============================================================</div>
+<div class="log-line log-risk">2026-04-14 15:30:04,954 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-14 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
+<div class="log-line log-general">2026-04-14 15:30:04,977 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
