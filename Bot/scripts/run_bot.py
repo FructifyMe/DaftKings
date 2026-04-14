@@ -33,8 +33,20 @@ logging.basicConfig(
 
 from main import run_cycle, run_settlement
 
+def publish_dashboard():
+    """Publish dashboard to GitHub Pages after cycle completes."""
+    try:
+        from scripts.publish_dashboard import publish
+        publish()
+    except Exception as e:
+        logging.getLogger(__name__).warning("Dashboard publish failed: %s", e)
+
 if __name__ == "__main__":
     if "--settle" in sys.argv:
         run_settlement()
+    elif "--publish" in sys.argv:
+        publish_dashboard()
     else:
         run_cycle()
+    # Always publish dashboard after any operation
+    publish_dashboard()
