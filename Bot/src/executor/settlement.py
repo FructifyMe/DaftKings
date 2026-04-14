@@ -359,7 +359,7 @@ class SettlementProcessor:
     def _update_bets_log(self, settled_rows: list[dict]) -> None:
         """Update bets_log.csv in-place with settlement results."""
         try:
-            df = pd.read_csv(BETS_LOG, dtype={"result": str, "pnl_usd": str})
+            df = pd.read_csv(BETS_LOG, dtype={"result": str, "pnl_usd": str, "score_summary": str})
             for settled in settled_rows:
                 idx = settled["index"]
                 df.at[idx, "result"] = settled["result"]
