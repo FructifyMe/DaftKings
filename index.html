@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-14 20:30:04 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-14 21:00:07 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -685,11 +685,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">24</span></h2>
+        <h2>Run History <span class="count">25</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-14T21:00:06</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-04-14T20:30:04</td>
                 <td>0</td>
                 <td>0</td>
@@ -771,16 +781,6 @@
                 <td><span class="status-ok">OK</span></td>
             </tr><tr>
                 <td>2026-04-14T16:30:03</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-14T16:00:04</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -961,18 +961,11 @@
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
             <span>150 lines</span>
-            <span class="err-count">1 errors</span>
-            <span class="warn-count">1 warnings</span>
+            
+            
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-general">2026-04-14 10:33:08,571 INFO src.scanner.score_fetcher: Got 14 completed games for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-14 10:33:08,571 INFO src.scanner.score_fetcher: Total completed games fetched: 106</div>
-<div class="log-line log-general">2026-04-14 10:33:08,571 INFO src.executor.settlement: Fetched 106 completed game scores</div>
-<div class="log-line log-warning log-warn">2026-04-14 10:33:08,572 WARNING src.executor.settlement: No odds available for payout calc � using even money</div>
-<div class="log-line log-settlement">2026-04-14 10:33:08,572 INFO src.executor.settlement: SETTLED: icehockey_nhl | Buffalo Sabres @ Chicago Blackhawks | spreads | WIN | P&amp;L $+17.00 | Chicago Blackhawks 1 - Buffalo Sabres 5</div>
-<div class="log-line log-error log-error">2026-04-14 10:33:08,579 ERROR src.executor.settlement: Failed to update bets_log.csv: Invalid value &#x27;Chicago Blackhawks 1 - Buffalo Sabres 5&#x27; for dtype &#x27;float64&#x27;</div>
-<div class="log-line log-general">2026-04-14 10:33:08,579 INFO src.executor.settlement: Updated 1 bets in bets_log.csv</div>
 <div class="log-line log-general">2026-04-14 10:33:09,307 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-settlement">2026-04-14 10:33:09,308 INFO main: SETTLED: icehockey_nhl | Chicago Blackhawks vs Buffalo Sabres | spreads | WIN | P&amp;L $+17.00</div>
 <div class="log-line log-general">2026-04-14 10:33:09,325 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
@@ -1116,6 +1109,13 @@
 <div class="log-line log-general">2026-04-14 20:30:04,260 INFO main: ============================================================</div>
 <div class="log-line log-risk">2026-04-14 20:30:04,284 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-14 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
 <div class="log-line log-general">2026-04-14 20:30:04,302 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-14 20:30:04,358 INFO scripts.publish_dashboard: Generated 71675 chars of HTML</div>
+<div class="log-line log-general">2026-04-14 20:30:06,281 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-14 21:00:06,929 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-14 21:00:06,929 INFO main: DaftKings Bot cycle starting | run_id=20260414_210006 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-14 21:00:06,930 INFO main: ============================================================</div>
+<div class="log-line log-risk">2026-04-14 21:00:06,954 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-14 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
+<div class="log-line log-general">2026-04-14 21:00:06,986 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
