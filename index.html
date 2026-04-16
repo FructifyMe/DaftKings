@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-16 10:30:20 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-16 11:00:12 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -731,11 +731,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">61</span></h2>
+        <h2>Run History <span class="count">62</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-16T11:00:12</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-04-16T10:30:20</td>
                 <td>0</td>
                 <td>0</td>
@@ -817,16 +827,6 @@
                 <td><span class="status-ok">OK</span></td>
             </tr><tr>
                 <td>2026-04-15T20:30:04</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-15T20:00:07</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -1007,56 +1007,11 @@
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
             <span>150 lines</span>
-            <span class="err-count">31 errors</span>
+            <span class="err-count">35 errors</span>
             
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-general">2026-04-15 22:00:06,754 INFO main: ============================================================</div>
-<div class="log-line log-risk">2026-04-15 22:00:06,778 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-15 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
-<div class="log-line log-general">2026-04-15 22:00:06,810 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
-<div class="log-line log-general">2026-04-15 22:00:06,866 INFO scripts.publish_dashboard: Generated 76124 chars of HTML</div>
-<div class="log-line log-general">2026-04-15 22:00:10,202 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-15 22:30:03,230 INFO main: ============================================================</div>
-<div class="log-line log-cycle">2026-04-15 22:30:03,231 INFO main: DaftKings Bot cycle starting | run_id=20260415_223003 | paper_mode=True</div>
-<div class="log-line log-general">2026-04-15 22:30:03,231 INFO main: ============================================================</div>
-<div class="log-line log-risk">2026-04-15 22:30:03,241 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-15 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
-<div class="log-line log-general">2026-04-15 22:30:03,257 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
-<div class="log-line log-general">2026-04-15 22:30:03,304 INFO scripts.publish_dashboard: Generated 76124 chars of HTML</div>
-<div class="log-line log-general">2026-04-15 22:30:04,900 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-15 23:00:03,283 INFO main: ============================================================</div>
-<div class="log-line log-cycle">2026-04-15 23:00:03,283 INFO main: DaftKings Bot cycle starting | run_id=20260415_230003 | paper_mode=True</div>
-<div class="log-line log-general">2026-04-15 23:00:03,283 INFO main: ============================================================</div>
-<div class="log-line log-risk">2026-04-15 23:00:03,294 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-04-15 | 15 bets | P&amp;L $+0.00 | DD 0.0% | KILLED)</div>
-<div class="log-line log-general">2026-04-15 23:00:03,310 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
-<div class="log-line log-general">2026-04-15 23:00:03,386 INFO scripts.publish_dashboard: Generated 76124 chars of HTML</div>
-<div class="log-line log-general">2026-04-15 23:00:05,175 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-15 23:30:03,397 INFO main: Running bet settlement...</div>
-<div class="log-line log-general">2026-04-15 23:30:03,409 INFO src.executor.settlement: Settling 2 bets across sports: [&#x27;baseball_mlb&#x27;, &#x27;icehockey_nhl&#x27;]</div>
-<div class="log-line log-general">2026-04-15 23:30:03,409 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:04,029 ERROR src.scanner.score_fetcher: Failed to fetch scores for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:04,030 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-15 23:30:04,030 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:04,416 ERROR src.scanner.score_fetcher: Failed to fetch scores for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:04,417 INFO src.scanner.score_fetcher: Got 0 completed games for basketball_nba</div>
-<div class="log-line log-general">2026-04-15 23:30:04,417 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:04,866 ERROR src.scanner.score_fetcher: Failed to fetch scores for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:04,867 INFO src.scanner.score_fetcher: Got 0 completed games for baseball_mlb</div>
-<div class="log-line log-general">2026-04-15 23:30:04,868 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:05,279 ERROR src.scanner.score_fetcher: Failed to fetch scores for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:05,280 INFO src.scanner.score_fetcher: Got 0 completed games for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-15 23:30:05,280 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:05,837 ERROR src.scanner.score_fetcher: Failed to fetch scores for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:05,838 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-15 23:30:05,838 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:06,270 ERROR src.scanner.score_fetcher: Failed to fetch scores for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:06,271 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
-<div class="log-line log-general">2026-04-15 23:30:06,272 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
-<div class="log-line log-error log-error">2026-04-15 23:30:06,676 ERROR src.scanner.score_fetcher: Failed to fetch scores for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/scores?apiKey=db560c31ed3f171022d264ea698e60b3&amp;daysFrom=3</div>
-<div class="log-line log-general">2026-04-15 23:30:06,677 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-15 23:30:06,677 INFO src.scanner.score_fetcher: Total completed games fetched: 0</div>
-<div class="log-line log-general">2026-04-15 23:30:06,677 INFO src.executor.settlement: Fetched 0 completed game scores</div>
-<div class="log-line log-general">2026-04-15 23:30:06,678 INFO main: No bets settled this cycle</div>
 <div class="log-line log-general">2026-04-15 23:30:06,694 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 <div class="log-line log-general">2026-04-15 23:30:06,733 INFO scripts.publish_dashboard: Generated 77165 chars of HTML</div>
 <div class="log-line log-general">2026-04-15 23:30:08,293 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
@@ -1162,6 +1117,51 @@
 <div class="log-line log-error log-error">2026-04-16 10:30:19,691 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
 <div class="log-line log-general">2026-04-16 10:30:20,426 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-general">2026-04-16 10:30:20,447 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-16 10:30:20,535 INFO scripts.publish_dashboard: Generated 82031 chars of HTML</div>
+<div class="log-line log-general">2026-04-16 10:30:23,980 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-16 11:00:04,306 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-16 11:00:04,306 INFO main: DaftKings Bot cycle starting | run_id=20260416_110004 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-16 11:00:04,306 INFO main: ============================================================</div>
+<div class="log-line log-general">2026-04-16 11:00:06,010 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-general">2026-04-16 11:00:06,037 INFO src.analyzer.claude_analyzer: AI health check passed � Haiku reachable</div>
+<div class="log-line log-general">2026-04-16 11:00:06,037 INFO main: Scanning all sports for odds...</div>
+<div class="log-line log-general">2026-04-16 11:00:06,037 INFO src.scanner.odds_fetcher: Fetching odds for americanfootball_nfl...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:06,536 ERROR src.scanner.odds_fetcher: Failed to fetch odds for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:06,537 INFO src.scanner.odds_fetcher: Got 0 markets for americanfootball_nfl</div>
+<div class="log-line log-general">2026-04-16 11:00:06,537 INFO src.scanner.odds_fetcher: Fetching odds for basketball_nba...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:07,285 ERROR src.scanner.odds_fetcher: Failed to fetch odds for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:07,286 INFO src.scanner.odds_fetcher: Got 0 markets for basketball_nba</div>
+<div class="log-line log-general">2026-04-16 11:00:07,286 INFO src.scanner.odds_fetcher: Fetching odds for baseball_mlb...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:07,728 ERROR src.scanner.odds_fetcher: Failed to fetch odds for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:07,729 INFO src.scanner.odds_fetcher: Got 0 markets for baseball_mlb</div>
+<div class="log-line log-general">2026-04-16 11:00:07,729 INFO src.scanner.odds_fetcher: Fetching odds for icehockey_nhl...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:08,321 ERROR src.scanner.odds_fetcher: Failed to fetch odds for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:08,322 INFO src.scanner.odds_fetcher: Got 0 markets for icehockey_nhl</div>
+<div class="log-line log-general">2026-04-16 11:00:08,322 INFO src.scanner.odds_fetcher: Fetching odds for golf_masters_tournament_winner...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:08,806 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_masters_tournament_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_masters_tournament_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:08,808 INFO src.scanner.odds_fetcher: Got 0 markets for golf_masters_tournament_winner</div>
+<div class="log-line log-general">2026-04-16 11:00:08,808 INFO src.scanner.odds_fetcher: Fetching odds for golf_pga_championship_winner...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:09,502 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_pga_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_pga_championship_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:09,504 INFO src.scanner.odds_fetcher: Got 0 markets for golf_pga_championship_winner</div>
+<div class="log-line log-general">2026-04-16 11:00:09,504 INFO src.scanner.odds_fetcher: Fetching odds for golf_the_open_championship_winner...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:09,977 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_the_open_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_the_open_championship_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:09,979 INFO src.scanner.odds_fetcher: Got 0 markets for golf_the_open_championship_winner</div>
+<div class="log-line log-general">2026-04-16 11:00:09,979 INFO src.scanner.odds_fetcher: Fetching odds for golf_us_open_winner...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:10,632 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_us_open_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_us_open_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:10,633 INFO src.scanner.odds_fetcher: Got 0 markets for golf_us_open_winner</div>
+<div class="log-line log-general">2026-04-16 11:00:10,633 INFO src.scanner.odds_fetcher: Fetching odds for tennis_atp_monte_carlo_masters...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:11,092 ERROR src.scanner.odds_fetcher: Failed to fetch odds for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:11,093 INFO src.scanner.odds_fetcher: Got 0 markets for tennis_atp_monte_carlo_masters</div>
+<div class="log-line log-general">2026-04-16 11:00:11,093 INFO src.scanner.odds_fetcher: Fetching odds for soccer_epl...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:11,703 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:11,704 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_epl</div>
+<div class="log-line log-general">2026-04-16 11:00:11,704 INFO src.scanner.odds_fetcher: Fetching odds for soccer_usa_mls...</div>
+<div class="log-line log-error log-error">2026-04-16 11:00:12,296 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
+<div class="log-line log-general">2026-04-16 11:00:12,297 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_usa_mls</div>
+<div class="log-line log-general">2026-04-16 11:00:12,297 INFO src.scanner.odds_fetcher: Total markets fetched: 0 across 11 sports</div>
+<div class="log-line log-general">2026-04-16 11:00:12,297 INFO main: Scanned 0 total markets</div>
+<div class="log-line log-general">2026-04-16 11:00:12,297 INFO main: No markets found � exiting cycle</div>
+<div class="log-line log-general">2026-04-16 11:00:12,321 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
