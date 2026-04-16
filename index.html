@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-16 18:00:06 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-16 18:30:05 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -731,11 +731,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">76</span></h2>
+        <h2>Run History <span class="count">77</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-16T18:30:05</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-err">ERR</span></td>
+            </tr><tr>
                 <td>2026-04-16T18:00:06</td>
                 <td>0</td>
                 <td>0</td>
@@ -817,16 +827,6 @@
                 <td><span class="status-err">ERR</span></td>
             </tr><tr>
                 <td>2026-04-16T14:00:04</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-err">ERR</span></td>
-            </tr><tr>
-                <td>2026-04-16T13:30:04</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -1012,16 +1012,6 @@
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-general">2026-04-16 12:30:06,023 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-general">2026-04-16 12:30:06,048 INFO src.analyzer.claude_analyzer: AI health check passed � Haiku reachable</div>
-<div class="log-line log-general">2026-04-16 12:30:06,048 INFO main: Scanning all sports for odds...</div>
-<div class="log-line log-general">2026-04-16 12:30:06,048 INFO src.scanner.odds_fetcher: Fetching odds for americanfootball_nfl...</div>
-<div class="log-line log-error log-error">2026-04-16 12:30:06,621 ERROR src.scanner.odds_fetcher: Failed to fetch odds for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-16 12:30:06,622 INFO src.scanner.odds_fetcher: Got 0 markets for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-16 12:30:06,622 INFO src.scanner.odds_fetcher: Fetching odds for basketball_nba...</div>
-<div class="log-line log-error log-error">2026-04-16 12:30:07,136 ERROR src.scanner.odds_fetcher: Failed to fetch odds for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-16 12:30:07,137 INFO src.scanner.odds_fetcher: Got 0 markets for basketball_nba</div>
-<div class="log-line log-general">2026-04-16 12:30:07,138 INFO src.scanner.odds_fetcher: Fetching odds for baseball_mlb...</div>
 <div class="log-line log-error log-error">2026-04-16 12:30:07,719 ERROR src.scanner.odds_fetcher: Failed to fetch odds for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
 <div class="log-line log-general">2026-04-16 12:30:07,720 INFO src.scanner.odds_fetcher: Got 0 markets for baseball_mlb</div>
 <div class="log-line log-general">2026-04-16 12:30:07,721 INFO src.scanner.odds_fetcher: Fetching odds for icehockey_nhl...</div>
@@ -1162,6 +1152,16 @@
 <div class="log-line log-error log-error">2026-04-16 18:00:05,357 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
 <div class="log-line log-general">2026-04-16 18:00:06,118 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-general">2026-04-16 18:00:06,144 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-16 18:00:06,220 INFO scripts.publish_dashboard: Generated 82269 chars of HTML</div>
+<div class="log-line log-general">2026-04-16 18:00:09,171 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-16 18:30:03,814 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-16 18:30:03,814 INFO main: DaftKings Bot cycle starting | run_id=20260416_183003 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-16 18:30:03,815 INFO main: ============================================================</div>
+<div class="log-line log-general">2026-04-16 18:30:04,421 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 400 Bad Request&quot;</div>
+<div class="log-line log-error log-error">2026-04-16 18:30:04,422 ERROR src.analyzer.claude_analyzer: AI health check FAILED � Haiku unreachable: Error code: 400 - {&#x27;type&#x27;: &#x27;error&#x27;, &#x27;error&#x27;: {&#x27;type&#x27;: &#x27;invalid_request_error&#x27;, &#x27;message&#x27;: &#x27;Your credit balance is too low to access the Anthropic API. Please go to Plans &amp; Billing to upgrade or purchase credits.&#x27;}, &#x27;request_id&#x27;: &#x27;req_011Ca8EwY9KAuQ5VLS3qjUdq&#x27;}</div>
+<div class="log-line log-error log-error">2026-04-16 18:30:04,422 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
+<div class="log-line log-general">2026-04-16 18:30:05,326 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-16 18:30:05,370 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
