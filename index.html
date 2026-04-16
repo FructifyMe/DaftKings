@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-16 18:30:05 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-16 19:00:06 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -731,11 +731,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">77</span></h2>
+        <h2>Run History <span class="count">78</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-16T19:00:06</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-err">ERR</span></td>
+            </tr><tr>
                 <td>2026-04-16T18:30:05</td>
                 <td>0</td>
                 <td>0</td>
@@ -817,16 +827,6 @@
                 <td><span class="status-err">ERR</span></td>
             </tr><tr>
                 <td>2026-04-16T14:30:05</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-err">ERR</span></td>
-            </tr><tr>
-                <td>2026-04-16T14:00:04</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -1007,21 +1007,11 @@
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
             <span>150 lines</span>
-            <span class="err-count">33 errors</span>
+            <span class="err-count">31 errors</span>
             
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-error log-error">2026-04-16 12:30:07,719 ERROR src.scanner.odds_fetcher: Failed to fetch odds for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-16 12:30:07,720 INFO src.scanner.odds_fetcher: Got 0 markets for baseball_mlb</div>
-<div class="log-line log-general">2026-04-16 12:30:07,721 INFO src.scanner.odds_fetcher: Fetching odds for icehockey_nhl...</div>
-<div class="log-line log-error log-error">2026-04-16 12:30:08,272 ERROR src.scanner.odds_fetcher: Failed to fetch odds for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-16 12:30:08,274 INFO src.scanner.odds_fetcher: Got 0 markets for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-16 12:30:08,274 INFO src.scanner.odds_fetcher: Fetching odds for golf_masters_tournament_winner...</div>
-<div class="log-line log-error log-error">2026-04-16 12:30:08,901 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_masters_tournament_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_masters_tournament_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-16 12:30:08,902 INFO src.scanner.odds_fetcher: Got 0 markets for golf_masters_tournament_winner</div>
-<div class="log-line log-general">2026-04-16 12:30:08,902 INFO src.scanner.odds_fetcher: Fetching odds for golf_pga_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-16 12:30:09,450 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_pga_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_pga_championship_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
 <div class="log-line log-general">2026-04-16 12:30:09,451 INFO src.scanner.odds_fetcher: Got 0 markets for golf_pga_championship_winner</div>
 <div class="log-line log-general">2026-04-16 12:30:09,451 INFO src.scanner.odds_fetcher: Fetching odds for golf_the_open_championship_winner...</div>
 <div class="log-line log-error log-error">2026-04-16 12:30:09,933 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_the_open_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_the_open_championship_winner/odds?apiKey=db560c31ed3f171022d264ea698e60b3&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
@@ -1162,6 +1152,16 @@
 <div class="log-line log-error log-error">2026-04-16 18:30:04,422 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
 <div class="log-line log-general">2026-04-16 18:30:05,326 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-general">2026-04-16 18:30:05,370 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-16 18:30:05,425 INFO scripts.publish_dashboard: Generated 82217 chars of HTML</div>
+<div class="log-line log-general">2026-04-16 18:30:08,210 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-16 19:00:04,984 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-16 19:00:04,985 INFO main: DaftKings Bot cycle starting | run_id=20260416_190004 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-16 19:00:04,985 INFO main: ============================================================</div>
+<div class="log-line log-general">2026-04-16 19:00:05,546 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 400 Bad Request&quot;</div>
+<div class="log-line log-error log-error">2026-04-16 19:00:05,547 ERROR src.analyzer.claude_analyzer: AI health check FAILED � Haiku unreachable: Error code: 400 - {&#x27;type&#x27;: &#x27;error&#x27;, &#x27;error&#x27;: {&#x27;type&#x27;: &#x27;invalid_request_error&#x27;, &#x27;message&#x27;: &#x27;Your credit balance is too low to access the Anthropic API. Please go to Plans &amp; Billing to upgrade or purchase credits.&#x27;}, &#x27;request_id&#x27;: &#x27;req_011Ca8HEKKbMDe7SfKJKp2on&#x27;}</div>
+<div class="log-line log-error log-error">2026-04-16 19:00:05,547 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
+<div class="log-line log-general">2026-04-16 19:00:06,271 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-16 19:00:06,294 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
