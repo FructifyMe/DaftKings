@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-16 20:30:05 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-16 21:00:06 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -731,11 +731,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">81</span></h2>
+        <h2>Run History <span class="count">82</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-16T21:00:06</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-err">ERR</span></td>
+            </tr><tr>
                 <td>2026-04-16T20:30:05</td>
                 <td>0</td>
                 <td>0</td>
@@ -822,16 +832,6 @@
                 <td>0</td>
                 <td>0</td>
                 <td>2s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-err">ERR</span></td>
-            </tr><tr>
-                <td>2026-04-16T16:00:05</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1s</td>
                 <td>-</td>
                 <td>0</td>
                 <td><span class="status-err">ERR</span></td>
@@ -1012,16 +1012,6 @@
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-general">2026-04-16 13:00:05,141 INFO scripts.publish_dashboard: Generated 83249 chars of HTML</div>
-<div class="log-line log-general">2026-04-16 13:00:06,933 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-16 13:30:03,402 INFO main: ============================================================</div>
-<div class="log-line log-cycle">2026-04-16 13:30:03,402 INFO main: DaftKings Bot cycle starting | run_id=20260416_133003 | paper_mode=True</div>
-<div class="log-line log-general">2026-04-16 13:30:03,402 INFO main: ============================================================</div>
-<div class="log-line log-general">2026-04-16 13:30:03,929 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 400 Bad Request&quot;</div>
-<div class="log-line log-error log-error">2026-04-16 13:30:03,929 ERROR src.analyzer.claude_analyzer: AI health check FAILED � Haiku unreachable: Error code: 400 - {&#x27;type&#x27;: &#x27;error&#x27;, &#x27;error&#x27;: {&#x27;type&#x27;: &#x27;invalid_request_error&#x27;, &#x27;message&#x27;: &#x27;Your credit balance is too low to access the Anthropic API. Please go to Plans &amp; Billing to upgrade or purchase credits.&#x27;}, &#x27;request_id&#x27;: &#x27;req_011Ca7r4cwocLgQadkTLUMga&#x27;}</div>
-<div class="log-line log-error log-error">2026-04-16 13:30:03,930 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
-<div class="log-line log-general">2026-04-16 13:30:04,701 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-general">2026-04-16 13:30:04,719 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 <div class="log-line log-general">2026-04-16 13:30:04,769 INFO scripts.publish_dashboard: Generated 83735 chars of HTML</div>
 <div class="log-line log-general">2026-04-16 13:30:06,487 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
 <div class="log-line log-general">2026-04-16 14:00:03,661 INFO main: ============================================================</div>
@@ -1162,6 +1152,16 @@
 <div class="log-line log-error log-error">2026-04-16 20:30:04,727 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
 <div class="log-line log-general">2026-04-16 20:30:05,494 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-general">2026-04-16 20:30:05,517 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-16 20:30:05,593 INFO scripts.publish_dashboard: Generated 81339 chars of HTML</div>
+<div class="log-line log-general">2026-04-16 20:30:08,713 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-16 21:00:04,753 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-04-16 21:00:04,753 INFO main: DaftKings Bot cycle starting | run_id=20260416_210004 | paper_mode=True</div>
+<div class="log-line log-general">2026-04-16 21:00:04,754 INFO main: ============================================================</div>
+<div class="log-line log-general">2026-04-16 21:00:05,736 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 400 Bad Request&quot;</div>
+<div class="log-line log-error log-error">2026-04-16 21:00:05,736 ERROR src.analyzer.claude_analyzer: AI health check FAILED � Haiku unreachable: Error code: 400 - {&#x27;type&#x27;: &#x27;error&#x27;, &#x27;error&#x27;: {&#x27;type&#x27;: &#x27;invalid_request_error&#x27;, &#x27;message&#x27;: &#x27;Your credit balance is too low to access the Anthropic API. Please go to Plans &amp; Billing to upgrade or purchase credits.&#x27;}, &#x27;request_id&#x27;: &#x27;req_011Ca8SP45NG6dhhmKWyt86n&#x27;}</div>
+<div class="log-line log-error log-error">2026-04-16 21:00:05,737 ERROR main: AI review unavailable � aborting cycle. Bot will not run blind.</div>
+<div class="log-line log-general">2026-04-16 21:00:06,479 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-16 21:00:06,501 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
