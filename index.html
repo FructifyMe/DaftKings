@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-17 10:07:33 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-17 10:16:31 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -309,16 +309,16 @@
         <div class="label">Pending</div>
     </div>
     <div class="stat-card">
-        <div class="value">48</div>
+        <div class="value">52</div>
         <div class="label">Passes</div>
     </div>
     <div class="stat-card">
-        <div class="value">473</div>
+        <div class="value">582</div>
         <div class="label">Arbs Found</div>
     </div>
     <div class="stat-card cost">
-        <div class="value">$0.1699</div>
-        <div class="label">API Cost &bull; 68 calls &bull; 102,310 tok</div>
+        <div class="value">$0.1814</div>
+        <div class="label">API Cost &bull; 72 calls &bull; 109,422 tok</div>
     </div>
 </div>
 
@@ -681,7 +681,7 @@
 <!-- Two-column: Arbs + Run History -->
 <div class="two-col">
     <div class="section">
-        <h2>Top Arbitrage Signals <span class="count">473</span></h2>
+        <h2>Top Arbitrage Signals <span class="count">582</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Sport</th><th>Match</th><th>Value Side</th><th>Book</th><th>Odds</th><th>Margin</th></tr></thead>
@@ -795,11 +795,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">90</span></h2>
+        <h2>Run History <span class="count">91</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-17T10:16:27</td>
+                <td>279</td>
+                <td>109</td>
+                <td>4</td>
+                <td>0</td>
+                <td>134s</td>
+                <td>$0.0115</td>
+                <td>4</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-04-17T10:07:29</td>
                 <td>279</td>
                 <td>120</td>
@@ -889,16 +899,6 @@
                 <td>-</td>
                 <td>0</td>
                 <td><span class="status-err">ERR</span></td>
-            </tr><tr>
-                <td>2026-04-16T20:30:05</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-err">ERR</span></td>
             </tr></tbody>
         </table>
         </div>
@@ -907,11 +907,39 @@
 
 <!-- Passed Opportunities -->
 <div class="section">
-    <h2>Passed Opportunities (last 20) <span class="count">48</span></h2>
+    <h2>Passed Opportunities (last 20) <span class="count">52</span></h2>
     <div style="max-height:500px;overflow-y:auto;">
     <table>
         <thead><tr><th>Sport</th><th>Match</th><th>Market</th><th>Conf</th><th>Edge</th><th>Why Passed</th></tr></thead>
         <tbody><tr>
+                <td>EPL</td>
+                <td>Wolverhampton Wanderers @ Leeds United</td>
+                <td>totals</td>
+                <td>0%</td>
+                <td>0.0%</td>
+                <td class="reasoning">While the totals market shows near-50/50 odds (+102/-103), critical data gaps prevent confident probability estimation. The arbitrage signal on Leeds -1.5 suggests significant misp...</td>
+            </tr><tr>
+                <td>MLB</td>
+                <td>Kansas City Royals @ New York Yankees</td>
+                <td>totals</td>
+                <td>62%</td>
+                <td>1.8%</td>
+                <td class="reasoning">The totals market shows minimal mispricings across books (highest discrepancy Under 8.0 at -102 vs Under 8.5 at -113 represents 2.6% variance). While Wacha's 0.43 ERA and recent do...</td>
+            </tr><tr>
+                <td>EPL</td>
+                <td>Wolverhampton Wanderers @ Leeds United</td>
+                <td>spreads</td>
+                <td>62%</td>
+                <td>8.9%</td>
+                <td class="reasoning">Leeds United -1.5 at +169 offers value due to cross-book mispricing. Wolverhampton's abysmal away record (3W-21L, 24GF/58GA) and league-worst form create a structural edge for Leed...</td>
+            </tr><tr>
+                <td>MLB</td>
+                <td>Kansas City Royals @ New York Yankees</td>
+                <td>spreads</td>
+                <td>68%</td>
+                <td>15.6%</td>
+                <td class="reasoning">The 15.6% arbitrage margin is a critical mispricing signal—betanysports has Yankees -2.5 at +175 (36.4% implied), dramatically undervaluing the home team against a Royals team with...</td>
+            </tr><tr>
                 <td>EPL</td>
                 <td>Bournemouth @ Newcastle United</td>
                 <td>spreads</td>
@@ -1023,34 +1051,6 @@
                 <td>62%</td>
                 <td>8.1%</td>
                 <td class="reasoning">The 8.1% arbitrage margin is a strong signal of market mispricing. Boston Red Sox -2.5 at +195 offers genuine value: the pitcher matchup heavily favors Early (elite ERA/WHIP vs. st...</td>
-            </tr><tr>
-                <td>NBA</td>
-                <td>Orlando Magic @ Philadelphia 76ers</td>
-                <td>totals</td>
-                <td>45%</td>
-                <td>1.0%</td>
-                <td class="reasoning">Market consensus is tightly clustered around 223-224 with minimal odds divergence, suggesting efficient pricing across books. Estimated true total probability is ~52% (slight over ...</td>
-            </tr><tr>
-                <td>NHL</td>
-                <td>Dallas Stars @ Buffalo Sabres</td>
-                <td>totals</td>
-                <td>0%</td>
-                <td>0.0%</td>
-                <td class="reasoning">The 37.2% arbitrage margin on a 'Draw' market in NHL (where draws are extremely rare in modern playoff hockey) signals severe data integrity problems. The totals odds structure its...</td>
-            </tr><tr>
-                <td>MLB</td>
-                <td>Arizona Diamondbacks @ Baltimore Orioles</td>
-                <td>totals</td>
-                <td>72%</td>
-                <td>5.4%</td>
-                <td class="reasoning">Eduardo Rodriguez is performing at an elite level (0.50 ERA, 3 consecutive quality starts with minimal runs allowed) while Kyle Bradish shows a 5.27 ERA and inconsistent recent for...</td>
-            </tr><tr>
-                <td>NBA</td>
-                <td>Orlando Magic @ Philadelphia 76ers</td>
-                <td>spreads</td>
-                <td>55%</td>
-                <td>1.0%</td>
-                <td class="reasoning">While Orlando Magic's 7-3 L10 record versus Philadelphia's 6-4 suggests slight away-team value, the market is pricing this nearly even (implied probabilities 50-52% across all spre...</td>
             </tr></tbody>
     </table>
     </div>
@@ -1076,23 +1076,107 @@
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
+<div class="log-line log-general">2026-04-17 10:15:32,947 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:32,948 INFO src.executor.bet_logger: Logged arb: 9ab3eb7088bf119b5e88c0c659ecd3db 3.4%</div>
+<div class="log-line log-general">2026-04-17 10:15:33,662 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:33,664 INFO src.executor.bet_logger: Logged arb: a6df706107ac1333cf13aa483d24a56a 71.6%</div>
+<div class="log-line log-general">2026-04-17 10:15:34,393 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:34,394 INFO src.executor.bet_logger: Logged arb: ee52c5d68b9f25c862176b9ecf058dc0 40.4%</div>
+<div class="log-line log-general">2026-04-17 10:15:35,110 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:35,112 INFO src.executor.bet_logger: Logged arb: 8b3c6a6dd6d21aa88956f4f7464f7d9b 20.1%</div>
+<div class="log-line log-general">2026-04-17 10:15:35,954 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:35,955 INFO src.executor.bet_logger: Logged arb: 8b3c6a6dd6d21aa88956f4f7464f7d9b 13.1%</div>
+<div class="log-line log-general">2026-04-17 10:15:36,650 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:36,651 INFO src.executor.bet_logger: Logged arb: 3456f6723f3971431a7c6206976c9db5 69.7%</div>
+<div class="log-line log-general">2026-04-17 10:15:37,358 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:37,359 INFO src.executor.bet_logger: Logged arb: 03cf20ec95b082ca40f0b552438558df 61.9%</div>
+<div class="log-line log-general">2026-04-17 10:15:38,057 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:38,059 INFO src.executor.bet_logger: Logged arb: 531496bcbda76eda957cb9bb18724387 46.8%</div>
+<div class="log-line log-general">2026-04-17 10:15:38,742 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:38,744 INFO src.executor.bet_logger: Logged arb: 531496bcbda76eda957cb9bb18724387 5.5%</div>
+<div class="log-line log-general">2026-04-17 10:15:39,464 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-17 10:15:39,698 INFO main: Pre-filter: 39/279 opportunities passed</div>
+<div class="log-line log-general">2026-04-17 10:16:05,976 INFO main: Sport diversity: {&#x27;baseball_mlb&#x27;: 7, &#x27;soccer_epl&#x27;: 2}</div>
+<div class="log-line log-haiku">2026-04-17 10:16:05,981 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | Kansas City Royals @ New York Yankees | spreads</div>
+<div class="log-line log-general">2026-04-17 10:16:11,304 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-17 10:16:11,305 INFO src.analyzer.claude_analyzer: Haiku tokens: 1478 in / 532 out = $0.0033 (session total: $0.0033 / 1 calls)</div>
+<div class="log-line log-general">2026-04-17 10:16:11,305 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: &quot;home&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;New York Yankees -2.5&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: 175,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;betanysports&quot;,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.68,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.156,</div>
 <div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.52,</div>
 <div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Tampa Bay superior pitching (Martinez 2.16 ERA vs Chandler 3.86 ERA)&quot;,</div>
-<div class="log-line log-raw">    &quot;Tampa Bay hot streak (8-2 L10 vs Pirates 5-5 L10)&quot;,</div>
-<div class="log-line log-raw">    &quot;Tampa Bay road performance solid (7-5 away)&quot;,</div>
-<div class="log-line log-raw">    &quot;Arbitrage signal may reflect structural market inefficiency rather than true edge&quot;,</div>
-<div class="log-line log-raw">    &quot;Pittsburgh home advantage offset by recent loss and inconsistent L10 record&quot;,</div>
-<div class="log-line log-raw">    &quot;Favorable weather conditions neutral to both teams&quot;</div>
+<div class="log-line log-raw">    &quot;Arbitrage detected: 15.6% margin indicates significant mispricing across books&quot;,</div>
+<div class="log-line log-raw">    &quot;Pitching dominance: Wacha (0.43 ERA, 8.0IP/0ER in last start) vs Schlittler (2.49 ERA, solid but not elite)&quot;,</div>
+<div class="log-line log-raw">    &quot;Royals road woes: 2-7 away record vs Yankees solid 5-5 home record&quot;,</div>
+<div class="log-line log-raw">    &quot;Recent form divergence: Yankees 3-7 L10 but Angels series volatility; Royals 3-7 L10 with larger losing streak (L4)&quot;,</div>
+<div class="log-line log-raw">    &quot;Cross-book divergence: Yankees -2.5 at +175 (36.4% implied) underpriced vs other spreads implying 45-56.5% for Yankees&quot;,</div>
+<div class="log-line log-raw">    &quot;Equal rest: Both teams have 1 rest day, neutral weather (73F, 8.8mph wind, 5% rain)&quot;</div>
 <div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While the 30.8% implied probability on Pirates -2.5 appears mispriced versus the 74.4% on Rays +2.5, the underlying fundamentals favor Tampa Bay. The Rays&#x27; superior pitching matchup (Martinez&#x27;s elite 2.16 ERA and 0.96 WHIP vs Chandler&#x27;s 3.86 ERA), recent dominance (8-2 L10), and solid road record (7-5) suggest true probability favors Tampa Bay closer to 52% moneyline territory. The Pirates&#x27; home advantage and rest parity don&#x27;t overcome the pitching and form gap. The arbitrage signal may reflect market overreaction to odds movement rather than genuine mispricing�estimated edge of only 1-2% on Pirates -2.5 does not meet the 3% threshold for recommendation.&quot;</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The 15.6% arbitrage margin is a critical mispricing signal�betanysports has Yankees -2.5 at +175 (36.4% implied), dramatically undervaluing the home team against a Royals team with a 2-7 road record. Despite similar L10 records, context differs sharply: Wacha is elite (0.43 ERA, 8 innings scoreless last start, 0.71 WHIP) while Schlittler is solid but mortal (2.49 ERA). Yankees home advantage (5-5) vs Royals road collapse (2-7) supports a true probability near 52% for a -2.5 spread�yielding 15.6% estimated edge. The arbitrage signal combined with superior pitching and venue mismatch justifies the bet despite moderate confidence (early season variance).&quot;</div>
 <div class="log-line log-raw">}</div>
 <div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-17 10:07:07,197 INFO main: PASS: baseball_mlb | Tampa Bay Rays @ Pittsburgh Pirates | While the 30.8% implied probability on Pirates -2.5 appears mispriced versus the 74.4% on Rays +2.5, the underlying fundamentals favor Tampa Bay. The Rays&#x27; superior pitching matchup (Martinez&#x27;s elite 2.16 ERA and 0.96 WHIP vs Chandler&#x27;s 3.86 ERA), recent dominance (8-2 L10), and solid road record (7-5) suggest true probability favors Tampa Bay closer to 52% moneyline territory. The Pirates&#x27; home advantage and rest parity don&#x27;t overcome the pitching and form gap. The arbitrage signal may reflect market overreaction to odds movement rather than genuine mispricing�estimated edge of only 1-2% on Pirates -2.5 does not meet the 3% threshold for recommendation.</div>
-<div class="log-line log-haiku">2026-04-17 10:07:07,212 INFO src.analyzer.claude_analyzer: Calling Haiku for basketball_nba | Golden State Warriors @ Phoenix Suns | spreads</div>
-<div class="log-line log-general">2026-04-17 10:07:11,122 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-17 10:07:11,122 INFO src.analyzer.claude_analyzer: Haiku tokens: 1041 in / 355 out = $0.0023 (session total: $0.0174 / 7 calls)</div>
-<div class="log-line log-general">2026-04-17 10:07:11,122 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-risk log-warn">2026-04-17 10:16:11,315 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 3 bets on baseball_mlb today (max 2)</div>
+<div class="log-line log-risk">2026-04-17 10:16:11,315 INFO main: Position limits blocked: Already have 3 bets on baseball_mlb today (max 2)</div>
+<div class="log-line log-haiku">2026-04-17 10:16:11,339 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_epl | Wolverhampton Wanderers @ Leeds United | spreads</div>
+<div class="log-line log-general">2026-04-17 10:16:16,386 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-17 10:16:16,387 INFO src.analyzer.claude_analyzer: Haiku tokens: 1253 in / 439 out = $0.0028 (session total: $0.0061 / 2 calls)</div>
+<div class="log-line log-general">2026-04-17 10:16:16,387 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: &quot;home&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Leeds United -1.5&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: 169,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;onexbet&quot;,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.089,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.461,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;Leeds United home advantage (39 GF vs 49 GA at home suggests decent attacking setup despite poor record)&quot;,</div>
+<div class="log-line log-raw">    &quot;Wolverhampton historically worst team in league (3W-21L, -34 goal differential away from home at 24GF/58GA)&quot;,</div>
+<div class="log-line log-raw">    &quot;Cross-book mispricing: Leeds -1.5 at +169 (37.2% implied) vs market consensus suggesting 45%+ true probability for Leeds -1.5&quot;,</div>
+<div class="log-line log-raw">    &quot;15.2% arbitrage margin detected indicates significant line divergence across books&quot;,</div>
+<div class="log-line log-raw">    &quot;Leeds home vs Wolves away creates massive skill/form gap (15th vs 20th, home vs away records heavily favor Leeds)&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;Leeds United -1.5 at +169 offers value due to cross-book mispricing. Wolverhampton&#x27;s abysmal away record (3W-21L, 24GF/58GA) and league-worst form create a structural edge for Leeds at home despite their own struggles (8W-12L). The 15.2% arbitrage margin signals genuine mispricing across books, with onexbet underpricing Leeds&#x27; -1.5 line. Estimated true probability of Leeds -1.5 is approximately 46%, yielding a +89bps edge at +169 odds. Missing recent form data limits confidence, but the fundamental record disparity (Leeds home vs Wolves away) and cross-book arbitrage justify the play.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-risk log-warn">2026-04-17 10:16:16,394 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 3 bets on soccer_epl today (max 2)</div>
+<div class="log-line log-risk">2026-04-17 10:16:16,394 INFO main: Position limits blocked: Already have 3 bets on soccer_epl today (max 2)</div>
+<div class="log-line log-haiku">2026-04-17 10:16:16,407 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | Kansas City Royals @ New York Yankees | totals</div>
+<div class="log-line log-general">2026-04-17 10:16:22,533 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-17 10:16:22,534 INFO src.analyzer.claude_analyzer: Haiku tokens: 1442 in / 450 out = $0.0030 (session total: $0.0090 / 3 calls)</div>
+<div class="log-line log-general">2026-04-17 10:16:22,534 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.018,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.51,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;Wacha elite form (0.43 ERA, 2-0, dominant recent starts) vs Schlittler solid but less proven&quot;,</div>
+<div class="log-line log-raw">    &quot;Kansas City away record 2-7 is concerning but Wacha performance transcends team context&quot;,</div>
+<div class="log-line log-raw">    &quot;Yankees home advantage (5-5) and recent loss momentum (L1) neutralize positional edge&quot;,</div>
+<div class="log-line log-raw">    &quot;Arbitrage signal on Yankees spread indicates market sees Yankees slight value, but totals market appears fairly priced across books&quot;,</div>
+<div class="log-line log-raw">    &quot;Early season volatility and small sample sizes limit confidence in both team and pitcher projections&quot;,</div>
+<div class="log-line log-raw">    &quot;Favorable weather (73.6�F, low wind 8.8 mph, minimal precipitation) slightly elevates run-scoring environment&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The totals market shows minimal mispricings across books (highest discrepancy Under 8.0 at -102 vs Under 8.5 at -113 represents 2.6% variance). While Wacha&#x27;s 0.43 ERA and recent dominance (three straight starts with 0-1 ER) suggest under-value, the Yankees&#x27; Schlittler has also been effective (2.49 ERA, 14K in last 9.1 IP). Early season small sample sizes and the conflicting signals (arbitrage on Yankees ML vs. fairly-priced totals) reduce confidence. True probability for Over 7.5 estimated at ~51%, yielding ~1.8% edge�below the 3% threshold for a paper trade recommendation despite favorable pitching matchup context.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-17 10:16:22,535 INFO main: PASS: baseball_mlb | Kansas City Royals @ New York Yankees | The totals market shows minimal mispricings across books (highest discrepancy Under 8.0 at -102 vs Under 8.5 at -113 represents 2.6% variance). While Wacha&#x27;s 0.43 ERA and recent dominance (three straight starts with 0-1 ER) suggest under-value, the Yankees&#x27; Schlittler has also been effective (2.49 ERA, 14K in last 9.1 IP). Early season small sample sizes and the conflicting signals (arbitrage on Yankees ML vs. fairly-priced totals) reduce confidence. True probability for Over 7.5 estimated at ~51%, yielding ~1.8% edge�below the 3% threshold for a paper trade recommendation despite favorable pitching matchup context.</div>
+<div class="log-line log-haiku">2026-04-17 10:16:22,551 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_epl | Wolverhampton Wanderers @ Leeds United | totals</div>
+<div class="log-line log-general">2026-04-17 10:16:27,109 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-17 10:16:27,109 INFO src.analyzer.claude_analyzer: Haiku tokens: 1123 in / 395 out = $0.0025 (session total: $0.0115 / 4 calls)</div>
+<div class="log-line log-general">2026-04-17 10:16:27,110 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
 <div class="log-line log-raw">{</div>
 <div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
 <div class="log-line log-raw">  &quot;side&quot;: null,</div>
@@ -1101,131 +1185,47 @@
 <div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
 <div class="log-line log-raw">  &quot;confidence&quot;: 0.0,</div>
 <div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.00,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.52,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.00,</div>
 <div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Suns favored but odds fairly priced across books&quot;,</div>
-<div class="log-line log-raw">    &quot;Phoenix home court advantage minimal in April (late season)&quot;,</div>
-<div class="log-line log-raw">    &quot;Warriors&#x27; recent form poor (3-7 L10) but Suns inconsistent (5-5 L10)&quot;,</div>
-<div class="log-line log-raw">    &quot;Cross-book variance shows balanced market pricing&quot;,</div>
-<div class="log-line log-raw">    &quot;No significant rest or injury edge to exploit&quot;</div>
+<div class="log-line log-raw">    &quot;Insufficient data: Missing recent form (L10 records), injury reports, and head-to-head context&quot;,</div>
+<div class="log-line log-raw">    &quot;Arbitrage signal (Leeds -1.5 +169 at onexbet) does not align with totals market being evaluated&quot;,</div>
+<div class="log-line log-raw">    &quot;Both teams severely underperforming: Leeds 8W-12L (39GF/49GA home), Wolves 3W-21L (24GF/58GA away) � extreme defensive fragility&quot;,</div>
+<div class="log-line log-raw">    &quot;Late-season context unclear: No playoff position, seeding, or motivation data provided to assess relegation/survival pressure&quot;</div>
 <div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The Suns are appropriately favored at -3.5 (-103), with implied probability of 50.7% aligned to their superior record (45-37 vs 37-45) and home court. Cross-book spreads (-2.5 to -3.5) show tight consensus pricing with minimal variance, indicating an efficiently-priced market. While Phoenix&#x27;s L10 record (5-5) and Golden State&#x27;s struggles (3-7 L10) suggest Suns should win, the current odds already reflect this. Equal rest for both teams and no disclosed injuries eliminate situational edges. Estimated true probability (~52% Suns) does not justify the -103 odds required, failing the 3% edge threshold for a bet recommendation.&quot;</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While the totals market shows near-50/50 odds (+102/-103), critical data gaps prevent confident probability estimation. The arbitrage signal on Leeds -1.5 suggests significant mispricing in the spreads market but does not directly validate the Over/Under. Leeds&#x27; poor defensive record (49 GA at home) and Wolves&#x27; anemic offense (24 GF away) could support Under 2.5, but without recent form, injuries, or late-season motivation context, estimating true goal probability is unreliable. The 15.2% arbitrage margin on an unrelated spread market indicates bookmaker disagreement exists, but does not quantify expected goals. Pass pending more granular data.&quot;</div>
 <div class="log-line log-raw">}</div>
 <div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-17 10:07:11,123 INFO main: PASS: basketball_nba | Golden State Warriors @ Phoenix Suns | The Suns are appropriately favored at -3.5 (-103), with implied probability of 50.7% aligned to their superior record (45-37 vs 37-45) and home court. Cross-book spreads (-2.5 to -3.5) show tight consensus pricing with minimal variance, indicating an efficiently-priced market. While Phoenix&#x27;s L10 record (5-5) and Golden State&#x27;s struggles (3-7 L10) suggest Suns should win, the current odds already reflect this. Equal rest for both teams and no disclosed injuries eliminate situational edges. Estimated true probability (~52% Suns) does not justify the -103 odds required, failing the 3% edge threshold for a bet recommendation.</div>
-<div class="log-line log-haiku">2026-04-17 10:07:11,160 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_epl | Fulham @ Brentford | totals</div>
-<div class="log-line log-general">2026-04-17 10:07:15,046 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-17 10:07:15,047 INFO src.analyzer.claude_analyzer: Haiku tokens: 967 in / 368 out = $0.0022 (session total: $0.0197 / 8 calls)</div>
-<div class="log-line log-general">2026-04-17 10:07:15,047 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.35,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.01,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.51,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Insufficient recent form data (L10 records N/A prevents trend analysis)&quot;,</div>
-<div class="log-line log-raw">    &quot;Missing injury information limits team strength assessment&quot;,</div>
-<div class="log-line log-raw">    &quot;Arbitrage signal on Brentford ML suggests market uncertainty rather than totals edge&quot;,</div>
-<div class="log-line log-raw">    &quot;Record parity: both teams 13W-14L or 13W-11L; predictive value limited&quot;,</div>
-<div class="log-line log-raw">    &quot;Totals odds show tight market consensus (Under 2.75 at 52.4% vs Over 2.75 at 50.5%)&quot;,</div>
-<div class="log-line log-raw">    &quot;No weather/venue context beyond &#x27;indoor&#x27; designation&quot;</div>
-<div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While the arbitrage detection on Brentford -1.0 signals market mispricing, it provides limited direct insight into totals lines. The totals markets show tight consensus with Under 2.75 implying 52.4% and Over 2.75 implying 50.5%�essentially a coin flip. Without recent form data (L10 N/A), injury updates, or specific match context, we cannot establish a genuine 3%+ edge on totals. The data quality is too sparse to confidently estimate true probability; recommend passing until more current information is available.&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-17 10:07:15,048 INFO main: PASS: soccer_epl | Fulham @ Brentford | While the arbitrage detection on Brentford -1.0 signals market mispricing, it provides limited direct insight into totals lines. The totals markets show tight consensus with Under 2.75 implying 52.4% and Over 2.75 implying 50.5%�essentially a coin flip. Without recent form data (L10 N/A), injury updates, or specific match context, we cannot establish a genuine 3%+ edge on totals. The data quality is too sparse to confidently estimate true probability; recommend passing until more current information is available.</div>
-<div class="log-line log-haiku">2026-04-17 10:07:15,062 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | Tampa Bay Rays @ Pittsburgh Pirates | totals</div>
-<div class="log-line log-general">2026-04-17 10:07:19,844 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-17 10:07:19,845 INFO src.analyzer.claude_analyzer: Haiku tokens: 1198 in / 457 out = $0.0028 (session total: $0.0224 / 9 calls)</div>
-<div class="log-line log-haiku">2026-04-17 10:07:19,861 INFO src.analyzer.claude_analyzer: Calling Haiku for basketball_nba | Golden State Warriors @ Phoenix Suns | totals</div>
-<div class="log-line log-general">2026-04-17 10:07:24,774 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-17 10:07:24,775 INFO src.analyzer.claude_analyzer: Haiku tokens: 1055 in / 410 out = $0.0025 (session total: $0.0249 / 10 calls)</div>
-<div class="log-line log-general">2026-04-17 10:07:24,775 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: &quot;under&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Under 219.5&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: 100,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;draftkings&quot;,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.04,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.54,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Warriors offensive decline: 37-45 record, 3-7 L10, averaging ~110 PPG in recent losses&quot;,</div>
-<div class="log-line log-raw">    &quot;Suns inconsistent scoring: 5-5 L10 with wide output range (73-135 PPG), defensive matchup uncertainty&quot;,</div>
-<div class="log-line log-raw">    &quot;Cross-book divergence: Under 219.5 +100 vs implied 50% is a clear mispricing; market undervaluing low-scoring tendency&quot;,</div>
-<div class="log-line log-raw">    &quot;Both teams in poor form with limited offensive rhythm heading into playoff context&quot;,</div>
-<div class="log-line log-raw">    &quot;Equal rest (6 days each) eliminates fatigue as differentiator; focus shifts to pure matchup&quot;</div>
-<div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The Warriors&#x27; poor form (3-7 L10, 37-45 record) and recent low-scoring outputs (103-118 PPG) combined with Suns&#x27; inconsistent offensive rhythm (73-135 range) suggest the true total lands below 220. The Under 219.5 at +100 is mispriced relative to the market&#x27;s own 50% implied probability�this is +EV at even money. Cross-book odds show sharp books offering Under 218.5 at +108, confirming the under-bias. Estimated true probability of going under 219.5 is ~54%, yielding 4% edge.&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-risk log-warn">2026-04-17 10:07:24,781 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 1 bet(s) on this game today</div>
-<div class="log-line log-risk">2026-04-17 10:07:24,781 INFO main: Position limits blocked: Already have 1 bet(s) on this game today</div>
-<div class="log-line log-haiku">2026-04-17 10:07:24,793 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_epl | Bournemouth @ Newcastle United | spreads</div>
-<div class="log-line log-general">2026-04-17 10:07:29,598 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-17 10:07:29,599 INFO src.analyzer.claude_analyzer: Haiku tokens: 1079 in / 430 out = $0.0026 (session total: $0.0275 / 11 calls)</div>
-<div class="log-line log-general">2026-04-17 10:07:29,599 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: &quot;away&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Bournemouth Draw +0.5 AH&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: -118,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;draftkings&quot;,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.048,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.589,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;28% arbitrage margin signals severe DK mispricing on draw markets&quot;,</div>
-<div class="log-line log-raw">    &quot;Newcastle 12-14 home record (12W, 45GF/47GA) shows poor defensive form despite respectable scoring&quot;,</div>
-<div class="log-line log-raw">    &quot;Bournemouth 10-7 away record (48GF/49GA) indicates competitive away team with neutral goal differential&quot;,</div>
-<div class="log-line log-raw">    &quot;League positioning (#14 Newcastle vs #11 Bournemouth) contradicts odds favoring Newcastle heavily&quot;,</div>
-<div class="log-line log-raw">    &quot;Draw at +295 betfair_ex_eu vs DK&#x27;s -118 on Bournemouth 0.5 reflects significant mispricing&quot;,</div>
-<div class="log-line log-raw">    &quot;Newcastle&#x27;s 0-draw record is unusual; Bournemouth&#x27;s clean sheet away form suggests defensive stability&quot;</div>
-<div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;DK&#x27;s Bournemouth 0.5 AH at -118 (54.1% implied) substantially undervalues the draw outcome relative to betfair&#x27;s +295 (25% implied). With Newcastle&#x27;s poor home defensive record (47 GA at home) and Bournemouth&#x27;s competitive away record, true draw probability exceeds 58%, creating ~4.8% edge. The 28% arbitrage margin is a red flag that DK has misprice the draw heavily; Bournemouth 0.5 AH (which pays on draw or away win) offers genuine value at -118.&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-risk log-warn">2026-04-17 10:07:29,606 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 2 bets on soccer_epl today (max 2)</div>
-<div class="log-line log-risk">2026-04-17 10:07:29,607 INFO main: Position limits blocked: Already have 2 bets on soccer_epl today (max 2)</div>
-<div class="log-line log-cycle">2026-04-17 10:07:29,608 INFO main: Cycle complete: 279 markets, 120 arbs, 11 analyzed, 4 bets, 182.0s, 0 errors</div>
-<div class="log-line log-general">2026-04-17 10:07:29,608 INFO main: Running bet settlement...</div>
-<div class="log-line log-general">2026-04-17 10:07:29,624 INFO src.executor.settlement: Settling 6 bets across sports: [&#x27;baseball_mlb&#x27;, &#x27;icehockey_nhl&#x27;, &#x27;soccer_usa_mls&#x27;, &#x27;basketball_nba&#x27;, &#x27;soccer_epl&#x27;]</div>
-<div class="log-line log-general">2026-04-17 10:07:29,624 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
-<div class="log-line log-api">2026-04-17 10:07:30,062 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 446</div>
-<div class="log-line log-general">2026-04-17 10:07:30,063 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-17 10:07:30,063 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
-<div class="log-line log-api">2026-04-17 10:07:30,495 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 444</div>
-<div class="log-line log-general">2026-04-17 10:07:30,496 INFO src.scanner.score_fetcher: Got 4 completed games for basketball_nba</div>
-<div class="log-line log-general">2026-04-17 10:07:30,496 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
-<div class="log-line log-api">2026-04-17 10:07:30,892 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 442</div>
-<div class="log-line log-general">2026-04-17 10:07:30,893 INFO src.scanner.score_fetcher: Got 40 completed games for baseball_mlb</div>
-<div class="log-line log-general">2026-04-17 10:07:30,893 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
-<div class="log-line log-api">2026-04-17 10:07:31,282 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 440</div>
-<div class="log-line log-general">2026-04-17 10:07:31,283 INFO src.scanner.score_fetcher: Got 21 completed games for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-17 10:07:31,283 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-api">2026-04-17 10:07:31,683 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 440</div>
-<div class="log-line log-general">2026-04-17 10:07:31,684 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-17 10:07:31,685 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
-<div class="log-line log-api">2026-04-17 10:07:32,081 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 438</div>
-<div class="log-line log-general">2026-04-17 10:07:32,082 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
-<div class="log-line log-general">2026-04-17 10:07:32,082 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
-<div class="log-line log-api">2026-04-17 10:07:32,491 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 436</div>
-<div class="log-line log-general">2026-04-17 10:07:32,492 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-17 10:07:32,492 INFO src.scanner.score_fetcher: Total completed games fetched: 65</div>
-<div class="log-line log-general">2026-04-17 10:07:32,492 INFO src.executor.settlement: Fetched 65 completed game scores</div>
-<div class="log-line log-settlement">2026-04-17 10:07:32,493 INFO src.executor.settlement: SETTLED: baseball_mlb | Arizona Diamondbacks @ Baltimore Orioles | spreads | LOSS | P&amp;L $-13.50 | Baltimore Orioles 5 - Arizona Diamondbacks 8</div>
-<div class="log-line log-settlement">2026-04-17 10:07:32,494 INFO src.executor.settlement: SETTLED: icehockey_nhl | Dallas Stars @ Buffalo Sabres | spreads | LOSS | P&amp;L $-13.00 | Buffalo Sabres 3 - Dallas Stars 4</div>
-<div class="log-line log-general">2026-04-17 10:07:32,505 INFO src.executor.settlement: Updated 2 bets in bets_log.csv</div>
-<div class="log-line log-general">2026-04-17 10:07:33,221 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-settlement">2026-04-17 10:07:33,222 INFO main: SETTLED: baseball_mlb | Baltimore Orioles vs Arizona Diamondbacks | spreads | LOSS | P&amp;L $-13.50</div>
-<div class="log-line log-settlement">2026-04-17 10:07:33,222 INFO main: SETTLED: icehockey_nhl | Buffalo Sabres vs Dallas Stars | spreads | LOSS | P&amp;L $-13.00</div>
-<div class="log-line log-general">2026-04-17 10:07:33,223 INFO main: Settled 2 bets this cycle</div>
-<div class="log-line log-general">2026-04-17 10:07:33,253 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-17 10:16:27,110 INFO main: PASS: soccer_epl | Wolverhampton Wanderers @ Leeds United | While the totals market shows near-50/50 odds (+102/-103), critical data gaps prevent confident probability estimation. The arbitrage signal on Leeds -1.5 suggests significant mispricing in the spreads market but does not directly validate the Over/Under. Leeds&#x27; poor defensive record (49 GA at home) and Wolves&#x27; anemic offense (24 GF away) could support Under 2.5, but without recent form, injuries, or late-season motivation context, estimating true goal probability is unreliable. The 15.2% arbitrage margin on an unrelated spread market indicates bookmaker disagreement exists, but does not quantify expected goals. Pass pending more granular data.</div>
+<div class="log-line log-risk">2026-04-17 10:16:27,126 INFO main: Kill switch triggered mid-cycle � stopping</div>
+<div class="log-line log-general">2026-04-17 10:16:27,915 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-cycle">2026-04-17 10:16:27,916 INFO main: Cycle complete: 279 markets, 109 arbs, 4 analyzed, 0 bets, 133.8s, 0 errors</div>
+<div class="log-line log-general">2026-04-17 10:16:27,916 INFO main: Running bet settlement...</div>
+<div class="log-line log-general">2026-04-17 10:16:27,923 INFO src.executor.settlement: Settling 4 bets across sports: [&#x27;soccer_usa_mls&#x27;, &#x27;baseball_mlb&#x27;, &#x27;basketball_nba&#x27;, &#x27;soccer_epl&#x27;]</div>
+<div class="log-line log-general">2026-04-17 10:16:27,923 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
+<div class="log-line log-api">2026-04-17 10:16:28,442 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 382</div>
+<div class="log-line log-general">2026-04-17 10:16:28,443 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
+<div class="log-line log-general">2026-04-17 10:16:28,443 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
+<div class="log-line log-api">2026-04-17 10:16:28,969 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 380</div>
+<div class="log-line log-general">2026-04-17 10:16:28,970 INFO src.scanner.score_fetcher: Got 4 completed games for basketball_nba</div>
+<div class="log-line log-general">2026-04-17 10:16:28,971 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
+<div class="log-line log-api">2026-04-17 10:16:29,536 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 378</div>
+<div class="log-line log-general">2026-04-17 10:16:29,538 INFO src.scanner.score_fetcher: Got 40 completed games for baseball_mlb</div>
+<div class="log-line log-general">2026-04-17 10:16:29,538 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
+<div class="log-line log-api">2026-04-17 10:16:30,056 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 376</div>
+<div class="log-line log-general">2026-04-17 10:16:30,058 INFO src.scanner.score_fetcher: Got 21 completed games for icehockey_nhl</div>
+<div class="log-line log-general">2026-04-17 10:16:30,058 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
+<div class="log-line log-api">2026-04-17 10:16:30,575 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 376</div>
+<div class="log-line log-general">2026-04-17 10:16:30,576 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
+<div class="log-line log-general">2026-04-17 10:16:30,576 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
+<div class="log-line log-api">2026-04-17 10:16:31,038 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 374</div>
+<div class="log-line log-general">2026-04-17 10:16:31,039 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
+<div class="log-line log-general">2026-04-17 10:16:31,039 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
+<div class="log-line log-api">2026-04-17 10:16:31,586 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 372</div>
+<div class="log-line log-general">2026-04-17 10:16:31,588 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_usa_mls</div>
+<div class="log-line log-general">2026-04-17 10:16:31,588 INFO src.scanner.score_fetcher: Total completed games fetched: 65</div>
+<div class="log-line log-general">2026-04-17 10:16:31,588 INFO src.executor.settlement: Fetched 65 completed game scores</div>
+<div class="log-line log-general">2026-04-17 10:16:31,589 INFO main: No bets settled this cycle</div>
+<div class="log-line log-general">2026-04-17 10:16:31,624 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
