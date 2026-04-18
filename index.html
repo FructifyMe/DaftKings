@@ -64,9 +64,9 @@
         letter-spacing: 1px;
         margin-top: 4px;
     }
-    .stat-card.highlight .value { color: #ff4444; }
-    .stat-card.roi .value { color: #ff4444; }
-    .stat-card.bankroll .value { color: #ff4444; }
+    .stat-card.highlight .value { color: #00d4aa; }
+    .stat-card.roi .value { color: #00d4aa; }
+    .stat-card.bankroll .value { color: #00d4aa; }
     .stat-card.cost .value { color: #fbbf24; font-size: 22px; }
     .stat-card.win .value { color: #00d4aa; }
     .stat-card.loss .value { color: #ff4444; }
@@ -274,34 +274,34 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-18 09:00:10 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-18 17:03:44 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
 <!-- Summary Stats -->
 <div class="stats-grid">
     <div class="stat-card">
-        <div class="value">25</div>
+        <div class="value">28</div>
         <div class="label">Bets Placed</div>
     </div>
     <div class="stat-card win">
-        <div class="value">10W - 11L - 0P</div>
-        <div class="label">Record (21 settled)</div>
+        <div class="value">12W - 12L - 0P</div>
+        <div class="label">Record (24 settled)</div>
     </div>
     <div class="stat-card">
-        <div class="value">48%</div>
+        <div class="value">50%</div>
         <div class="label">Win Rate</div>
     </div>
     <div class="stat-card highlight">
-        <div class="value">$-6.10</div>
+        <div class="value">+$18.40</div>
         <div class="label">Total P&L</div>
     </div>
     <div class="stat-card roi">
-        <div class="value">-2.0%</div>
+        <div class="value">+5.1%</div>
         <div class="label">ROI</div>
     </div>
     <div class="stat-card bankroll">
-        <div class="value">$993.90</div>
+        <div class="value">$1018.40</div>
         <div class="label">Bankroll</div>
     </div>
     <div class="stat-card">
@@ -309,28 +309,45 @@
         <div class="label">Pending</div>
     </div>
     <div class="stat-card">
-        <div class="value">52</div>
+        <div class="value">59</div>
         <div class="label">Passes</div>
     </div>
     <div class="stat-card">
-        <div class="value">689</div>
+        <div class="value">805</div>
         <div class="label">Arbs Found</div>
     </div>
     <div class="stat-card cost">
-        <div class="value">$0.2002</div>
-        <div class="label">API Cost &bull; 78 calls &bull; 121,703 tok</div>
+        <div class="value">$0.2300</div>
+        <div class="label">API Cost &bull; 88 calls &bull; 141,821 tok</div>
     </div>
 </div>
 
 <!-- Settled Bets -->
 <div class="section">
-    <h2>Settled Bets <span class="count">21</span></h2>
+    <h2>Settled Bets <span class="count">24</span></h2>
     <table>
         <thead><tr>
             <th>Result</th><th>Sport</th><th>Match</th><th>Bet</th>
             <th>Odds</th><th>Book</th><th>Stake</th><th>P&L</th><th>Score</th>
         </tr></thead>
-        <tbody><tr class="row-loss">
+        <tbody><tr class="row-win">
+                <td><span class="badge badge-win">WIN</span></td>
+                <td>EPL <span class="arb-tag">ARB</span></td>
+                <td>Fulham @ Brentford</td>
+                <td class="bet-desc"><strong>Fulham +0.25 (0.25 goal handicap)</strong></td>
+                <td class="bet-odds">+110</td>
+                <td class="bet-book">Matchbook</td>
+                <td>$19.50</td>
+                <td><span class="pnl-pos">+$19.50</span></td>
+                <td class="score-cell">Brentford 0 - Fulham 0</td>
+            </tr>
+            <tr class="detail-row row-win">
+                <td colspan="9">
+                    <div class="criteria-bar">Conf: 62% &bull; Edge: 7.8% &bull; True Prob: 55.5%</div>
+                    <div class="factors-row"><span class="factor-pill">26% arbitrage margin signals sharp mispricing across the market</span><span class="factor-pill">Fulham away record (43GF/46GA) is respectable; Brentford home (48GF/44GA) shows modest advantage</span><span class="factor-pill">League position gap (#7 vs #12) is only 5 places with identical W-D-L records (13-0-11/13-0-14), suggesting closer quality than odds imply</span><span class="factor-pill">Fulham +0.25 at +110 (47.6% implied) vs estimated true probability ~55.5% creates 7.8% edge</span><span class="factor-pill">Cross-book divergence (best Fulham line +255 at Matchbook vs consensus -243) indicates soft consensus pricing on Brentford</span></div>
+                    <div class="reasoning-full">The 26% arbitrage margin is a rare, actionable mispricing signal. While Brentford has home advantage, the teams&#x27; nearly identical records (both 13W-0D with Fulham 14L vs Brentford 11L) suggest the consensus market is overweighting home bias. Fulham +0.25 at +110 (47.6% implied) undervalues an away team with comparable quality. The Matchbook +2...</div>
+                </td>
+            </tr><tr class="row-loss">
                 <td><span class="badge badge-loss">LOSS</span></td>
                 <td>NBA <span class="arb-tag">ARB</span></td>
                 <td>Golden State Warriors @ Phoenix Suns</td>
@@ -363,6 +380,40 @@
                     <div class="criteria-bar">Conf: 72% &bull; Edge: 4.8% &bull; True Prob: 61.2%</div>
                     <div class="factors-row"><span class="factor-pill">San Diego 13-6 record (68.4% win rate) vs Angels 10-10 (50%)</span><span class="factor-pill">Padres 9-1 in L10, Angels 5-5 in L10 — massive form divergence</span><span class="factor-pill">Angels starter Kikuchi 0-2 with 7.50 ERA, allowing 4-5 ER per outing</span><span class="factor-pill">Padres starter Márquez more consistent in recent outings, 5.0 IP/0 ER last game</span><span class="factor-pill">Padres 4-2 on road, Angels 3-3 at home — no home field advantage</span></div>
                     <div class="reasoning-full">San Diego is a 68% win-rate team in elite form (9-1 L10) playing on the road against a .500 Angels team that has shown inconsistent play. The pitching matchup heavily favors the Padres: Kikuchi is 0-2 with a 7.50 ERA struggling to get through 5 innings, while Márquez has stabilized recently with a quality start last outing. The +125 price at betsso...</div>
+                </td>
+            </tr><tr class="row-win">
+                <td><span class="badge badge-win">WIN</span></td>
+                <td>MLS <span class="arb-tag">ARB</span></td>
+                <td>Austin FC @ Toronto FC</td>
+                <td class="bet-desc"><strong>Toronto FC vs Austin FC Draw</strong></td>
+                <td class="bet-odds">+260</td>
+                <td class="bet-book">Espnbet</td>
+                <td>$22.00</td>
+                <td><span class="pnl-pos">+$22.00</span></td>
+                <td class="score-cell">Toronto FC 3 - Austin FC 3</td>
+            </tr>
+            <tr class="detail-row row-win">
+                <td colspan="9">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 8.7% &bull; True Prob: 47.5%</div>
+                    <div class="factors-row"><span class="factor-pill">22.2% arbitrage margin detected — strong mispricing signal across books</span><span class="factor-pill">Draw at +260 (espnbet) vs implied 35% (consensus) suggests significant underpricing</span><span class="factor-pill">Toronto FC home record 10GF/11GA shows balanced attack/defense; Austin away 8GF/11GA indicates defensive vulnerability but low-scoring road pattern</span><span class="factor-pill">Toronto #6 vs Austin #13 in league position — moderate skill gap, not a dominant home favorite</span><span class="factor-pill">Limited recent-form data (L10 N/A, recent results N/A) creates soft-line opportunity; MLS early-season variance is elevated</span></div>
+                    <div class="reasoning-full">The 22.2% arbitrage margin is a decisive red flag indicating genuine mispricing. The Draw at +260 (espnbet) offers ~27.6% implied probability while consensus lines price it ~35%, suggesting a 5–8 percentage-point undervaluation. Toronto&#x27;s home record is compact (10GF/11GA) and Austin&#x27;s away form is similarly constrained (8GF/11GA), creati...</div>
+                </td>
+            </tr><tr class="row-loss">
+                <td><span class="badge badge-loss">LOSS</span></td>
+                <td>EPL <span class="arb-tag">ARB</span></td>
+                <td>Fulham @ Brentford</td>
+                <td class="bet-desc"><strong>Brentford -1.0</strong></td>
+                <td class="bet-odds">+205</td>
+                <td class="bet-book">Coolbet</td>
+                <td>$17.00</td>
+                <td><span class="pnl-neg">-$17.00</span></td>
+                <td class="score-cell">Brentford 0 - Fulham 0</td>
+            </tr>
+            <tr class="detail-row row-loss">
+                <td colspan="9">
+                    <div class="criteria-bar">Conf: 62% &bull; Edge: 6.8% &bull; True Prob: 39.5%</div>
+                    <div class="factors-row"><span class="factor-pill">20% arbitrage margin signals significant mispricing across books</span><span class="factor-pill">Brentford home advantage: 48GF/44GA strong attacking record at Gtech</span><span class="factor-pill">Fulham away weakness: 43GF/46GA defensive vulnerability on road</span><span class="factor-pill">League position differential: Brentford #7 vs Fulham #12 (5-place gap)</span><span class="factor-pill">Odds divergence: +205 at coolbet vs consensus -114 to -128 suggests sharp books underpricing Brentford by ~3-7%</span></div>
+                    <div class="reasoning-full">The 20% arbitrage detected is a strong mispricing signal, with Brentford -1.0 at +205 (32.8% implied) significantly underpriced relative to the market consensus and the teams&#x27; underlying metrics. Brentford&#x27;s home form (48GF/44GA) is objectively stronger than Fulham&#x27;s away record (43GF/46GA), and the 5-place league position gap (+7 po...</div>
                 </td>
             </tr><tr class="row-loss">
                 <td><span class="badge badge-loss">LOSS</span></td>
@@ -700,19 +751,49 @@
             <th>Odds</th><th>Book</th><th>Stake</th>
         </tr></thead>
         <tbody><tr>
-                <td>EPL <span class="arb-tag">ARB</span></td>
-                <td>Fulham @ Brentford</td>
-                <td class="game-time">2026-04-18T11:30</td>
-                <td class="bet-desc"><strong>Fulham +0.25 (0.25 goal handicap)</strong></td>
-                <td class="bet-odds">+110</td>
+                <td>NBA <span class="arb-tag">ARB</span></td>
+                <td>Minnesota Timberwolves @ Denver Nuggets</td>
+                <td class="game-time">2026-04-18T19:41</td>
+                <td class="bet-desc"><strong>Denver Nuggets -8.5</strong></td>
+                <td class="bet-odds">+132</td>
                 <td class="bet-book">Matchbook</td>
-                <td>$19.50</td>
+                <td>$14.00</td>
             </tr>
             <tr class="detail-row">
                 <td colspan="7">
-                    <div class="criteria-bar">Conf: 62% &bull; Edge: 7.8% &bull; True Prob: 55.5%</div>
-                    <div class="factors-row"><span class="factor-pill">26% arbitrage margin signals sharp mispricing across the market</span><span class="factor-pill">Fulham away record (43GF/46GA) is respectable; Brentford home (48GF/44GA) shows modest advantage</span><span class="factor-pill">League position gap (#7 vs #12) is only 5 places with identical W-D-L records (13-0-11/13-0-14), suggesting closer quality than odds imply</span><span class="factor-pill">Fulham +0.25 at +110 (47.6% implied) vs estimated true probability ~55.5% creates 7.8% edge</span><span class="factor-pill">Cross-book divergence (best Fulham line +255 at Matchbook vs consensus -243) indicates soft consensus pricing on Brentford</span></div>
-                    <div class="reasoning-full">The 26% arbitrage margin is a rare, actionable mispricing signal. While Brentford has home advantage, the teams&#x27; nearly identical records (both 13W-0D with Fulham 14L vs Brentford 11L) suggest the consensus market is overweighting home bias. Fulham +0.25 at +110 (47.6% implied) undervalues an away team with comparable quality. The Matchbook +2...</div>
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 5.7% &bull; True Prob: 48.8%</div>
+                    <div class="factors-row"><span class="factor-pill">Denver 10-0 L10 vs Minnesota 5-5 L10 — massive recent form divergence</span><span class="factor-pill">Denver 54-28 season record (0.659 win%) vs Minnesota 49-33 (0.598) — 6.1% baseline advantage</span><span class="factor-pill">Game 1 of playoffs — Denver&#x27;s elite recent streak suggests playoff readiness; Minnesota inconsistent</span><span class="factor-pill">5.7% arbitrage detected at +132 — strong mispricing signal across books</span><span class="factor-pill">Equal rest (6 days each) — no fatigue advantage, focus on intrinsic team strength</span></div>
+                    <div class="reasoning-full">Denver&#x27;s 10-0 recent form and 54-28 season record represent a significantly stronger team than Minnesota&#x27;s 5-5 L10 and 49-33 record. Cross-book odds show +132 at Matchbook for Denver -8.5, while other books price it between -105 and -118, indicating a 5.7% arbitrage — the +132 odds imply only 43.1% probability for Denver, yet their true p...</div>
+                </td>
+            </tr><tr>
+                <td>MLS <span class="arb-tag">ARB</span></td>
+                <td>Inter Miami CF @ Colorado Rapids</td>
+                <td class="game-time">2026-04-18T20:30</td>
+                <td class="bet-desc"><strong>Colorado Rapids vs Inter Miami CF Draw</strong></td>
+                <td class="bet-odds">+285</td>
+                <td class="bet-book">Matchbook</td>
+                <td>$50.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 38.9% &bull; True Prob: 35.0%</div>
+                    <div class="factors-row"><span class="factor-pill">Massive 38.9% arbitrage margin on draw at matchbook signals severe cross-book mispricing</span><span class="factor-pill">Colorado Rapids strong home record (19 GF / 12 GA across season) vs Inter Miami modest away form (13 GF / 12 GA)</span><span class="factor-pill">Inter Miami ranked #3 vs Rapids #6 but home-field advantage + draw odds (+285) dramatically underpriced relative to other books</span><span class="factor-pill">Implied probability discord: Rapids 0.0 at +100 (50%), Inter Miami -0.25 at +106 (48.5%), but draw at +285 only 26% — internally inconsistent</span><span class="factor-pill">Early season MLS (April 18) with limited form data (N/A recent results) increases variance and line softness</span></div>
+                    <div class="reasoning-full">The draw at +285 is the sharp arbitrage edge here. Matchbook&#x27;s pricing implies 26% draw probability while other books&#x27; consensus (Rapids 0.0 +100 / Inter Miami -0.25 +106) suggests ~48-50% each for home/away and by elimination implies ~24-26% for draw. However, the massive +285 payout indicates market distortion. Colorado&#x27;s home stre...</div>
+                </td>
+            </tr><tr>
+                <td>MLB <span class="arb-tag">ARB</span></td>
+                <td>Cincinnati Reds @ Minnesota Twins</td>
+                <td class="game-time">2026-04-18T18:11</td>
+                <td class="bet-desc"><strong>Minnesota Twins -1.5</strong></td>
+                <td class="bet-odds">+147</td>
+                <td class="bet-book">Pinnacle</td>
+                <td>$22.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 8.7% &bull; True Prob: 49.2%</div>
+                    <div class="factors-row"><span class="factor-pill">Taj Bradley elite form: 1.63 ERA, 3-0, last 3 starts avg 5.6 IP with 1.33 ER and 7.3 K/9</span><span class="factor-pill">Andrew Abbott poor form: 5.84 ERA, 0-2, volatile performance last 3 starts (0 ER to 4 ER)</span><span class="factor-pill">Pitching matchup heavily favors Twins: Bradley&#x27;s 4.21 ERA gap over Abbott is massive in early season</span><span class="factor-pill">Cincinnati away splits solid (6-2) but Abbott&#x27;s volatility and inconsistency is concerning</span><span class="factor-pill">Twins home record solid (7-4), strong L10 (7-3), recent momentum shift from L2 to game context</span></div>
+                    <div class="reasoning-full">The pitching matchup is the decisive factor here. Taj Bradley is performing at an elite level (1.63 ERA, 3-0, dominant K rates) while Andrew Abbott is struggling badly (5.84 ERA, 0-2, inconsistent). The +147 odds at Pinnacle imply only 40.5% true probability for Twins -1.5, but Bradley&#x27;s proven dominance and Abbott&#x27;s volatility suggest Tw...</div>
                 </td>
             </tr><tr>
                 <td>NHL <span class="arb-tag">ARB</span></td>
@@ -729,36 +810,6 @@
                     <div class="factors-row"><span class="factor-pill">Playoff motivation asymmetry: Carolina clinched #1 seed with seeding locked; Ottawa still fighting for positioning—desperation edge favors OTT</span><span class="factor-pill">Game 1 playoff variance: Limited matchup data, softer lines; home-ice advantage less decisive in round openers than later games</span><span class="factor-pill">Rest parity: CAR +1 day rest advantage is minimal; both teams well-rested</span><span class="factor-pill">Recent form comparable: CAR 7-2-1 L10, OTT 6-3-1 L10; CAR slight edge but OTT&#x27;s wins include 6-2 vs TBL, 5-1 vs FLA—strong performances</span><span class="factor-pill">Arbitrage signal: 19.9% margin with OTT at +206 is a strong mispricing indicator across books; DK implied probability undervalues OTT relative to sharp markets</span></div>
                     <div class="reasoning-full">Carolina&#x27;s seeding is fully locked at #1 with zero remaining games (113 pts clinched), while Ottawa still has positioning stakes despite playoff berth certainty. This late-season motivation gap is a critical edge: eliminated/locked-in favorites historically underperform in playoff Game 1s, while desperate underdogs elevate play. Game 1 varianc...</div>
                 </td>
-            </tr><tr>
-                <td>MLS <span class="arb-tag">ARB</span></td>
-                <td>Austin FC @ Toronto FC</td>
-                <td class="game-time">2026-04-18T17:00</td>
-                <td class="bet-desc"><strong>Toronto FC vs Austin FC Draw</strong></td>
-                <td class="bet-odds">+260</td>
-                <td class="bet-book">Espnbet</td>
-                <td>$22.00</td>
-            </tr>
-            <tr class="detail-row">
-                <td colspan="7">
-                    <div class="criteria-bar">Conf: 68% &bull; Edge: 8.7% &bull; True Prob: 47.5%</div>
-                    <div class="factors-row"><span class="factor-pill">22.2% arbitrage margin detected — strong mispricing signal across books</span><span class="factor-pill">Draw at +260 (espnbet) vs implied 35% (consensus) suggests significant underpricing</span><span class="factor-pill">Toronto FC home record 10GF/11GA shows balanced attack/defense; Austin away 8GF/11GA indicates defensive vulnerability but low-scoring road pattern</span><span class="factor-pill">Toronto #6 vs Austin #13 in league position — moderate skill gap, not a dominant home favorite</span><span class="factor-pill">Limited recent-form data (L10 N/A, recent results N/A) creates soft-line opportunity; MLS early-season variance is elevated</span></div>
-                    <div class="reasoning-full">The 22.2% arbitrage margin is a decisive red flag indicating genuine mispricing. The Draw at +260 (espnbet) offers ~27.6% implied probability while consensus lines price it ~35%, suggesting a 5–8 percentage-point undervaluation. Toronto&#x27;s home record is compact (10GF/11GA) and Austin&#x27;s away form is similarly constrained (8GF/11GA), creati...</div>
-                </td>
-            </tr><tr>
-                <td>EPL <span class="arb-tag">ARB</span></td>
-                <td>Fulham @ Brentford</td>
-                <td class="game-time">2026-04-18T11:30</td>
-                <td class="bet-desc"><strong>Brentford -1.0</strong></td>
-                <td class="bet-odds">+205</td>
-                <td class="bet-book">Coolbet</td>
-                <td>$17.00</td>
-            </tr>
-            <tr class="detail-row">
-                <td colspan="7">
-                    <div class="criteria-bar">Conf: 62% &bull; Edge: 6.8% &bull; True Prob: 39.5%</div>
-                    <div class="factors-row"><span class="factor-pill">20% arbitrage margin signals significant mispricing across books</span><span class="factor-pill">Brentford home advantage: 48GF/44GA strong attacking record at Gtech</span><span class="factor-pill">Fulham away weakness: 43GF/46GA defensive vulnerability on road</span><span class="factor-pill">League position differential: Brentford #7 vs Fulham #12 (5-place gap)</span><span class="factor-pill">Odds divergence: +205 at coolbet vs consensus -114 to -128 suggests sharp books underpricing Brentford by ~3-7%</span></div>
-                    <div class="reasoning-full">The 20% arbitrage detected is a strong mispricing signal, with Brentford -1.0 at +205 (32.8% implied) significantly underpriced relative to the market consensus and the teams&#x27; underlying metrics. Brentford&#x27;s home form (48GF/44GA) is objectively stronger than Fulham&#x27;s away record (43GF/46GA), and the 5-place league position gap (+7 po...</div>
-                </td>
             </tr></tbody>
     </table>
 </div>
@@ -766,7 +817,7 @@
 <!-- Two-column: Arbs + Run History -->
 <div class="two-col">
     <div class="section">
-        <h2>Top Arbitrage Signals <span class="count">689</span></h2>
+        <h2>Top Arbitrage Signals <span class="count">805</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Sport</th><th>Match</th><th>Value Side</th><th>Book</th><th>Odds</th><th>Margin</th></tr></thead>
@@ -855,6 +906,13 @@
                 <td>+15000</td>
                 <td class="margin">98.5%</td>
             </tr><tr class="hot">
+                <td>The Open</td>
+                <td>nan @ nan</td>
+                <td><strong>Keita Nakajima</strong></td>
+                <td>espnbet</td>
+                <td>+17500</td>
+                <td class="margin">98.4%</td>
+            </tr><tr class="hot">
                 <td>US Open</td>
                 <td>nan @ nan</td>
                 <td><strong>Max Homa</strong></td>
@@ -868,23 +926,26 @@
                 <td>betonlineag</td>
                 <td>+20000</td>
                 <td class="margin">97.5%</td>
-            </tr><tr class="hot">
-                <td>PGA</td>
-                <td>nan @ nan</td>
-                <td><strong>Keith Mitchell</strong></td>
-                <td>lowvig</td>
-                <td>+25000</td>
-                <td class="margin">97.4%</td>
             </tr></tbody>
         </table>
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">101</span></h2>
+        <h2>Run History <span class="count">102</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-18T17:03:40</td>
+                <td>330</td>
+                <td>116</td>
+                <td>10</td>
+                <td>3</td>
+                <td>213s</td>
+                <td>$0.0298</td>
+                <td>10</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-04-18T00:03:24</td>
                 <td>291</td>
                 <td>107</td>
@@ -974,16 +1035,6 @@
                 <td>-</td>
                 <td>0</td>
                 <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-17T10:32:49</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-ok">OK</span></td>
             </tr></tbody>
         </table>
         </div>
@@ -992,11 +1043,60 @@
 
 <!-- Passed Opportunities -->
 <div class="section">
-    <h2>Passed Opportunities (last 20) <span class="count">52</span></h2>
+    <h2>Passed Opportunities (last 20) <span class="count">59</span></h2>
     <div style="max-height:500px;overflow-y:auto;">
     <table>
         <thead><tr><th>Sport</th><th>Match</th><th>Market</th><th>Conf</th><th>Edge</th><th>Why Passed</th></tr></thead>
         <tbody><tr>
+                <td>EPL</td>
+                <td>Sunderland @ Aston Villa</td>
+                <td>spreads</td>
+                <td>68%</td>
+                <td>8.9%</td>
+                <td class="reasoning">Aston Villa -1.5 at +194 implies only 34.0% true probability, but the 20.5% cross-book arbitrage margin indicates the true probability is substantially higher. Aston Villa's home r...</td>
+            </tr><tr>
+                <td>NBA</td>
+                <td>Minnesota Timberwolves @ Denver Nuggets</td>
+                <td>totals</td>
+                <td>55%</td>
+                <td>1.0%</td>
+                <td class="reasoning">This is a Playoff Game 1 with both teams locked into seeding, eliminating motivation edge. Denver's 10-0 L10 streak is impressive but Minnesota enters as a desperate lower seed — p...</td>
+            </tr><tr>
+                <td>NHL</td>
+                <td>Minnesota Wild @ Dallas Stars</td>
+                <td>totals</td>
+                <td>0%</td>
+                <td>0.0%</td>
+                <td class="reasoning">This is Playoff Game 1 with both teams clinched but seeding still in play — a nuanced motivation scenario that does not clearly favor either motivation-based edge. The totals marke...</td>
+            </tr><tr>
+                <td>MLS</td>
+                <td>Inter Miami CF @ Colorado Rapids</td>
+                <td>totals</td>
+                <td>0%</td>
+                <td>0.0%</td>
+                <td class="reasoning">While the 38.9% arbitrage margin on the Draw (Matchbook +285) is an eye-catching signal, this reflects a data inconsistency across books rather than a true edge on totals. The Tota...</td>
+            </tr><tr>
+                <td>MLB</td>
+                <td>Cincinnati Reds @ Minnesota Twins</td>
+                <td>totals</td>
+                <td>68%</td>
+                <td>8.4%</td>
+                <td class="reasoning">The pitching matchup heavily favors a low-scoring game: Bradley is in elite form with a 1.63 ERA and recent performances of 9K, 3K, and 10K strikeouts, while Abbott is struggling (...</td>
+            </tr><tr>
+                <td>EPL</td>
+                <td>Manchester United @ Chelsea</td>
+                <td>spreads</td>
+                <td>0%</td>
+                <td>0.0%</td>
+                <td class="reasoning">While Chelsea (#6) vs Manchester United (#3) presents a matchup with measurable home/away records, critical late-season data is missing. With no L10 form, injury status, or rest co...</td>
+            </tr><tr>
+                <td>NHL</td>
+                <td>Minnesota Wild @ Dallas Stars</td>
+                <td>spreads</td>
+                <td>62%</td>
+                <td>1.8%</td>
+                <td class="reasoning">Dallas -1.5 at +215 shows detected arbitrage, implying true probability ~52% vs 31.7% implied. However, Game 1 of playoff series carry elevated variance and soft-line risk; histori...</td>
+            </tr><tr>
                 <td>EPL</td>
                 <td>Wolverhampton Wanderers @ Leeds United</td>
                 <td>totals</td>
@@ -1087,55 +1187,6 @@
                 <td>65%</td>
                 <td>2.0%</td>
                 <td class="reasoning">While the arbitrage detection flags Rangers +170 as potentially mispriced, Tampa Bay's 26-13-1 home record, Rangers' poor away record (19-19-2), and current form trends (Rangers L3...</td>
-            </tr><tr>
-                <td>MLB</td>
-                <td>Chicago Cubs @ Philadelphia Phillies</td>
-                <td>spreads</td>
-                <td>62%</td>
-                <td>5.8%</td>
-                <td class="reasoning">The 12.8% arbitrage margin signals a genuine market mispricing favoring Phillies -2.5 at +220. However, deeper analysis reveals the Cubs have a significant pitching advantage (Iman...</td>
-            </tr><tr>
-                <td>NBA</td>
-                <td>Golden State Warriors @ Los Angeles Clippers</td>
-                <td>totals</td>
-                <td>62%</td>
-                <td>3.4%</td>
-                <td class="reasoning">The Warriors' poor record (37-45) correlates with defensive struggles, but recent games show inconsistent scoring patterns. Clippers average 115.2 PPG over last 5 games with high v...</td>
-            </tr><tr>
-                <td>NHL</td>
-                <td>Detroit Red Wings @ Florida Panthers</td>
-                <td>totals</td>
-                <td>62%</td>
-                <td>5.5%</td>
-                <td class="reasoning">Both teams are significantly underperforming offensively in April (Panthers 4-5-1, Red Wings 3-5-2 in L10). Recent game logs show low-scoring outputs: Florida's last 5 games averag...</td>
-            </tr><tr>
-                <td>MLB</td>
-                <td>Boston Red Sox @ Minnesota Twins</td>
-                <td>totals</td>
-                <td>62%</td>
-                <td>1.8%</td>
-                <td class="reasoning">The totals market shows relatively balanced implied probabilities across books (48-57% range), indicating fair pricing with minimal mispricing. While the Twins' dominant home form ...</td>
-            </tr><tr>
-                <td>NBA</td>
-                <td>Golden State Warriors @ Los Angeles Clippers</td>
-                <td>spreads</td>
-                <td>62%</td>
-                <td>3.4%</td>
-                <td class="reasoning">Golden State Warriors +5.5 offers genuine value at -103 implied probability (50.7%) versus estimated true probability of 54.1%, yielding a 3.4% edge. While Clippers are home favori...</td>
-            </tr><tr>
-                <td>NHL</td>
-                <td>Detroit Red Wings @ Florida Panthers</td>
-                <td>spreads</td>
-                <td>62%</td>
-                <td>6.8%</td>
-                <td class="reasoning">The 20.4% arbitrage margin is a strong mispricing signal favoring Detroit at +186. While Detroit's recent form (3-5-2 L10) is modest, their superior overall record, stronger away p...</td>
-            </tr><tr>
-                <td>MLB</td>
-                <td>Boston Red Sox @ Minnesota Twins</td>
-                <td>spreads</td>
-                <td>62%</td>
-                <td>8.1%</td>
-                <td class="reasoning">The 8.1% arbitrage margin is a strong signal of market mispricing. Boston Red Sox -2.5 at +195 offers genuine value: the pitcher matchup heavily favors Early (elite ERA/WHIP vs. st...</td>
             </tr></tbody>
     </table>
     </div>
@@ -1156,161 +1207,161 @@
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
             <span>150 lines</span>
-            <span class="err-count">1 errors</span>
-            <span class="warn-count">2 warnings</span>
+            
+            <span class="warn-count">4 warnings</span>
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;Carolina&#x27;s seeding is fully locked at #1 with zero remaining games (113 pts clinched), while Ottawa still has positioning stakes despite playoff berth certainty. This late-season motivation gap is a critical edge: eliminated/locked-in favorites historically underperform in playoff Game 1s, while desperate underdogs elevate play. Game 1 variance amplifies this effect. The 19.9% arbitrage margin on Ottawa at +206 signals sharp money disagrees with DK&#x27;s -153 Carolina favorite. Implied probability of 42.7% for OTT at +134 suggests true probability is closer to 49�50%, making +206 genuine value. Rest, recent form, and injury data show no decisive advantage for Carolina; the motivation asymmetry is the decisive signal.&quot;</div>
+<div class="log-line log-raw">    &quot;Taj Bradley elite pitching form: 1.63 ERA, 3-0 record, exceptional strikeout rates (9K, 3K, 10K in last 3)&quot;,</div>
+<div class="log-line log-raw">    &quot;Andrew Abbott severe struggles: 5.84 ERA, 0-2 record, volatile recent outings (0ER/6IP then 4ER/5.2IP)&quot;,</div>
+<div class="log-line log-raw">    &quot;Cold weather suppresses run scoring: 40.7�F with 15.5 mph wind reduces ball carry and offensive production&quot;,</div>
+<div class="log-line log-raw">    &quot;Reds weak road performance contextual: 6-2 away record masks Abbott&#x27;s poor form as the starting pitcher&quot;,</div>
+<div class="log-line log-raw">    &quot;Market overvaluing run potential: implied probability 57.1% for Under 9.0 vs estimated true probability 65.1%&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The pitching matchup heavily favors a low-scoring game: Bradley is in elite form with a 1.63 ERA and recent performances of 9K, 3K, and 10K strikeouts, while Abbott is struggling (5.84 ERA, 0-2) with inconsistent outings. Cold weather (40.7�F, 15.5 mph wind) further suppresses run scoring in April baseball. The Under 9.0 at -133 implies 57.1% probability, but true probability is ~65.1%, yielding an 8.4% edge. This represents genuine value despite the negative odds.&quot;</div>
 <div class="log-line log-raw">}</div>
 <div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-18 00:03:05,698 INFO src.executor.kalshi_executor: PAPER BET: icehockey_nhl | Ottawa Senators @ Carolina Hurricanes | spreads | side=away | $22.00</div>
-<div class="log-line log-bet">2026-04-18 00:03:05,699 INFO src.executor.bet_logger: Logged bet: icehockey_nhl away 76d3bd29c4c5d001c2404fb6d3010c36 $22.00</div>
-<div class="log-line log-general">2026-04-18 00:03:06,412 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-general">2026-04-18 00:03:06,415 INFO main: BET PLACED [paper]: icehockey_nhl | Ottawa Senators @ Carolina Hurricanes | away=? | $22.00 | edge=8.7%</div>
-<div class="log-line log-haiku">2026-04-18 00:03:06,427 INFO src.analyzer.claude_analyzer: Calling Haiku for basketball_nba | Golden State Warriors @ Phoenix Suns | spreads</div>
-<div class="log-line log-general">2026-04-18 00:03:12,924 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-18 00:03:12,928 INFO src.analyzer.claude_analyzer: Haiku tokens: 1728 in / 556 out = $0.0036 (session total: $0.0133 / 4 calls)</div>
-<div class="log-line log-general">2026-04-18 00:03:12,928 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-risk log-warn">2026-04-18 17:03:19,846 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 1 bet(s) on this game today</div>
+<div class="log-line log-risk">2026-04-18 17:03:19,846 INFO main: Position limits blocked: Already have 1 bet(s) on this game today</div>
+<div class="log-line log-haiku">2026-04-18 17:03:19,861 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_usa_mls | Inter Miami CF @ Colorado Rapids | totals</div>
+<div class="log-line log-general">2026-04-18 17:03:24,901 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-18 17:03:24,905 INFO src.analyzer.claude_analyzer: Haiku tokens: 1380 in / 430 out = $0.0028 (session total: $0.0210 / 7 calls)</div>
+<div class="log-line log-general">2026-04-18 17:03:24,905 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.0,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.0,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.0,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;Insufficient data: missing recent results, rest days, injury reports, and L10 form&quot;,</div>
+<div class="log-line log-raw">    &quot;Early season (April 18, 2026) � limited matchup history and team stability&quot;,</div>
+<div class="log-line log-raw">    &quot;Arbitrage signal (38.9% margin on Draw) suggests severe market dislocation, not true edge&quot;,</div>
+<div class="log-line log-raw">    &quot;Totals markets require goal-scoring context; without recent offensive/defensive trends, estimation is unreliable&quot;,</div>
+<div class="log-line log-raw">    &quot;Colorado home form (19GF/12GA) and Miami away form (13GF/12GA) provide some data but insufficient without opponent-specific recent matchups&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While the 38.9% arbitrage margin on the Draw (Matchbook +285) is an eye-catching signal, this reflects a data inconsistency across books rather than a true edge on totals. The Totals market (Over/Under 3.0 and 2.5) lacks critical inputs: recent game results, rest advantage, and L10 form are all missing. Early-season MLS (mid-April) typically exhibits higher variance; Colorado&#x27;s 4-0-3 home record and Miami&#x27;s 3-0-1 away record are sparse samples. Without recent scoring trends, weather, or confirmed lineups, we cannot reliably estimate whether 3.0 goals is under- or over-weighted. The absence of injury data and rest-day differentials further limits confidence. Pass and wait for more granular data before committing.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-18 17:03:24,906 INFO main: PASS: soccer_usa_mls | Inter Miami CF @ Colorado Rapids | While the 38.9% arbitrage margin on the Draw (Matchbook +285) is an eye-catching signal, this reflects a data inconsistency across books rather than a true edge on totals. The Totals market (Over/Under 3.0 and 2.5) lacks critical inputs: recent game results, rest advantage, and L10 form are all missing. Early-season MLS (mid-April) typically exhibits higher variance; Colorado&#x27;s 4-0-3 home record and Miami&#x27;s 3-0-1 away record are sparse samples. Without recent scoring trends, weather, or confirmed lineups, we cannot reliably estimate whether 3.0 goals is under- or over-weighted. The absence of injury data and rest-day differentials further limits confidence. Pass and wait for more granular data before committing.</div>
+<div class="log-line log-haiku">2026-04-18 17:03:24,918 INFO src.analyzer.claude_analyzer: Calling Haiku for icehockey_nhl | Minnesota Wild @ Dallas Stars | totals</div>
+<div class="log-line log-general">2026-04-18 17:03:29,770 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-18 17:03:29,773 INFO src.analyzer.claude_analyzer: Haiku tokens: 1577 in / 379 out = $0.0028 (session total: $0.0237 / 8 calls)</div>
+<div class="log-line log-general">2026-04-18 17:03:29,774 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.0,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.00,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.00,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;Playoff Game 1 context with limited historical adjustment data&quot;,</div>
+<div class="log-line log-raw">    &quot;Both teams clinched with seeding implications � motivation is complex, not straightforward&quot;,</div>
+<div class="log-line log-raw">    &quot;Recent head-to-head favors Dallas (5-4 W vs MIN), but small sample in late season&quot;,</div>
+<div class="log-line log-raw">    &quot;Totals market is well-established with tight arbitrage margin (21.3%) suggesting sharp pricing&quot;,</div>
+<div class="log-line log-raw">    &quot;Rest advantage minimal (Dallas +1 day) � insufficient edge driver for totals&quot;,</div>
+<div class="log-line log-raw">    &quot;No injury data � standard lineup assumptions apply&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;This is Playoff Game 1 with both teams clinched but seeding still in play � a nuanced motivation scenario that does not clearly favor either motivation-based edge. The totals market shows a 21.3% arbitrage margin on the Dallas moneyline, signaling sharp pricing overall. Recent form slightly favors Dallas (W5, recent 5-4 H2H win), but Game 1 playoff variance is high and the totals line (5.5�6.0 range) reflects balanced scoring expectations. Neither over nor under shows estimated true probability diverging &gt;= 3% from implied probability given the playoff context uncertainty and well-calibrated market pricing. Pass on this totals trade.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-18 17:03:29,774 INFO main: PASS: icehockey_nhl | Minnesota Wild @ Dallas Stars | This is Playoff Game 1 with both teams clinched but seeding still in play � a nuanced motivation scenario that does not clearly favor either motivation-based edge. The totals market shows a 21.3% arbitrage margin on the Dallas moneyline, signaling sharp pricing overall. Recent form slightly favors Dallas (W5, recent 5-4 H2H win), but Game 1 playoff variance is high and the totals line (5.5�6.0 range) reflects balanced scoring expectations. Neither over nor under shows estimated true probability diverging &gt;= 3% from implied probability given the playoff context uncertainty and well-calibrated market pricing. Pass on this totals trade.</div>
+<div class="log-line log-haiku">2026-04-18 17:03:29,787 INFO src.analyzer.claude_analyzer: Calling Haiku for basketball_nba | Minnesota Timberwolves @ Denver Nuggets | totals</div>
+<div class="log-line log-general">2026-04-18 17:03:35,864 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-18 17:03:35,865 INFO src.analyzer.claude_analyzer: Haiku tokens: 1726 in / 469 out = $0.0033 (session total: $0.0270 / 9 calls)</div>
+<div class="log-line log-general">2026-04-18 17:03:35,865 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.55,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.01,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.515,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;Game 1 playoff variance � limited matchup data softens lines&quot;,</div>
+<div class="log-line log-raw">    &quot;Denver 10-0 L10 vs Minnesota 5-5 L10 � quality gap evident but playoff intensity unpredictable&quot;,</div>
+<div class="log-line log-raw">    &quot;Recent scoring trends: Denver averaging 132.8 PPG (last 5), Minnesota 124 PPG (last 5) � points slightly elevated&quot;,</div>
+<div class="log-line log-raw">    &quot;Both teams clinched seeds with 0 games remaining � no motivation asymmetry, both play hard&quot;,</div>
+<div class="log-line log-raw">    &quot;Odds fragmentation (Under 246.5 at -167 implies 62.5% probability) suggests modest unders lean, but inconsistent market&quot;,</div>
+<div class="log-line log-raw">    &quot;Playoff Game 1 historically volatile; 244-point total reasonable for these offenses&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;This is a Playoff Game 1 with both teams locked into seeding, eliminating motivation edge. Denver&#x27;s 10-0 L10 streak is impressive but Minnesota enters as a desperate lower seed � playoff intensity should tighten the gap. Recent scoring (Denver 132.8 PPG, Minnesota 124 PPG) supports a mid-244 total. Market odds are fragmented (Under 246.5 at -167 is an overreaction; core range 243.5�244.5 at -110 to -115 is fairly efficient). Estimated true probability ~51.5% to go under 244, but implied probability across books ranges 49�53%, yielding minimal edge (&lt;1.5%). Game 1 playoff variance and lack of clear situational misalignment warrant a pass � the bet lacks sufficient edge for playoff tail risk.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-18 17:03:35,866 INFO main: PASS: basketball_nba | Minnesota Timberwolves @ Denver Nuggets | This is a Playoff Game 1 with both teams locked into seeding, eliminating motivation edge. Denver&#x27;s 10-0 L10 streak is impressive but Minnesota enters as a desperate lower seed � playoff intensity should tighten the gap. Recent scoring (Denver 132.8 PPG, Minnesota 124 PPG) supports a mid-244 total. Market odds are fragmented (Under 246.5 at -167 is an overreaction; core range 243.5�244.5 at -110 to -115 is fairly efficient). Estimated true probability ~51.5% to go under 244, but implied probability across books ranges 49�53%, yielding minimal edge (&lt;1.5%). Game 1 playoff variance and lack of clear situational misalignment warrant a pass � the bet lacks sufficient edge for playoff tail risk.</div>
+<div class="log-line log-haiku">2026-04-18 17:03:35,879 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_epl | Sunderland @ Aston Villa | spreads</div>
+<div class="log-line log-general">2026-04-18 17:03:39,572 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-18 17:03:39,573 INFO src.analyzer.claude_analyzer: Haiku tokens: 1544 in / 384 out = $0.0028 (session total: $0.0298 / 10 calls)</div>
+<div class="log-line log-general">2026-04-18 17:03:39,573 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
 <div class="log-line log-raw">{</div>
 <div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: &quot;away&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Golden State Warriors +2.5&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: 162,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;matchbook&quot;,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.118,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.50,</div>
+<div class="log-line log-raw">  &quot;side&quot;: &quot;home&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Aston Villa -1.5&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: 194,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;onexbet&quot;,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.68,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.089,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.429,</div>
 <div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;11.8% arbitrage margin detected � Golden State +2.5 at +162 is significantly mispriced relative to market consensus&quot;,</div>
-<div class="log-line log-raw">    &quot;Both teams in play-in tournament range with equal motivation; no motivation asymmetry to exploit&quot;,</div>
-<div class="log-line log-raw">    &quot;Golden State 37-45 away team facing 45-37 Phoenix at home; 8-game win differential favors Suns&quot;,</div>
-<div class="log-line log-raw">    &quot;Golden State L10: 3-7 form is concerning; Phoenix L10: 5-5 is neutral; recent results show Suns more consistent&quot;,</div>
-<div class="log-line log-raw">    &quot;Cross-book spread clustering (Suns -6.0 to -7.5 at -110 to +100) suggests market consensus around -6.5 to -7.0; +162 on Warriors +2.5 is a statistical outlier&quot;,</div>
-<div class="log-line log-raw">    &quot;Equal rest (6 days each); no back-to-back fatigue; no injury data to exploit&quot;,</div>
-<div class="log-line log-raw">    &quot;Arbitrage detected flag is the dominant signal � one bookmaker has meaningfully mispriced this line relative to peers&quot;</div>
+<div class="log-line log-raw">    &quot;20.5% arbitrage margin signals significant market mispricing&quot;,</div>
+<div class="log-line log-raw">    &quot;Aston Villa home advantage: 43 GF vs 38 GA (strong attack, solid defense)&quot;,</div>
+<div class="log-line log-raw">    &quot;Sunderland away form weak: 33 GF vs 36 GA across away matches&quot;,</div>
+<div class="log-line log-raw">    &quot;League position: Aston Villa #4 vs Sunderland #11 reflects quality gap&quot;,</div>
+<div class="log-line log-raw">    &quot;Market consensus undervalues home favorite despite 16-9 record and superior goal differential&quot;</div>
 <div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While Phoenix&#x27;s 45-37 record and superior recent form (-5-5 vs -3-7 L10) nominally justify a favorite, the 11.8% arbitrage margin on Golden State +2.5 at +162 is a strong mispricing signal. Market consensus clusters around Suns -6.5 to -7.5 (implying Warriors cover at ~49-52%), but Matchbook&#x27;s +162 on +2.5 reflects only ~38% Warriors cover probability�a 10-14 percentage-point gap from the consensus. In a standard regular-season matchup with no injury advantages or rest leverage, this cross-book divergence alone justifies a bet on the value side. Equal late-season motivation and no B2B context prevent a strong directional edge, but the statistical mispricing warrants action at 3%+ edge threshold.&quot;</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;Aston Villa -1.5 at +194 implies only 34.0% true probability, but the 20.5% cross-book arbitrage margin indicates the true probability is substantially higher. Aston Villa&#x27;s home record (16-9, 43 GF/38 GA) shows attacking strength and defensive solidity, while Sunderland&#x27;s away form (33 GF/36 GA) is materially weaker. The 7-position league gap (#4 vs #11) reinforces Villa&#x27;s quality advantage. Conservative estimate: true probability ~42.9%, yielding ~8.9% edge. This represents genuine value in a mispriced market.&quot;</div>
 <div class="log-line log-raw">}</div>
 <div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-18 00:03:12,937 INFO src.executor.kalshi_executor: PAPER BET: basketball_nba | Golden State Warriors @ Phoenix Suns | spreads | side=away | $29.50</div>
-<div class="log-line log-bet">2026-04-18 00:03:12,938 INFO src.executor.bet_logger: Logged bet: basketball_nba away c8d1b7fd06c21e259b9416daf596f023 $29.50</div>
-<div class="log-line log-general">2026-04-18 00:03:13,704 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-general">2026-04-18 00:03:13,707 INFO main: BET PLACED [paper]: basketball_nba | Golden State Warriors @ Phoenix Suns | away=? | $29.50 | edge=11.8%</div>
-<div class="log-line log-haiku">2026-04-18 00:03:13,720 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_epl | Fulham @ Brentford | spreads</div>
-<div class="log-line log-general">2026-04-18 00:03:20,313 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-18 00:03:20,317 INFO src.analyzer.claude_analyzer: Haiku tokens: 1522 in / 497 out = $0.0032 (session total: $0.0165 / 5 calls)</div>
-<div class="log-line log-general">2026-04-18 00:03:20,317 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: &quot;away&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Fulham +0.25 (0.25 goal handicap)&quot;,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: 110,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;matchbook&quot;,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.078,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.555,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;26% arbitrage margin signals sharp mispricing across the market&quot;,</div>
-<div class="log-line log-raw">    &quot;Fulham away record (43GF/46GA) is respectable; Brentford home (48GF/44GA) shows modest advantage&quot;,</div>
-<div class="log-line log-raw">    &quot;League position gap (#7 vs #12) is only 5 places with identical W-D-L records (13-0-11/13-0-14), suggesting closer quality than odds imply&quot;,</div>
-<div class="log-line log-raw">    &quot;Fulham +0.25 at +110 (47.6% implied) vs estimated true probability ~55.5% creates 7.8% edge&quot;,</div>
-<div class="log-line log-raw">    &quot;Cross-book divergence (best Fulham line +255 at Matchbook vs consensus -243) indicates soft consensus pricing on Brentford&quot;,</div>
-<div class="log-line log-raw">    &quot;No injury data, rest days, or recent form available to adjust; relying on structural edge from arbitrage signal and record parity&quot;</div>
-<div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The 26% arbitrage margin is a rare, actionable mispricing signal. While Brentford has home advantage, the teams&#x27; nearly identical records (both 13W-0D with Fulham 14L vs Brentford 11L) suggest the consensus market is overweighting home bias. Fulham +0.25 at +110 (47.6% implied) undervalues an away team with comparable quality. The Matchbook +255 outlier on Fulham ML further confirms the market is dislocated. With estimated true probability ~55.5% for Fulham +0.25, the edge exceeds 7.5%, justifying a bet despite moderate confidence (missing recent form and injury data).&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-18 00:03:20,326 INFO src.executor.kalshi_executor: PAPER BET: soccer_epl | Fulham @ Brentford | spreads | side=away | $19.50</div>
-<div class="log-line log-bet">2026-04-18 00:03:20,326 INFO src.executor.bet_logger: Logged bet: soccer_epl away 2c2061ffc9ee67808fd45273089d7795 $19.50</div>
-<div class="log-line log-general">2026-04-18 00:03:21,032 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-general">2026-04-18 00:03:21,035 INFO main: BET PLACED [paper]: soccer_epl | Fulham @ Brentford | away=? | $19.50 | edge=7.8%</div>
-<div class="log-line log-haiku">2026-04-18 00:03:21,047 INFO src.analyzer.claude_analyzer: Calling Haiku for soccer_usa_mls | New York Red Bulls @ CF Montreal | spreads</div>
-<div class="log-line log-general">2026-04-18 00:03:23,450 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-18 00:03:23,454 INFO src.analyzer.claude_analyzer: Haiku tokens: 1449 in / 265 out = $0.0022 (session total: $0.0188 / 6 calls)</div>
-<div class="log-line log-error log-error">2026-04-18 00:03:23,456 ERROR main: Unhandled error in bot cycle: float() argument must be a string or a real number, not &#x27;NoneType&#x27;</div>
-<div class="log-line log-general">Traceback (most recent call last):</div>
-<div class="log-line log-raw">  File &quot;C:\Users\MikeF\Documents\Claude\Projects\DaftKings\Bot\main.py&quot;, line 153, in run_cycle</div>
-<div class="log-line log-raw">    analysis = claude_analyzer.analyze(opp, opp.situational_factors)</div>
-<div class="log-line log-raw">  File &quot;C:\Users\MikeF\Documents\Claude\Projects\DaftKings\Bot\src\analyzer\claude_analyzer.py&quot;, line 168, in analyze</div>
-<div class="log-line log-raw">    raw_response = self._call_haiku(prompt)</div>
-<div class="log-line log-raw">  File &quot;C:\Users\MikeF\Documents\Claude\Projects\DaftKings\Bot\src\analyzer\claude_analyzer.py&quot;, line 352, in _call_haiku</div>
-<div class="log-line log-raw">    self.parse_response(raw)</div>
-<div class="log-line log-raw">    ~~~~~~~~~~~~~~~~~~~^^^^^</div>
-<div class="log-line log-raw">  File &quot;C:\Users\MikeF\Documents\Claude\Projects\DaftKings\Bot\src\analyzer\claude_analyzer.py&quot;, line 312, in parse_response</div>
-<div class="log-line log-raw">    estimated_true_probability=float(data.get(&quot;estimated_true_probability&quot;, 0)),</div>
-<div class="log-line log-raw">                               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</div>
-<div class="log-line log-general">TypeError: float() argument must be a string or a real number, not &#x27;NoneType&#x27;</div>
-<div class="log-line log-general">2026-04-18 00:03:24,180 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-cycle">2026-04-18 00:03:24,186 INFO main: Cycle complete: 291 markets, 107 arbs, 6 analyzed, 5 bets, 198.5s, 1 errors</div>
-<div class="log-line log-general">2026-04-18 00:03:24,186 INFO main: Running bet settlement...</div>
-<div class="log-line log-general">2026-04-18 00:03:24,193 INFO src.executor.settlement: Settling 9 bets across sports: [&#x27;soccer_usa_mls&#x27;, &#x27;baseball_mlb&#x27;, &#x27;basketball_nba&#x27;, &#x27;soccer_epl&#x27;, &#x27;icehockey_nhl&#x27;]</div>
-<div class="log-line log-general">2026-04-18 00:03:24,193 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
-<div class="log-line log-api">2026-04-18 00:03:24,641 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 318</div>
-<div class="log-line log-general">2026-04-18 00:03:24,643 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-18 00:03:24,643 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
-<div class="log-line log-api">2026-04-18 00:03:25,072 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 316</div>
-<div class="log-line log-general">2026-04-18 00:03:25,075 INFO src.scanner.score_fetcher: Got 3 completed games for basketball_nba</div>
-<div class="log-line log-general">2026-04-18 00:03:25,076 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
-<div class="log-line log-api">2026-04-18 00:03:25,502 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 314</div>
-<div class="log-line log-general">2026-04-18 00:03:25,506 INFO src.scanner.score_fetcher: Got 36 completed games for baseball_mlb</div>
-<div class="log-line log-general">2026-04-18 00:03:25,506 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
-<div class="log-line log-api">2026-04-18 00:03:25,902 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 312</div>
-<div class="log-line log-general">2026-04-18 00:03:25,906 INFO src.scanner.score_fetcher: Got 12 completed games for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-18 00:03:25,906 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-api">2026-04-18 00:03:26,308 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 312</div>
-<div class="log-line log-general">2026-04-18 00:03:26,310 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-18 00:03:26,310 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
-<div class="log-line log-api">2026-04-18 00:03:26,721 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 310</div>
-<div class="log-line log-general">2026-04-18 00:03:26,725 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
-<div class="log-line log-general">2026-04-18 00:03:26,725 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
-<div class="log-line log-api">2026-04-18 00:03:27,152 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 308</div>
-<div class="log-line log-general">2026-04-18 00:03:27,156 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-18 00:03:27,156 INFO src.scanner.score_fetcher: Total completed games fetched: 51</div>
-<div class="log-line log-general">2026-04-18 00:03:27,156 INFO src.executor.settlement: Fetched 51 completed game scores</div>
-<div class="log-line log-warning log-warn">2026-04-18 00:03:27,157 WARNING src.executor.settlement: No odds available for payout calc � using even money</div>
-<div class="log-line log-settlement">2026-04-18 00:03:27,157 INFO src.executor.settlement: SETTLED: baseball_mlb | New York Mets @ Chicago Cubs | spreads | WIN | P&amp;L $+14.00 | Chicago Cubs 12 - New York Mets 4</div>
-<div class="log-line log-settlement">2026-04-18 00:03:27,158 INFO src.executor.settlement: SETTLED: basketball_nba | Charlotte Hornets @ Orlando Magic | spreads | LOSS | P&amp;L $-11.50 | Orlando Magic 121 - Charlotte Hornets 90</div>
-<div class="log-line log-general">2026-04-18 00:03:27,171 INFO src.executor.settlement: Updated 2 bets in bets_log.csv</div>
-<div class="log-line log-general">2026-04-18 00:03:27,883 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-settlement">2026-04-18 00:03:27,886 INFO main: SETTLED: baseball_mlb | Chicago Cubs vs New York Mets | spreads | WIN | P&amp;L $+14.00</div>
-<div class="log-line log-settlement">2026-04-18 00:03:27,887 INFO main: SETTLED: basketball_nba | Orlando Magic vs Charlotte Hornets | spreads | LOSS | P&amp;L $-11.50</div>
-<div class="log-line log-general">2026-04-18 00:03:27,887 INFO main: Settled 2 bets this cycle</div>
-<div class="log-line log-general">2026-04-18 09:00:05,106 INFO main: Running bet settlement...</div>
-<div class="log-line log-general">2026-04-18 09:00:05,194 INFO src.executor.settlement: Settling 7 bets across sports: [&#x27;soccer_usa_mls&#x27;, &#x27;soccer_epl&#x27;, &#x27;baseball_mlb&#x27;, &#x27;icehockey_nhl&#x27;, &#x27;basketball_nba&#x27;]</div>
-<div class="log-line log-general">2026-04-18 09:00:05,194 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
-<div class="log-line log-api">2026-04-18 09:00:05,878 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 308</div>
-<div class="log-line log-general">2026-04-18 09:00:05,882 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-18 09:00:05,882 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
-<div class="log-line log-api">2026-04-18 09:00:06,336 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 306</div>
-<div class="log-line log-general">2026-04-18 09:00:06,337 INFO src.scanner.score_fetcher: Got 4 completed games for basketball_nba</div>
-<div class="log-line log-general">2026-04-18 09:00:06,338 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
-<div class="log-line log-api">2026-04-18 09:00:06,928 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 304</div>
-<div class="log-line log-general">2026-04-18 09:00:06,932 INFO src.scanner.score_fetcher: Got 40 completed games for baseball_mlb</div>
-<div class="log-line log-general">2026-04-18 09:00:06,932 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
-<div class="log-line log-api">2026-04-18 09:00:07,583 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 302</div>
-<div class="log-line log-general">2026-04-18 09:00:07,587 INFO src.scanner.score_fetcher: Got 12 completed games for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-18 09:00:07,587 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-api">2026-04-18 09:00:08,237 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 302</div>
-<div class="log-line log-general">2026-04-18 09:00:08,240 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-18 09:00:08,240 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
-<div class="log-line log-api">2026-04-18 09:00:08,710 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 300</div>
-<div class="log-line log-general">2026-04-18 09:00:08,714 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
-<div class="log-line log-general">2026-04-18 09:00:08,714 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
-<div class="log-line log-api">2026-04-18 09:00:09,223 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 298</div>
-<div class="log-line log-general">2026-04-18 09:00:09,227 INFO src.scanner.score_fetcher: Got 1 completed games for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-18 09:00:09,227 INFO src.scanner.score_fetcher: Total completed games fetched: 57</div>
-<div class="log-line log-general">2026-04-18 09:00:09,228 INFO src.executor.settlement: Fetched 57 completed game scores</div>
-<div class="log-line log-warning log-warn">2026-04-18 09:00:09,229 WARNING src.executor.settlement: No odds available for payout calc � using even money</div>
-<div class="log-line log-settlement">2026-04-18 09:00:09,230 INFO src.executor.settlement: SETTLED: soccer_usa_mls | Sporting Kansas City @ Vancouver Whitecaps FC | totals | WIN | P&amp;L $+22.00 | Vancouver Whitecaps FC 3 - Sporting Kansas City 0</div>
-<div class="log-line log-settlement">2026-04-18 09:00:09,231 INFO src.executor.settlement: SETTLED: baseball_mlb | San Diego Padres @ Los Angeles Angels | spreads | LOSS | P&amp;L $-12.00 | Los Angeles Angels 8 - San Diego Padres 0</div>
-<div class="log-line log-settlement">2026-04-18 09:00:09,232 INFO src.executor.settlement: SETTLED: basketball_nba | Golden State Warriors @ Phoenix Suns | spreads | LOSS | P&amp;L $-29.50 | Phoenix Suns 111 - Golden State Warriors 96</div>
-<div class="log-line log-general">2026-04-18 09:00:09,242 INFO src.executor.settlement: Updated 3 bets in bets_log.csv</div>
-<div class="log-line log-general">2026-04-18 09:00:09,983 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
-<div class="log-line log-settlement">2026-04-18 09:00:09,987 INFO main: SETTLED: soccer_usa_mls | Vancouver Whitecaps FC vs Sporting Kansas City | totals | WIN | P&amp;L $+22.00</div>
-<div class="log-line log-settlement">2026-04-18 09:00:09,987 INFO main: SETTLED: baseball_mlb | Los Angeles Angels vs San Diego Padres | spreads | LOSS | P&amp;L $-12.00</div>
-<div class="log-line log-settlement">2026-04-18 09:00:09,987 INFO main: SETTLED: basketball_nba | Phoenix Suns vs Golden State Warriors | spreads | LOSS | P&amp;L $-29.50</div>
-<div class="log-line log-general">2026-04-18 09:00:10,666 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-risk log-warn">2026-04-18 17:03:39,582 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 2 bets on soccer_epl today (max 2)</div>
+<div class="log-line log-risk">2026-04-18 17:03:39,582 INFO main: Position limits blocked: Already have 2 bets on soccer_epl today (max 2)</div>
+<div class="log-line log-risk">2026-04-18 17:03:39,594 INFO main: Kill switch triggered mid-cycle � stopping</div>
+<div class="log-line log-general">2026-04-18 17:03:40,317 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-cycle">2026-04-18 17:03:40,319 INFO main: Cycle complete: 330 markets, 116 arbs, 10 analyzed, 3 bets, 213.4s, 0 errors</div>
+<div class="log-line log-general">2026-04-18 17:03:40,319 INFO main: Running bet settlement...</div>
+<div class="log-line log-general">2026-04-18 17:03:40,327 INFO src.executor.settlement: Settling 7 bets across sports: [&#x27;soccer_epl&#x27;, &#x27;soccer_usa_mls&#x27;, &#x27;icehockey_nhl&#x27;, &#x27;baseball_mlb&#x27;, &#x27;basketball_nba&#x27;]</div>
+<div class="log-line log-general">2026-04-18 17:03:40,327 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
+<div class="log-line log-api">2026-04-18 17:03:40,750 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 244</div>
+<div class="log-line log-general">2026-04-18 17:03:40,751 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
+<div class="log-line log-general">2026-04-18 17:03:40,752 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
+<div class="log-line log-api">2026-04-18 17:03:41,161 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 242</div>
+<div class="log-line log-general">2026-04-18 17:03:41,162 INFO src.scanner.score_fetcher: Got 5 completed games for basketball_nba</div>
+<div class="log-line log-general">2026-04-18 17:03:41,162 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
+<div class="log-line log-api">2026-04-18 17:03:41,575 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 240</div>
+<div class="log-line log-general">2026-04-18 17:03:41,576 INFO src.scanner.score_fetcher: Got 39 completed games for baseball_mlb</div>
+<div class="log-line log-general">2026-04-18 17:03:41,576 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
+<div class="log-line log-api">2026-04-18 17:03:41,978 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 238</div>
+<div class="log-line log-general">2026-04-18 17:03:41,979 INFO src.scanner.score_fetcher: Got 12 completed games for icehockey_nhl</div>
+<div class="log-line log-general">2026-04-18 17:03:41,979 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
+<div class="log-line log-api">2026-04-18 17:03:42,391 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 238</div>
+<div class="log-line log-general">2026-04-18 17:03:42,392 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
+<div class="log-line log-general">2026-04-18 17:03:42,392 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
+<div class="log-line log-api">2026-04-18 17:03:42,789 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 236</div>
+<div class="log-line log-general">2026-04-18 17:03:42,790 INFO src.scanner.score_fetcher: Got 5 completed games for soccer_epl</div>
+<div class="log-line log-general">2026-04-18 17:03:42,790 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
+<div class="log-line log-api">2026-04-18 17:03:43,193 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 234</div>
+<div class="log-line log-general">2026-04-18 17:03:43,194 INFO src.scanner.score_fetcher: Got 3 completed games for soccer_usa_mls</div>
+<div class="log-line log-general">2026-04-18 17:03:43,194 INFO src.scanner.score_fetcher: Total completed games fetched: 64</div>
+<div class="log-line log-general">2026-04-18 17:03:43,194 INFO src.executor.settlement: Fetched 64 completed game scores</div>
+<div class="log-line log-settlement">2026-04-18 17:03:43,196 INFO src.executor.settlement: SETTLED: soccer_epl | Fulham @ Brentford | spreads | LOSS | P&amp;L $-17.00 | Brentford 0 - Fulham 0</div>
+<div class="log-line log-warning log-warn">2026-04-18 17:03:43,196 WARNING src.executor.settlement: No odds available for payout calc � using even money</div>
+<div class="log-line log-settlement">2026-04-18 17:03:43,196 INFO src.executor.settlement: SETTLED: soccer_usa_mls | Austin FC @ Toronto FC | spreads | WIN | P&amp;L $+22.00 | Toronto FC 3 - Austin FC 3</div>
+<div class="log-line log-warning log-warn">2026-04-18 17:03:43,197 WARNING src.executor.settlement: No odds available for payout calc � using even money</div>
+<div class="log-line log-settlement">2026-04-18 17:03:43,197 INFO src.executor.settlement: SETTLED: soccer_epl | Fulham @ Brentford | spreads | WIN | P&amp;L $+19.50 | Brentford 0 - Fulham 0</div>
+<div class="log-line log-general">2026-04-18 17:03:43,211 INFO src.executor.settlement: Updated 3 bets in bets_log.csv</div>
+<div class="log-line log-general">2026-04-18 17:03:43,913 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-settlement">2026-04-18 17:03:43,914 INFO main: SETTLED: soccer_epl | Brentford vs Fulham | spreads | LOSS | P&amp;L $-17.00</div>
+<div class="log-line log-settlement">2026-04-18 17:03:43,914 INFO main: SETTLED: soccer_usa_mls | Toronto FC vs Austin FC | spreads | WIN | P&amp;L $+22.00</div>
+<div class="log-line log-settlement">2026-04-18 17:03:43,914 INFO main: SETTLED: soccer_epl | Brentford vs Fulham | spreads | WIN | P&amp;L $+19.50</div>
+<div class="log-line log-general">2026-04-18 17:03:43,914 INFO main: Settled 3 bets this cycle</div>
+<div class="log-line log-general">2026-04-18 17:03:43,969 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
