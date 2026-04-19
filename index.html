@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-19 00:03:32 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-19 09:00:09 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -1265,35 +1265,6 @@
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.0,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.0,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Insufficient recent form data (L10, recent results marked N/A)&quot;,</div>
-<div class="log-line log-raw">    &quot;Both teams severely underperforming (Forest 8-0-15, Burnley 4-0-20 records indicate relegation battle)&quot;,</div>
-<div class="log-line log-raw">    &quot;Arbitrage signal present but unreliable without match context&quot;,</div>
-<div class="log-line log-raw">    &quot;Missing critical injury, rest, and head-to-head data&quot;,</div>
-<div class="log-line log-raw">    &quot;Inability to validate true probability given data gaps&quot;</div>
-<div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While arbitrage detection flags a 4% margin favoring Nottingham Forest -1.5, the fundamental dataset is too sparse to establish a genuine edge. Recent form (L10), head-to-head history, injury status, and tactical context are all marked N/A, making true-probability estimation unreliable. Both teams&#x27; records (Forest 8W, Burnley 4W in heavily underperforming seasons) indicate volatility and relegation-battle desperation that skew typical models. The arbitrage signal alone does not overcome the absence of form-based validation. Pass pending more current information.&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-19 00:03:09,656 INFO main: PASS: soccer_epl | Burnley @ Nottingham Forest | While arbitrage detection flags a 4% margin favoring Nottingham Forest -1.5, the fundamental dataset is too sparse to establish a genuine edge. Recent form (L10), head-to-head history, injury status, and tactical context are all marked N/A, making true-probability estimation unreliable. Both teams&#x27; records (Forest 8W, Burnley 4W in heavily underperforming seasons) indicate volatility and relegation-battle desperation that skew typical models. The arbitrage signal alone does not overcome the absence of form-based validation. Pass pending more current information.</div>
-<div class="log-line log-haiku">2026-04-19 00:03:09,670 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | San Diego Padres @ Los Angeles Angels | totals</div>
-<div class="log-line log-general">2026-04-19 00:03:14,210 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-19 00:03:14,211 INFO src.analyzer.claude_analyzer: Haiku tokens: 1734 in / 422 out = $0.0031 (session total: $0.0334 / 11 calls)</div>
-<div class="log-line log-general">2026-04-19 00:03:14,211 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.0,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.0,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.0,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Arbitrage signal (36% margin) is a red flag for data integrity, not genuine value&quot;,</div>
-<div class="log-line log-raw">    &quot;Over 7.5 odds (+760) imply 11.6% probability � extreme outlier inconsistent with matchup&quot;,</div>
 <div class="log-line log-raw">    &quot;Recent form contradiction: Angels beat Padres 8-0 but Padres 13-7 overall with 8-2 L10&quot;,</div>
 <div class="log-line log-raw">    &quot;Pitching matchup favors run suppression (Detmers 3.57 ERA, King 2.78 ERA, both solid)&quot;,</div>
 <div class="log-line log-raw">    &quot;Standard April weather (79�F, light wind, no precipitation) is neutral&quot;,</div>
@@ -1415,6 +1386,35 @@
 <div class="log-line log-settlement">2026-04-19 00:03:32,395 INFO main: SETTLED: basketball_nba | Denver Nuggets vs Minnesota Timberwolves | spreads | WIN | P&amp;L $+14.00</div>
 <div class="log-line log-general">2026-04-19 00:03:32,395 INFO main: Settled 4 bets this cycle</div>
 <div class="log-line log-general">2026-04-19 00:03:32,445 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-19 00:03:32,513 INFO scripts.publish_dashboard: Generated 106680 chars of HTML</div>
+<div class="log-line log-general">2026-04-19 00:03:36,313 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-19 09:00:04,829 INFO main: Running bet settlement...</div>
+<div class="log-line log-general">2026-04-19 09:00:04,851 INFO src.executor.settlement: Settling 3 bets across sports: [&#x27;baseball_mlb&#x27;, &#x27;basketball_nba&#x27;, &#x27;soccer_epl&#x27;]</div>
+<div class="log-line log-general">2026-04-19 09:00:04,852 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
+<div class="log-line log-api">2026-04-19 09:00:05,546 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 170</div>
+<div class="log-line log-general">2026-04-19 09:00:05,550 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
+<div class="log-line log-general">2026-04-19 09:00:05,550 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
+<div class="log-line log-api">2026-04-19 09:00:06,243 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 168</div>
+<div class="log-line log-general">2026-04-19 09:00:06,244 INFO src.scanner.score_fetcher: Got 6 completed games for basketball_nba</div>
+<div class="log-line log-general">2026-04-19 09:00:06,246 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
+<div class="log-line log-api">2026-04-19 09:00:06,763 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 166</div>
+<div class="log-line log-general">2026-04-19 09:00:06,764 INFO src.scanner.score_fetcher: Got 40 completed games for baseball_mlb</div>
+<div class="log-line log-general">2026-04-19 09:00:06,764 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
+<div class="log-line log-api">2026-04-19 09:00:07,299 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 164</div>
+<div class="log-line log-general">2026-04-19 09:00:07,300 INFO src.scanner.score_fetcher: Got 9 completed games for icehockey_nhl</div>
+<div class="log-line log-general">2026-04-19 09:00:07,301 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
+<div class="log-line log-api">2026-04-19 09:00:08,098 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 164</div>
+<div class="log-line log-general">2026-04-19 09:00:08,101 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
+<div class="log-line log-general">2026-04-19 09:00:08,102 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
+<div class="log-line log-api">2026-04-19 09:00:08,752 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 162</div>
+<div class="log-line log-general">2026-04-19 09:00:08,756 INFO src.scanner.score_fetcher: Got 5 completed games for soccer_epl</div>
+<div class="log-line log-general">2026-04-19 09:00:08,756 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
+<div class="log-line log-api">2026-04-19 09:00:09,551 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 160</div>
+<div class="log-line log-general">2026-04-19 09:00:09,554 INFO src.scanner.score_fetcher: Got 14 completed games for soccer_usa_mls</div>
+<div class="log-line log-general">2026-04-19 09:00:09,555 INFO src.scanner.score_fetcher: Total completed games fetched: 74</div>
+<div class="log-line log-general">2026-04-19 09:00:09,555 INFO src.executor.settlement: Fetched 74 completed game scores</div>
+<div class="log-line log-general">2026-04-19 09:00:09,556 INFO main: No bets settled this cycle</div>
+<div class="log-line log-general">2026-04-19 09:00:09,576 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
