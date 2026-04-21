@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-21 00:00:12 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-21 09:00:13 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -1311,40 +1311,11 @@
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
             <span>150 lines</span>
-            <span class="err-count">18 errors</span>
+            <span class="err-count">25 errors</span>
             
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-raw">    &quot;Set totals (229.5�232.5) cluster tightly around 231 with no decisive cross-book divergence; market is well-balanced&quot;,</div>
-<div class="log-line log-raw">    &quot;Both teams clinched with seeding &#x27;possibly still in play&#x27; but 0 games remaining�this is contradictory; if season is complete, rest/experimentation bias is present&quot;,</div>
-<div class="log-line log-raw">    &quot;Lack of home/away splits, B2B status clarity, and playoff context ambiguity reduce model precision&quot;</div>
-<div class="log-line log-raw">  ],</div>
-<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The totals market is fairly priced across all books (implied probabilities 45�57% span typical vig range). Denver&#x27;s recent high-scoring form is noteworthy (10-0 L10), but late-season seeding clinches historically correlate with reduced intensity and slower pace. Minnesota&#x27;s road record is unknown, and its 5-5 L10 volatility adds noise. The absence of meaningful cross-book divergence (all lines within 3 points of 231) and contradictory playoff context signals (seeding &#x27;possibly in play&#x27; with 0 remaining games) suggest the market has already priced in late-season dynamics. True probability lands near 51.5%, yielding minimal edge (&lt;1%) on any side�below the 3% threshold for a confident recommendation.&quot;</div>
-<div class="log-line log-raw">}</div>
-<div class="log-line log-raw">```</div>
-<div class="log-line log-general">2026-04-20 17:01:31,119 INFO main: PASS: basketball_nba | Minnesota Timberwolves @ Denver Nuggets | The totals market is fairly priced across all books (implied probabilities 45�57% span typical vig range). Denver&#x27;s recent high-scoring form is noteworthy (10-0 L10), but late-season seeding clinches historically correlate with reduced intensity and slower pace. Minnesota&#x27;s road record is unknown, and its 5-5 L10 volatility adds noise. The absence of meaningful cross-book divergence (all lines within 3 points of 231) and contradictory playoff context signals (seeding &#x27;possibly in play&#x27; with 0 remaining games) suggest the market has already priced in late-season dynamics. True probability lands near 51.5%, yielding minimal edge (&lt;1%) on any side�below the 3% threshold for a confident recommendation.</div>
-<div class="log-line log-haiku">2026-04-20 17:01:31,133 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | Toronto Blue Jays @ Los Angeles Angels | spreads</div>
-<div class="log-line log-general">2026-04-20 17:01:35,751 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-04-20 17:01:35,752 INFO src.analyzer.claude_analyzer: Haiku tokens: 1731 in / 440 out = $0.0031 (session total: $0.0275 / 9 calls)</div>
-<div class="log-line log-general">2026-04-20 17:01:35,753 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
-<div class="log-line log-raw">  &quot;side&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
-<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
-<div class="log-line log-raw">  &quot;confidence&quot;: 0.62,</div>
-<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.018,</div>
-<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.349,</div>
-<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
-<div class="log-line log-raw">    &quot;Toronto Blue Jays -2.5 at +220 implies 31.2% but arbitrage suggests true probability ~34.9%&quot;,</div>
-<div class="log-line log-raw">    &quot;Angels home field advantage (4-5 at home, but recent form stable: 5-5 L10)&quot;,</div>
-<div class="log-line log-raw">    &quot;Kochanowicz (2-0, 3.47 ERA) outperforming Corbin (0-0, 4.66 ERA) in recent starts&quot;,</div>
-<div class="log-line log-raw">    &quot;Blue Jays poor away record (2-7) and overall slump (4-6 L10, -2.9% pythagorean)&quot;,</div>
-<div class="log-line log-raw">    &quot;Arbitrage detected but modest: 8.1% margin is within normal book variance&quot;,</div>
-<div class="log-line log-raw">    &quot;No injury data or motivational context to shift probabilities materially&quot;</div>
-<div class="log-line log-raw">  ],</div>
 <div class="log-line log-raw">  &quot;reasoning&quot;: &quot;While arbitrage detection signals TOR -2.5 at +220 is mispriced relative to other books, the estimated true probability (34.9%) still falls short of break-even at +220 (31.2% implied). The Blue Jays&#x27; 2-7 away record, 4-6 L10 streak, and Corbin&#x27;s weaker recent form (4.66 ERA vs Kochanowicz&#x27;s 3.47) support a modest Angels edge. The 1.8% estimated edge is below the 3% threshold for confident play in early-season baseball where variance is high and sample sizes small. Pass and monitor for sharper odds movement.&quot;</div>
 <div class="log-line log-raw">}</div>
 <div class="log-line log-raw">```</div>
@@ -1466,6 +1437,35 @@
 <div class="log-line log-general">2026-04-21 00:00:12,461 INFO main: Scanned 0 total markets</div>
 <div class="log-line log-general">2026-04-21 00:00:12,461 INFO main: No markets found � exiting cycle</div>
 <div class="log-line log-general">2026-04-21 00:00:12,484 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-04-21 00:00:12,606 INFO scripts.publish_dashboard: Generated 114990 chars of HTML</div>
+<div class="log-line log-general">2026-04-21 00:00:15,680 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-04-21 09:00:08,741 INFO main: Running bet settlement...</div>
+<div class="log-line log-general">2026-04-21 09:00:08,793 INFO src.executor.settlement: Settling 3 bets across sports: [&#x27;baseball_mlb&#x27;, &#x27;soccer_epl&#x27;, &#x27;basketball_nba&#x27;]</div>
+<div class="log-line log-general">2026-04-21 09:00:08,794 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:09,363 ERROR src.scanner.score_fetcher: Failed to fetch scores for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:09,368 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
+<div class="log-line log-general">2026-04-21 09:00:09,368 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:09,786 ERROR src.scanner.score_fetcher: Failed to fetch scores for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:09,787 INFO src.scanner.score_fetcher: Got 0 completed games for basketball_nba</div>
+<div class="log-line log-general">2026-04-21 09:00:09,788 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:10,376 ERROR src.scanner.score_fetcher: Failed to fetch scores for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:10,379 INFO src.scanner.score_fetcher: Got 0 completed games for baseball_mlb</div>
+<div class="log-line log-general">2026-04-21 09:00:10,379 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:10,843 ERROR src.scanner.score_fetcher: Failed to fetch scores for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:10,847 INFO src.scanner.score_fetcher: Got 0 completed games for icehockey_nhl</div>
+<div class="log-line log-general">2026-04-21 09:00:10,847 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:11,365 ERROR src.scanner.score_fetcher: Failed to fetch scores for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:11,368 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
+<div class="log-line log-general">2026-04-21 09:00:11,369 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:11,986 ERROR src.scanner.score_fetcher: Failed to fetch scores for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:11,990 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
+<div class="log-line log-general">2026-04-21 09:00:11,990 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
+<div class="log-line log-error log-error">2026-04-21 09:00:12,554 ERROR src.scanner.score_fetcher: Failed to fetch scores for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/scores?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;daysFrom=3</div>
+<div class="log-line log-general">2026-04-21 09:00:12,558 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_usa_mls</div>
+<div class="log-line log-general">2026-04-21 09:00:12,558 INFO src.scanner.score_fetcher: Total completed games fetched: 0</div>
+<div class="log-line log-general">2026-04-21 09:00:12,558 INFO src.executor.settlement: Fetched 0 completed game scores</div>
+<div class="log-line log-general">2026-04-21 09:00:12,559 INFO main: No bets settled this cycle</div>
+<div class="log-line log-general">2026-04-21 09:00:12,937 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
