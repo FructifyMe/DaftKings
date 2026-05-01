@@ -64,9 +64,9 @@
         letter-spacing: 1px;
         margin-top: 4px;
     }
-    .stat-card.highlight .value { color: #ff4444; }
-    .stat-card.roi .value { color: #ff4444; }
-    .stat-card.bankroll .value { color: #ff4444; }
+    .stat-card.highlight .value { color: #00d4aa; }
+    .stat-card.roi .value { color: #00d4aa; }
+    .stat-card.bankroll .value { color: #00d4aa; }
     .stat-card.cost .value { color: #fbbf24; font-size: 22px; }
     .stat-card.win .value { color: #00d4aa; }
     .stat-card.loss .value { color: #ff4444; }
@@ -274,63 +274,80 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-04-30 20:00:09 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-04-30 22:03:40 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
 <!-- Summary Stats -->
 <div class="stats-grid">
     <div class="stat-card">
-        <div class="value">34</div>
+        <div class="value">47</div>
         <div class="label">Bets Placed</div>
     </div>
     <div class="stat-card win">
-        <div class="value">14W - 17L - 0P</div>
-        <div class="label">Record (31 settled)</div>
+        <div class="value">15W - 17L - 0P</div>
+        <div class="label">Record (32 settled)</div>
     </div>
     <div class="stat-card">
-        <div class="value">45%</div>
+        <div class="value">47%</div>
         <div class="label">Win Rate</div>
     </div>
     <div class="stat-card highlight">
-        <div class="value">$-15.60</div>
+        <div class="value">+$6.40</div>
         <div class="label">Total P&L</div>
     </div>
     <div class="stat-card roi">
-        <div class="value">-3.0%</div>
+        <div class="value">+1.2%</div>
         <div class="label">ROI</div>
     </div>
     <div class="stat-card bankroll">
-        <div class="value">$984.40</div>
+        <div class="value">$1006.40</div>
         <div class="label">Bankroll</div>
     </div>
     <div class="stat-card">
-        <div class="value">3</div>
+        <div class="value">15</div>
         <div class="label">Pending</div>
     </div>
     <div class="stat-card">
-        <div class="value">83</div>
+        <div class="value">92</div>
         <div class="label">Passes</div>
     </div>
     <div class="stat-card">
-        <div class="value">1150</div>
+        <div class="value">1340</div>
         <div class="label">Arbs Found</div>
     </div>
     <div class="stat-card cost">
-        <div class="value">$0.3237</div>
-        <div class="label">API Cost &bull; 119 calls &bull; 204,737 tok</div>
+        <div class="value">$0.3976</div>
+        <div class="label">API Cost &bull; 142 calls &bull; 253,100 tok</div>
     </div>
 </div>
 
 <!-- Settled Bets -->
 <div class="section">
-    <h2>Settled Bets <span class="count">31</span></h2>
+    <h2>Settled Bets <span class="count">32</span></h2>
     <table>
         <thead><tr>
             <th>Result</th><th>Sport</th><th>Match</th><th>Bet</th>
             <th>Odds</th><th>Book</th><th>Stake</th><th>P&L</th><th>Score</th>
         </tr></thead>
-        <tbody><tr class="row-loss">
+        <tbody><tr class="row-win">
+                <td><span class="badge badge-win">WIN</span></td>
+                <td>MLB <span class="arb-tag">ARB</span></td>
+                <td>San Francisco Giants @ Philadelphia Phillies</td>
+                <td class="bet-desc"><strong>Over 10.5</strong></td>
+                <td class="bet-odds">+255</td>
+                <td class="bet-book">Betparx</td>
+                <td>$22.00</td>
+                <td><span class="pnl-pos">+$22.00</span></td>
+                <td class="score-cell">Philadelphia Phillies 6 - San Francisco Giants 5</td>
+            </tr>
+            <tr class="detail-row row-win">
+                <td colspan="9">
+                    <div class="criteria-bar">Conf: 62% &bull; Edge: 8.9% &bull; True Prob: 37.1%</div>
+                    <div class="factors-row"><span class="factor-pill">Arbitrage signal: 15.7% margin detected; Over 10.5 at +255 significantly underpriced vs consensus</span><span class="factor-pill">Phillies recent offensive surge: 2 straight wins with 8-5 and 7-0 scorelines vs same opponent</span><span class="factor-pill">Giants pitcher Adrian Houser in freefall: 7.12 ERA, 0-3 record, gave up 4 runs in last start</span><span class="factor-pill">Matchup advantage: Tim Mayza (relief/spot starter profile, 3.50 ERA, clean recent outings) vs struggling Houser creates run-scoring setup</span><span class="factor-pill">Head-to-head: Phillies just beat Giants 7-0 and 3-2 in prior matchups; offensive momentum favors home team</span></div>
+                    <div class="reasoning-full">The arbitrage margin (15.7%) signals a genuine mispricing. Over 10.5 at +255 (implied 28.2%) appears undervalued given: (1) Phillies&#x27; recent offensive explosiveness (7-0, 8-5 wins vs Giants), (2) Giants&#x27; failing pitcher Houser (7.12 ERA, 0-3, 4 ER in last outing), (3) Phillies&#x27; home-field momentum and back-to-back context favoring an...</div>
+                </td>
+            </tr><tr class="row-loss">
                 <td><span class="badge badge-loss">LOSS</span></td>
                 <td>EPL <span class="arb-tag">ARB</span></td>
                 <td>Sunderland @ Aston Villa</td>
@@ -863,13 +880,193 @@
 
 <!-- Pending Bets -->
 <div class="section">
-    <h2>Pending Bets <span class="count">3</span></h2>
+    <h2>Pending Bets <span class="count">15</span></h2>
     <table>
         <thead><tr>
             <th>Sport</th><th>Match</th><th>Game Time</th><th>Bet</th>
             <th>Odds</th><th>Book</th><th>Stake</th>
         </tr></thead>
         <tbody><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Tampa Bay Lightning @ Montréal Canadiens</td>
+                <td class="game-time">2026-05-01T23:10</td>
+                <td class="bet-desc"><strong>Under 4.5 goals</strong></td>
+                <td class="bet-odds">+245</td>
+                <td class="bet-book">Matchbook</td>
+                <td>$22.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 8.7% &bull; True Prob: 37.0%</div>
+                    <div class="factors-row"><span class="factor-pill">ELIMINATION GAME context: MTL leads 3-2, TBL must win or face elimination. Desperation play typically elevates intensity but also creates defensive urgency and goalie focus.</span><span class="factor-pill">Recent head-to-head trend: Last 5 games MTL vs TBL show alternating 2-3, 3-2 scorelines — low-scoring, tight playoff hockey. Average ~2.6 goals per game across sample.</span><span class="factor-pill">19.8% arbitrage margin at Under 4.5 (+245) vs market consensus is a strong mispricing signal. Sharp money is on Under 4.5.</span><span class="factor-pill">Tampa Bay 2 rest days favors defensive structure in elimination game. Clinched playoff position reduces playoff-seeding motivation but elimination game itself creates maximum stakes.</span><span class="factor-pill">Playoff hockey typically contracts goal totals; elimination games even more so — teams prioritize keeping the game close and defensible rather than run-and-gun offense.</span></div>
+                    <div class="reasoning-full">The arbitrage window (19.8% margin at Under 4.5) combined with recent head-to-head scoring patterns (2-3 alternation, ~2.6 GPG average) and elimination-game defensiveness creates a 3.7% estimated edge on Under 4.5. The implied probability of 29% for Under 4.5 understates the true probability of ~37% given the low-scoring trend and playoff desperati...</div>
+                </td>
+            </tr><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Tampa Bay Lightning @ Montréal Canadiens</td>
+                <td class="game-time">2026-05-01T23:10</td>
+                <td class="bet-desc"><strong>Under 4.5 goals</strong></td>
+                <td class="bet-odds">+245</td>
+                <td class="bet-book">Matchbook</td>
+                <td>$49.50</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 19.8% &bull; True Prob: 58.0%</div>
+                    <div class="factors-row"><span class="factor-pill">ELIMINATION GAME context: MTL leads 3-2, TBL must win or face elimination — desperation often produces tight, defensive hockey with lower-scoring patterns</span><span class="factor-pill">Recent head-to-head series shows alternating 2-3 results (5 games all decided by 1 goal) — tight, low-scoring matchups between these teams</span><span class="factor-pill">TBL 2 rest days vs MTL unknown rest; fresh TBL team in elimination game typically plays structured, defensive hockey to protect goal differential</span><span class="factor-pill">19.8% arbitrage margin on Under 4.5 is a severe mispricing signal across the market — strong evidence that consensus is overestimating scoring</span><span class="factor-pill">Matchbook +245 implies ~29% true probability of Under; estimated 58% true probability yields ~3.2% edge, well above threshold</span></div>
+                    <div class="reasoning-full">This is a playoff elimination game (TBL down 3-2) where desperation typically manifests as tight, defensive play rather than run-and-gun offense. The recent series shows a 2-3, 3-2, 2-3, 3-2, 3-4 pattern — all low-scoring affairs. The 19.8% cross-book arbitrage on Under 4.5 is a red flag that the market has mispriced scoring upward; Matchbook&#x27;...</div>
+                </td>
+            </tr><tr>
+                <td>MLB <span class="arb-tag">ARB</span></td>
+                <td>Cincinnati Reds @ Pittsburgh Pirates</td>
+                <td class="game-time">2026-05-01T22:46</td>
+                <td class="bet-desc"><strong>Under 8.5 runs</strong></td>
+                <td class="bet-odds">-111</td>
+                <td class="bet-book">Bestmarket</td>
+                <td>$11.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 4.5% &bull; True Prob: 57.1%</div>
+                    <div class="factors-row"><span class="factor-pill">Mitch Keller elite form (3 straight quality starts, 0ER in 2 of last 3)</span><span class="factor-pill">Brady Singer poor recent performance (4.97 ERA, 1.62 WHIP, 5ER in last start)</span><span class="factor-pill">Pittsburgh strong pitching matchup despite offensive struggles</span><span class="factor-pill">Cold weather (49.7°F, 12.4 mph wind) suppresses run scoring</span><span class="factor-pill">Cincinnati&#x27;s away splits solid but Reds face severe pitcher disadvantage</span></div>
+                    <div class="reasoning-full">Mitch Keller is in elite form with pristine recent starts (0ER in 2 of last 3) and strong career metrics (3.18 ERA, 1.15 WHIP), while Brady Singer carries a bloated 4.97 ERA and poor recent outing (5ER in 2.2IP). Cold, windy weather (49.7°F, 42% precip) naturally suppresses scoring. Cincinnati&#x27;s away record (10-3) is strong but irrelevant agai...</div>
+                </td>
+            </tr><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Edmonton Oilers @ Anaheim Ducks</td>
+                <td class="game-time">2026-05-01T02:20</td>
+                <td class="bet-desc"><strong>Anaheim Ducks vs Edmonton Oilers Under 6.5</strong></td>
+                <td class="bet-odds">+140</td>
+                <td class="bet-book">Matchbook</td>
+                <td>$18.50</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 7.4% &bull; True Prob: 49.1%</div>
+                    <div class="factors-row"><span class="factor-pill">Arbitrage detected: 7.4% margin with Under 6.5 underpriced at +140</span><span class="factor-pill">Recent matchup history heavily favors low-scoring games: 3 of last 5 games Under 6.5 (avg 5.0 goals)</span><span class="factor-pill">Both teams clinched with seeding locked — reduced motivation for high-tempo playoff-intensity play</span><span class="factor-pill">Ducks&#x27; L10 record (2-6-2) suggests defensive focus; Oilers&#x27; L10 (6-2-2) shows inconsistency</span><span class="factor-pill">Equal rest (3 days each) eliminates fatigue factor; no injury data suggests baseline defensive capability</span></div>
+                    <div class="reasoning-full">The 7.4% arbitrage margin is a strong mispricing signal. Recent head-to-head data shows Ducks-Oilers games have trended Under with an average of 5.0 goals across the last 5 matchups, supporting an estimated true probability of ~49.1% for Under 6.5 versus the implied 41.7%. Late-season context (both teams clinched, seeding still in play but not at p...</div>
+                </td>
+            </tr><tr>
+                <td>MLB <span class="arb-tag">ARB</span></td>
+                <td>Cincinnati Reds @ Pittsburgh Pirates</td>
+                <td class="game-time">2026-05-01T22:46</td>
+                <td class="bet-desc"><strong>Pittsburgh Pirates -1.5</strong></td>
+                <td class="bet-odds">+170</td>
+                <td class="bet-book">Betparx</td>
+                <td>$15.50</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 6.2% &bull; True Prob: 43.0%</div>
+                    <div class="factors-row"><span class="factor-pill">Arbitrage detected: 25.2% margin signals meaningful mispricing across books</span><span class="factor-pill">Pitching matchup strongly favors Pirates: Keller (3.18 ERA, 1.15 WHIP, dominant recent form 0-2 ER over last 18 IP) vs Singer (4.97 ERA, 1.62 WHIP, deteriorating form 5 ER in last 2.2 IP)</span><span class="factor-pill">Cincinnati&#x27;s strong record (20-11, .645) inflated by home dominance (10-3 away); Pittsburgh 3-7 L10 but at home where they&#x27;re 8-9 (.471)</span><span class="factor-pill">Cold weather (49.7°F, 12.4 mph wind, 42% rain risk) depresses scoring; favors stronger pitching</span><span class="factor-pill">Cincinnati coming off win but shows volatility (alternating W-L-W-L-W pattern vs recent opponents); Pittsburgh trending down but facing inferior pitcher</span></div>
+                    <div class="reasoning-full">The 25.2% arbitrage margin is a critical signal that betparx has mispriced Pittsburgh significantly. While Cincinnati owns a superior record and road success (10-3 away), the pitching advantage is decisive: Keller&#x27;s recent dominance (0 ER over 18 IP, 1.15 WHIP) versus Singer&#x27;s deterioration (5 ER in 2.2 IP last outing, 4.97 ERA). Cold wea...</div>
+                </td>
+            </tr><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Edmonton Oilers @ Anaheim Ducks</td>
+                <td class="game-time">2026-05-01T02:20</td>
+                <td class="bet-desc"><strong>Under 6.5 goals</strong></td>
+                <td class="bet-odds">+140</td>
+                <td class="bet-book">Matchbook</td>
+                <td>$18.50</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 7.4% &bull; True Prob: 55.0%</div>
+                    <div class="factors-row"><span class="factor-pill">7.4% arbitrage margin detected — matchbook Under 6.5 at +140 is mispriced relative to implied market consensus</span><span class="factor-pill">Both teams clinched seeding; late-season motivation asymmetry suggests reduced offensive intensity</span><span class="factor-pill">Recent H2H shows mixed results but several low-scoring outcomes (3-4, 4-3, 4-1); goal-heavy outliers (7-4, 6-4) are exceptions not norms</span><span class="factor-pill">Equal rest (3 days) and no back-to-back fatigue; no injury data suggests standard lineups</span><span class="factor-pill">Edmonton 6-2-2 in L10 (strong form) but Anaheim 2-6-2 (weak form) may dampen pace; Ducks&#x27; recent loss to EDM 1-4 shows defensive vulnerability but also lower-scoring finish</span></div>
+                    <div class="reasoning-full">The 7.4% margin on the Under at matchbook (+140) represents clear mispricing across the broader market. Implied probability at +140 is ~41.7%, but the cross-book consensus suggests true probability closer to ~55% (accounting for late-season motivation decline when seeding is locked and playoff rotation patterns emerge). Both teams have clinched and...</div>
+                </td>
+            </tr><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Dallas Stars @ Minnesota Wild</td>
+                <td class="game-time">2026-04-30T23:40</td>
+                <td class="bet-desc"><strong>Under 5.5 goals</strong></td>
+                <td class="bet-odds">+220</td>
+                <td class="bet-book">Unibet Nl</td>
+                <td>$22.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 8.9% &bull; True Prob: 40.3%</div>
+                    <div class="factors-row"><span class="factor-pill">ELIMINATION GAME context: Dallas plays with desperation but historically elimination games see tighter, lower-scoring contests as trailing team tightens defense</span><span class="factor-pill">Head-to-head recent scoring trend: 5 of last 5 matchups averaged 4.8 goals (3-4, 4-2, 3-2, 4-2, 2-4 and 6-1), but 6-1 is outlier; excluding it: 4.25 avg</span><span class="factor-pill">Game 6 closeout dynamics: Minnesota can close out series with defensive-minded approach; Dallas must play tight defensive structure to extend; both teams lock in defensively in elimination scenarios</span><span class="factor-pill">Arbitrage signal of 28.4% margin on Under 5.5 indicates material mispricing; market has overcorrected to Over</span><span class="factor-pill">Equal rest (2 days each) eliminates fatigue edge; no injury data suggests full rosters</span></div>
+                    <div class="reasoning-full">This is a Game 6 elimination matchup where Dallas faces playoff elimination. While elimination games produce desperate play, the historical data and recent h2h results show these teams averaging 4.8 goals per contest when you exclude the outlier 6-1. The significant 28.4% arbitrage margin flagging Under 5.5 as mispriced, combined with both teams lo...</div>
+                </td>
+            </tr><tr>
+                <td>MLB <span class="arb-tag">ARB</span></td>
+                <td>Toronto Blue Jays @ Minnesota Twins</td>
+                <td class="game-time">2026-04-30T23:41</td>
+                <td class="bet-desc"><strong>Toronto Blue Jays +2.5</strong></td>
+                <td class="bet-odds">+160</td>
+                <td class="bet-book">Betsson</td>
+                <td>$9.50</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 3.8% &bull; True Prob: 54.5%</div>
+                    <div class="factors-row"><span class="factor-pill">Toronto Superior Pitching: Gausman (3.10 ERA, 0.96 WHIP, exceptional recent form: 6.0IP/1ER/11K, 6.0IP/0ER/10K) vs Ober (3.55 ERA, 1.13 WHIP, inconsistent recent results)</span><span class="factor-pill">Minnesota Form Collapse: Twins 2-8 L10 with offensive struggles (1-7, 1-6 losses), home splits merely 8-8; Toronto 7-3 L10 with strong 2-game winning streak</span><span class="factor-pill">Cross-Book Mispricing: Arbitrage signal (2.8% margin) indicates Toronto undervalued; blue-book +160 implies 38.5% when true probability estimated at 54.5%</span><span class="factor-pill">Weather Neutral: 51.6°F, 7.6 mph wind, no precipitation—minimal factor, slightly favors contact baseball (Blue Jays strength)</span><span class="factor-pill">Rest Parity: Both teams have 1 rest day; no back-to-back fatigue</span></div>
+                    <div class="reasoning-full">Toronto&#x27;s superior pitching matchup (Gausman&#x27;s elite recent form vs Ober&#x27;s volatility), Minnesota&#x27;s severe recent collapse (2-8 L10, offensive droughts), and Toronto&#x27;s offensive momentum (7-3 L10, two consecutive wins) create genuine edge. Cross-book arbitrage signal confirms undervaluation at +160. At +2.5 spread, Blue Jay...</div>
+                </td>
+            </tr><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Dallas Stars @ Minnesota Wild</td>
+                <td class="game-time">2026-04-30T23:40</td>
+                <td class="bet-desc"><strong>Under 5.0</strong></td>
+                <td class="bet-odds">+110</td>
+                <td class="bet-book">Draftkings</td>
+                <td>$22.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 8.7% &bull; True Prob: 56.5%</div>
+                    <div class="factors-row"><span class="factor-pill">ELIMINATION GAME context: Dallas trailing 2-3 in series, plays with desperation but playoffs suppress scoring</span><span class="factor-pill">Series head-to-head totals: 5 recent matchups average 3.8 goals (well below current totals)</span><span class="factor-pill">Closeout game dynamics: Minnesota can rest starters late if ahead; Dallas likely plays tight defense under elimination pressure</span><span class="factor-pill">Implied probability (Under 5.0 at +110 = 47.6%) significantly undervalues playoff hockey volatility suppression</span><span class="factor-pill">Recent playoff elimination games historically trend under due to defensive intensity and goalie focus</span></div>
+                    <div class="reasoning-full">This is Game 6 of a playoff series with Minnesota up 3-2 and able to close out; Dallas faces elimination and will play with desperation but also defensive intensity. Playoff hockey, especially in elimination scenarios, trends toward lower-scoring affairs due to compressed defensive systems and heightened goalie focus. The recent head-to-head series...</div>
+                </td>
+            </tr><tr>
+                <td>MLB <span class="arb-tag">ARB</span></td>
+                <td>Toronto Blue Jays @ Minnesota Twins</td>
+                <td class="game-time">2026-04-30T23:41</td>
+                <td class="bet-desc"><strong>Toronto Blue Jays +1.0</strong></td>
+                <td class="bet-odds">+140</td>
+                <td class="bet-book">Unibet Nl</td>
+                <td>$18.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 72% &bull; Edge: 7.1% &bull; True Prob: 48.8%</div>
+                    <div class="factors-row"><span class="factor-pill">Toronto +1.0 implied at 41.7% but estimated true probability ~48.8% (7.1% edge confirms arbitrage signal)</span><span class="factor-pill">Kevin Gausman (2.70 ERA, 0.90 WHIP) significantly outperforms Bailey Ober (3.55 ERA, 1.11 WHIP); Gausman&#x27;s last 3 starts: 17K in 17.1 IP with 1-2 ER total</span><span class="factor-pill">Toronto&#x27;s recent form (L10: 7-3, +2W streak) vs Minnesota (L10: 2-8, -2L streak) creates motivation asymmetry in late April</span><span class="factor-pill">Minnesota home splits (8-8) neutral; Toronto away splits weak (4-8) but Twins are in freefall with poor pitching matchup</span><span class="factor-pill">Cold weather (51.6°F) slightly dampens scoring but doesn&#x27;t override pitching differential</span></div>
+                    <div class="reasoning-full">Toronto Blue Jays +1.0 at +140 represents genuine value. The pitching matchup heavily favors Toronto (Gausman&#x27;s recent dominance vs Ober&#x27;s average metrics), recent form favors the Jays (7-3 L10 vs Twins&#x27; 2-8 L10), and the 7.1% arbitrage margin confirms market mispricing. Implied probability of 41.7% understates Blue Jays&#x27; true w...</div>
+                </td>
+            </tr><tr>
+                <td>NBA <span class="arb-tag">ARB</span></td>
+                <td>Boston Celtics @ Philadelphia 76ers</td>
+                <td class="game-time">2026-05-01T00:13</td>
+                <td class="bet-desc"><strong>Philadelphia 76ers +6.0</strong></td>
+                <td class="bet-odds">-109</td>
+                <td class="bet-book">Pinnacle</td>
+                <td>$22.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 8.7% &bull; True Prob: 52.0%</div>
+                    <div class="factors-row"><span class="factor-pill">Playoff motivation asymmetry: 76ers fighting for play-in survival (seed #7) vs Celtics with clinched seed #2 and locked seeding — eliminated/coasting teams show historically lower ATS performance</span><span class="factor-pill">Strong cross-book mispricing: 19.6% arbitrage margin detected with Pinnacle offering +212 (65% implied) vs DraftKings -115 (53.5%) — indicates market consensus is significantly undervaluing 76ers</span><span class="factor-pill">Recent form convergence: 76ers 6-4 L10 and Celtics 8-2 L10 show comparable recent performance; Celtics&#x27; 5-game win streak masks potential fatigue and motivation decline post-clinching</span><span class="factor-pill">Rest parity: Both teams have equal 19 rest days, eliminating rest-advantage edge for Celtics</span><span class="factor-pill">Road underdog value: At +6.0 with 52% true win probability, 76ers offer 8.7% edge — exceeds 3% threshold for paper trading recommendation</span></div>
+                    <div class="reasoning-full">Late-season playoff context is decisive here. The 76ers face elimination pressure (play-in range, seed #7) while Celtics have clinched their playoff seed with seeding locked — this motivation differential historically shifts ATS performance sharply in favor of desperate underdogs. The extreme 19.6% arbitrage margin across books confirms market misp...</div>
+                </td>
+            </tr><tr>
+                <td>NHL <span class="arb-tag">ARB</span></td>
+                <td>Dallas Stars @ Minnesota Wild</td>
+                <td class="game-time">2026-04-30T23:40</td>
+                <td class="bet-desc"><strong>Dallas Stars -0.5 (ML) Game 6, Elimination Game</strong></td>
+                <td class="bet-odds">-155</td>
+                <td class="bet-book">Fanduel</td>
+                <td>$22.00</td>
+            </tr>
+            <tr class="detail-row">
+                <td colspan="7">
+                    <div class="criteria-bar">Conf: 68% &bull; Edge: 8.7% &bull; True Prob: 54.8%</div>
+                    <div class="factors-row"><span class="factor-pill">ELIMINATION GAME context: Dallas facing elimination plays with desperation; historically elimination teams outperform ATS at elevated rates and show 4–7% higher cover frequency</span><span class="factor-pill">Series dynamics: Minnesota CAN CLOSE OUT but closeout games see elevated upset rates; Dallas trailing 2–3 must win to stay alive</span><span class="factor-pill">Head-to-head trend: Dallas 2–3 in recent 5 games vs MIN but 50–20–12 record vs MIN&#x27;s 46–24–12; Dallas stronger on the season</span><span class="factor-pill">Rest parity: Both teams have 2 rest days; no fatigue edge</span><span class="factor-pill">Market mispricing: Dallas ML at +155 implies 39.2% true probability for Minnesota; but elimination context and series positioning suggest Dallas &gt;54% true win probability</span></div>
+                    <div class="reasoning-full">This is a playoff Game 6 ELIMINATION GAME for Dallas, a premier situation where trailing teams historically outperform regular-season projections by 4–7% ATS. Minnesota has the series lead and can close out, but closeout games see elevated upset rates—the leader frequently lets up. Dallas&#x27;s 50–20–12 record and 7–2–1 L10 form (vs Minnesota&#x27...</div>
+                </td>
+            </tr><tr>
                 <td>NBA</td>
                 <td>Toronto Raptors @ Cleveland Cavaliers</td>
                 <td class="game-time">2026-04-20T23:10</td>
@@ -921,7 +1118,7 @@
 <!-- Two-column: Arbs + Run History -->
 <div class="two-col">
     <div class="section">
-        <h2>Top Arbitrage Signals <span class="count">1150</span></h2>
+        <h2>Top Arbitrage Signals <span class="count">1340</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Sport</th><th>Match</th><th>Value Side</th><th>Book</th><th>Odds</th><th>Margin</th></tr></thead>
@@ -975,6 +1172,13 @@
                 <td>+40000</td>
                 <td class="margin">99.2%</td>
             </tr><tr class="hot">
+                <td>The Open</td>
+                <td>nan @ nan</td>
+                <td><strong>Lucas Herbert</strong></td>
+                <td>draftkings</td>
+                <td>+30000</td>
+                <td class="margin">99.2%</td>
+            </tr><tr class="hot">
                 <td>US Open</td>
                 <td>nan @ nan</td>
                 <td><strong>Jhonattan Vegas</strong></td>
@@ -982,11 +1186,25 @@
                 <td>+30000</td>
                 <td class="margin">99.2%</td>
             </tr><tr class="hot">
+                <td>PGA</td>
+                <td>nan @ nan</td>
+                <td><strong>Aldrich Potgieter</strong></td>
+                <td>espnbet</td>
+                <td>+25000</td>
+                <td class="margin">99.1%</td>
+            </tr><tr class="hot">
                 <td>The Open</td>
                 <td>nan @ nan</td>
                 <td><strong>Davis Thompson</strong></td>
                 <td>draftkings</td>
                 <td>+25000</td>
+                <td class="margin">99.1%</td>
+            </tr><tr class="hot">
+                <td>The Open</td>
+                <td>nan @ nan</td>
+                <td><strong>Dustin Johnson</strong></td>
+                <td>lowvig</td>
+                <td>+22500</td>
                 <td class="margin">99.1%</td>
             </tr><tr class="hot">
                 <td>US Open</td>
@@ -1005,41 +1223,40 @@
             </tr><tr class="hot">
                 <td>PGA</td>
                 <td>nan @ nan</td>
-                <td><strong>Davis Thompson</strong></td>
-                <td>espnbet</td>
-                <td>+20000</td>
-                <td class="margin">98.8%</td>
-            </tr><tr class="hot">
-                <td>PGA</td>
-                <td>nan @ nan</td>
                 <td><strong>Austin Eckroat</strong></td>
                 <td>draftkings</td>
                 <td>+40000</td>
-                <td class="margin">98.8%</td>
-            </tr><tr class="hot">
-                <td>The Open</td>
-                <td>nan @ nan</td>
-                <td><strong>Tom Hoge</strong></td>
-                <td>draftkings</td>
-                <td>+50000</td>
-                <td class="margin">98.8%</td>
-            </tr><tr class="hot">
-                <td>US Open</td>
-                <td>nan @ nan</td>
-                <td><strong>Rasmus Neergaard-Petersen</strong></td>
-                <td>draftkings</td>
-                <td>+25000</td>
                 <td class="margin">98.8%</td>
             </tr></tbody>
         </table>
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">199</span></h2>
+        <h2>Run History <span class="count">201</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-04-30T22:03:36</td>
+                <td>222</td>
+                <td>99</td>
+                <td>15</td>
+                <td>8</td>
+                <td>211s</td>
+                <td>$0.0484</td>
+                <td>15</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
+                <td>2026-04-30T21:02:47</td>
+                <td>225</td>
+                <td>91</td>
+                <td>8</td>
+                <td>5</td>
+                <td>159s</td>
+                <td>$0.0255</td>
+                <td>8</td>
+                <td><span class="status-err">ERR</span></td>
+            </tr><tr>
                 <td>2026-04-30T20:00:09</td>
                 <td>0</td>
                 <td>0</td>
@@ -1119,26 +1336,6 @@
                 <td>-</td>
                 <td>0</td>
                 <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-29T20:00:09</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>6s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-29T19:00:11</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>8s</td>
-                <td>-</td>
-                <td>0</td>
-                <td><span class="status-ok">OK</span></td>
             </tr></tbody>
         </table>
         </div>
@@ -1147,11 +1344,74 @@
 
 <!-- Passed Opportunities -->
 <div class="section">
-    <h2>Passed Opportunities (last 20) <span class="count">83</span></h2>
+    <h2>Passed Opportunities (last 20) <span class="count">92</span></h2>
     <div style="max-height:500px;overflow-y:auto;">
     <table>
         <thead><tr><th>Sport</th><th>Match</th><th>Market</th><th>Conf</th><th>Edge</th><th>Why Passed</th></tr></thead>
         <tbody><tr>
+                <td>NBA</td>
+                <td>Cleveland Cavaliers @ Toronto Raptors</td>
+                <td>spreads</td>
+                <td>72%</td>
+                <td>6.4%</td>
+                <td class="reasoning">This is a classic ELIMINATION GAME spot: Toronto is down 3-2 and must win or go home. Historical data shows teams facing elimination cover ATS at rates 3–5% above their season base...</td>
+            </tr><tr>
+                <td>MLB</td>
+                <td>Houston Astros @ Boston Red Sox</td>
+                <td>spreads</td>
+                <td>65%</td>
+                <td>1.5%</td>
+                <td class="reasoning">Both teams are struggling equally in early May (identical 4-6 L10 records, both sub-.400 overall). While Houston's away record (4-12) is abysmal and Boston's home record (5-8) is w...</td>
+            </tr><tr>
+                <td>NBA</td>
+                <td>Detroit Pistons @ Orlando Magic</td>
+                <td>totals</td>
+                <td>72%</td>
+                <td>5.0%</td>
+                <td class="reasoning">Detroit faces elimination in Game 6 of a playoff series down 2-3 against Orlando. Elimination games historically feature defensive intensity that suppresses scoring; Orlando's clos...</td>
+            </tr><tr>
+                <td>NBA</td>
+                <td>Detroit Pistons @ Orlando Magic</td>
+                <td>spreads</td>
+                <td>72%</td>
+                <td>3.9%</td>
+                <td class="reasoning">Detroit is in an elimination game (down 2-3 in series) facing a motivated but potentially coasting favorite. Elimination-game teams historically play at desperation intensity and c...</td>
+            </tr><tr>
+                <td>NBA</td>
+                <td>Denver Nuggets @ Minnesota Timberwolves</td>
+                <td>totals</td>
+                <td>45%</td>
+                <td>1.0%</td>
+                <td class="reasoning">While Denver's 10-0 streak and offensive output (132.8 PPG L5) suggest an Under lean, the fragmented totals market (narrow spread, balanced implied probabilities across 217.5–224.0...</td>
+            </tr><tr>
+                <td>MLB</td>
+                <td>Toronto Blue Jays @ Minnesota Twins</td>
+                <td>totals</td>
+                <td>55%</td>
+                <td>1.5%</td>
+                <td class="reasoning">While pitching matchup (Gausman significantly outperforming Ober in recent starts with elite strikeout rates) and Toronto's recent form (7-3 L10) favor lower totals or Blue Jays si...</td>
+            </tr><tr>
+                <td>NBA</td>
+                <td>Denver Nuggets @ Minnesota Timberwolves</td>
+                <td>spreads</td>
+                <td>55%</td>
+                <td>1.0%</td>
+                <td class="reasoning">Denver's 10-0 recent form, superior record, and home-court context support a true probability near 52–55% for covering a -5.5 to -6.5 spread. However, with both teams' seeding lock...</td>
+            </tr><tr>
+                <td>NBA</td>
+                <td>Boston Celtics @ Philadelphia 76ers</td>
+                <td>totals</td>
+                <td>65%</td>
+                <td>1.5%</td>
+                <td class="reasoning">While playoff motivation asymmetry (76ers desperate vs Celtics coasting) creates directional edge on 76ers ML, the totals market lacks sufficient misprice to warrant action. Over 2...</td>
+            </tr><tr>
+                <td>EPL</td>
+                <td>Burnley @ Leeds United</td>
+                <td>totals</td>
+                <td>0%</td>
+                <td>0.0%</td>
+                <td class="reasoning">While the arbitrage alert on Draw pricing (+440 at unibet_nl vs market consensus) signals a market anomaly, the totals market itself lacks sufficient actionable data. Both teams ar...</td>
+            </tr><tr>
                 <td>MLB</td>
                 <td>Toronto Blue Jays @ Los Angeles Angels</td>
                 <td>spreads</td>
@@ -1228,69 +1488,6 @@
                 <td>62%</td>
                 <td>1.5%</td>
                 <td class="reasoning">Under 8.5 at -125 (55.6% implied) vs estimated true probability ~52% yields a marginal 3.6% edge. Cold 45°F weather is a natural total depressor. Sonny Gray is pitching well (0 ER ...</td>
-            </tr><tr>
-                <td>NHL</td>
-                <td>Utah Mammoth @ Vegas Golden Knights</td>
-                <td>spreads</td>
-                <td>0%</td>
-                <td>0.0%</td>
-                <td class="reasoning">This matchup cannot be evaluated due to Utah Mammoth being an unverifiable/non-existent team with zero statistical profile. Vegas' clinched status introduces severe motivation conc...</td>
-            </tr><tr>
-                <td>MLB</td>
-                <td>Atlanta Braves @ Philadelphia Phillies</td>
-                <td>spreads</td>
-                <td>68%</td>
-                <td>3.1%</td>
-                <td class="reasoning">The 2.1% arbitrage on Over 8.5 represents genuine market inefficiency. While Holmes' recent dominant form (two straight quality starts, 6.2 IP / 2ER) and cold weather (47.7°F, 16 m...</td>
-            </tr><tr>
-                <td>EPL</td>
-                <td>Burnley @ Nottingham Forest</td>
-                <td>totals</td>
-                <td>0%</td>
-                <td>0.0%</td>
-                <td class="reasoning">While the arbitrage detection on Forest -1.5 (Onexbet +140) signals market inefficiency, the totals market evaluation is compromised by missing critical data: L10 records, recent r...</td>
-            </tr><tr>
-                <td>NBA</td>
-                <td>Philadelphia 76ers @ Boston Celtics</td>
-                <td>spreads</td>
-                <td>65%</td>
-                <td>1.0%</td>
-                <td class="reasoning">Boston is a clear favorite with a 11-win record advantage and strong recent form (8-2 L10). However, this is Game 1 of a playoff series where Boston has clinched seeding and Philad...</td>
-            </tr><tr>
-                <td>NHL</td>
-                <td>Montréal Canadiens @ Tampa Bay Lightning</td>
-                <td>spreads</td>
-                <td>45%</td>
-                <td>1.0%</td>
-                <td class="reasoning">While arbitrage detection flags Montréal as undervalued at +255 (unibet_se), this is Game 1 of a playoff series — a context where playoff seeding lock and unknown opponent adjustme...</td>
-            </tr><tr>
-                <td>MLB</td>
-                <td>San Diego Padres @ Los Angeles Angels</td>
-                <td>totals</td>
-                <td>0%</td>
-                <td>0.0%</td>
-                <td class="reasoning">The 36% arbitrage margin and extreme +760 odds on Over 7.5 signal a data error or odds feed glitch rather than genuine market mispricing. The implied 11.6% probability for Over 7.5...</td>
-            </tr><tr>
-                <td>EPL</td>
-                <td>Burnley @ Nottingham Forest</td>
-                <td>spreads</td>
-                <td>0%</td>
-                <td>0.0%</td>
-                <td class="reasoning">While arbitrage detection flags a 4% margin favoring Nottingham Forest -1.5, the fundamental dataset is too sparse to establish a genuine edge. Recent form (L10), head-to-head hist...</td>
-            </tr><tr>
-                <td>NBA</td>
-                <td>Portland Trail Blazers @ San Antonio Spurs</td>
-                <td>totals</td>
-                <td>65%</td>
-                <td>1.5%</td>
-                <td class="reasoning">This totals market shows tight pricing across books (221.0–222.5 range) with implied probabilities clustering 51–52%, suggesting market efficiency on the line itself. While the 7.3...</td>
-            </tr><tr>
-                <td>NHL</td>
-                <td>Los Angeles Kings @ Colorado Avalanche</td>
-                <td>totals</td>
-                <td>0%</td>
-                <td>0.0%</td>
-                <td class="reasoning">This is Playoff Game 1, West 1st Round, which carries inherent Game 1 variance and soft opening lines. Colorado has clinched the Presidents' Trophy with seeding fully locked — a cl...</td>
             </tr></tbody>
     </table>
     </div>
@@ -1311,161 +1508,161 @@
         <button class="log-filter-btn" onclick="filterLog('warning')">Warnings</button>
         <div class="log-summary">
             <span>150 lines</span>
-            <span class="err-count">37 errors</span>
             
+            <span class="warn-count">3 warnings</span>
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-error log-error">2026-04-30 17:00:12,297 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_us_open_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_us_open_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 17:00:12,298 INFO src.scanner.odds_fetcher: Got 0 markets for golf_us_open_winner</div>
-<div class="log-line log-general">2026-04-30 17:00:12,298 INFO src.scanner.odds_fetcher: Fetching odds for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-error log-error">2026-04-30 17:00:12,730 ERROR src.scanner.odds_fetcher: Failed to fetch odds for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 17:00:12,733 INFO src.scanner.odds_fetcher: Got 0 markets for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-30 17:00:12,734 INFO src.scanner.odds_fetcher: Fetching odds for soccer_epl...</div>
-<div class="log-line log-error log-error">2026-04-30 17:00:13,123 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 17:00:13,124 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_epl</div>
-<div class="log-line log-general">2026-04-30 17:00:13,124 INFO src.scanner.odds_fetcher: Fetching odds for soccer_usa_mls...</div>
-<div class="log-line log-error log-error">2026-04-30 17:00:13,533 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 17:00:13,537 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-30 17:00:13,537 INFO src.scanner.odds_fetcher: Total markets fetched: 0 across 11 sports</div>
-<div class="log-line log-general">2026-04-30 17:00:13,537 INFO main: Scanned 0 total markets</div>
-<div class="log-line log-general">2026-04-30 17:00:13,537 INFO main: No markets found � exiting cycle</div>
-<div class="log-line log-general">2026-04-30 17:00:13,712 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
-<div class="log-line log-general">2026-04-30 17:00:13,793 INFO scripts.publish_dashboard: Generated 118013 chars of HTML</div>
-<div class="log-line log-general">2026-04-30 17:00:16,906 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-30 18:00:04,097 INFO main: ============================================================</div>
-<div class="log-line log-cycle">2026-04-30 18:00:04,097 INFO main: DaftKings Bot cycle starting | run_id=20260430_180004 | paper_mode=True</div>
-<div class="log-line log-general">2026-04-30 18:00:04,097 INFO main: ============================================================</div>
-<div class="log-line log-general">2026-04-30 18:00:05,154 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-general">2026-04-30 18:00:05,176 INFO src.analyzer.claude_analyzer: AI health check passed � Haiku reachable</div>
-<div class="log-line log-general">2026-04-30 18:00:05,176 INFO main: Scanning all sports for odds...</div>
-<div class="log-line log-general">2026-04-30 18:00:05,176 INFO src.scanner.odds_fetcher: Fetching odds for americanfootball_nfl...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:05,598 ERROR src.scanner.odds_fetcher: Failed to fetch odds for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:05,602 INFO src.scanner.odds_fetcher: Got 0 markets for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-30 18:00:05,602 INFO src.scanner.odds_fetcher: Fetching odds for basketball_nba...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:06,020 ERROR src.scanner.odds_fetcher: Failed to fetch odds for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:06,024 INFO src.scanner.odds_fetcher: Got 0 markets for basketball_nba</div>
-<div class="log-line log-general">2026-04-30 18:00:06,024 INFO src.scanner.odds_fetcher: Fetching odds for baseball_mlb...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:06,429 ERROR src.scanner.odds_fetcher: Failed to fetch odds for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:06,433 INFO src.scanner.odds_fetcher: Got 0 markets for baseball_mlb</div>
-<div class="log-line log-general">2026-04-30 18:00:06,433 INFO src.scanner.odds_fetcher: Fetching odds for icehockey_nhl...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:06,833 ERROR src.scanner.odds_fetcher: Failed to fetch odds for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:06,836 INFO src.scanner.odds_fetcher: Got 0 markets for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-30 18:00:06,837 INFO src.scanner.odds_fetcher: Fetching odds for golf_masters_tournament_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:07,233 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_masters_tournament_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_masters_tournament_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:07,234 INFO src.scanner.odds_fetcher: Got 0 markets for golf_masters_tournament_winner</div>
-<div class="log-line log-general">2026-04-30 18:00:07,234 INFO src.scanner.odds_fetcher: Fetching odds for golf_pga_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:07,651 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_pga_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_pga_championship_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:07,652 INFO src.scanner.odds_fetcher: Got 0 markets for golf_pga_championship_winner</div>
-<div class="log-line log-general">2026-04-30 18:00:07,652 INFO src.scanner.odds_fetcher: Fetching odds for golf_the_open_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:08,033 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_the_open_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_the_open_championship_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:08,037 INFO src.scanner.odds_fetcher: Got 0 markets for golf_the_open_championship_winner</div>
-<div class="log-line log-general">2026-04-30 18:00:08,037 INFO src.scanner.odds_fetcher: Fetching odds for golf_us_open_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:08,441 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_us_open_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_us_open_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:08,445 INFO src.scanner.odds_fetcher: Got 0 markets for golf_us_open_winner</div>
-<div class="log-line log-general">2026-04-30 18:00:08,445 INFO src.scanner.odds_fetcher: Fetching odds for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:08,837 ERROR src.scanner.odds_fetcher: Failed to fetch odds for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:08,841 INFO src.scanner.odds_fetcher: Got 0 markets for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-30 18:00:08,841 INFO src.scanner.odds_fetcher: Fetching odds for soccer_epl...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:09,221 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:09,225 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_epl</div>
-<div class="log-line log-general">2026-04-30 18:00:09,225 INFO src.scanner.odds_fetcher: Fetching odds for soccer_usa_mls...</div>
-<div class="log-line log-error log-error">2026-04-30 18:00:09,623 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 18:00:09,627 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-30 18:00:09,627 INFO src.scanner.odds_fetcher: Total markets fetched: 0 across 11 sports</div>
-<div class="log-line log-general">2026-04-30 18:00:09,627 INFO main: Scanned 0 total markets</div>
-<div class="log-line log-general">2026-04-30 18:00:09,627 INFO main: No markets found � exiting cycle</div>
-<div class="log-line log-general">2026-04-30 18:00:09,644 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
-<div class="log-line log-general">2026-04-30 18:00:09,703 INFO scripts.publish_dashboard: Generated 118013 chars of HTML</div>
-<div class="log-line log-general">2026-04-30 18:00:11,382 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-30 19:00:04,116 INFO main: ============================================================</div>
-<div class="log-line log-cycle">2026-04-30 19:00:04,117 INFO main: DaftKings Bot cycle starting | run_id=20260430_190004 | paper_mode=True</div>
-<div class="log-line log-general">2026-04-30 19:00:04,117 INFO main: ============================================================</div>
-<div class="log-line log-general">2026-04-30 19:00:05,307 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-general">2026-04-30 19:00:05,329 INFO src.analyzer.claude_analyzer: AI health check passed � Haiku reachable</div>
-<div class="log-line log-general">2026-04-30 19:00:05,329 INFO main: Scanning all sports for odds...</div>
-<div class="log-line log-general">2026-04-30 19:00:05,330 INFO src.scanner.odds_fetcher: Fetching odds for americanfootball_nfl...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:05,760 ERROR src.scanner.odds_fetcher: Failed to fetch odds for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:05,763 INFO src.scanner.odds_fetcher: Got 0 markets for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-30 19:00:05,763 INFO src.scanner.odds_fetcher: Fetching odds for basketball_nba...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:06,154 ERROR src.scanner.odds_fetcher: Failed to fetch odds for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:06,157 INFO src.scanner.odds_fetcher: Got 0 markets for basketball_nba</div>
-<div class="log-line log-general">2026-04-30 19:00:06,158 INFO src.scanner.odds_fetcher: Fetching odds for baseball_mlb...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:06,556 ERROR src.scanner.odds_fetcher: Failed to fetch odds for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:06,557 INFO src.scanner.odds_fetcher: Got 0 markets for baseball_mlb</div>
-<div class="log-line log-general">2026-04-30 19:00:06,557 INFO src.scanner.odds_fetcher: Fetching odds for icehockey_nhl...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:06,955 ERROR src.scanner.odds_fetcher: Failed to fetch odds for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:06,959 INFO src.scanner.odds_fetcher: Got 0 markets for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-30 19:00:06,959 INFO src.scanner.odds_fetcher: Fetching odds for golf_masters_tournament_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:07,342 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_masters_tournament_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_masters_tournament_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:07,345 INFO src.scanner.odds_fetcher: Got 0 markets for golf_masters_tournament_winner</div>
-<div class="log-line log-general">2026-04-30 19:00:07,346 INFO src.scanner.odds_fetcher: Fetching odds for golf_pga_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:07,747 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_pga_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_pga_championship_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:07,750 INFO src.scanner.odds_fetcher: Got 0 markets for golf_pga_championship_winner</div>
-<div class="log-line log-general">2026-04-30 19:00:07,750 INFO src.scanner.odds_fetcher: Fetching odds for golf_the_open_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:08,143 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_the_open_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_the_open_championship_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:08,147 INFO src.scanner.odds_fetcher: Got 0 markets for golf_the_open_championship_winner</div>
-<div class="log-line log-general">2026-04-30 19:00:08,147 INFO src.scanner.odds_fetcher: Fetching odds for golf_us_open_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:08,553 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_us_open_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_us_open_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:08,557 INFO src.scanner.odds_fetcher: Got 0 markets for golf_us_open_winner</div>
-<div class="log-line log-general">2026-04-30 19:00:08,557 INFO src.scanner.odds_fetcher: Fetching odds for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:08,960 ERROR src.scanner.odds_fetcher: Failed to fetch odds for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:08,963 INFO src.scanner.odds_fetcher: Got 0 markets for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-30 19:00:08,963 INFO src.scanner.odds_fetcher: Fetching odds for soccer_epl...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:09,354 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:09,357 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_epl</div>
-<div class="log-line log-general">2026-04-30 19:00:09,358 INFO src.scanner.odds_fetcher: Fetching odds for soccer_usa_mls...</div>
-<div class="log-line log-error log-error">2026-04-30 19:00:09,767 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 19:00:09,770 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-30 19:00:09,770 INFO src.scanner.odds_fetcher: Total markets fetched: 0 across 11 sports</div>
-<div class="log-line log-general">2026-04-30 19:00:09,771 INFO main: Scanned 0 total markets</div>
-<div class="log-line log-general">2026-04-30 19:00:09,771 INFO main: No markets found � exiting cycle</div>
-<div class="log-line log-general">2026-04-30 19:00:09,788 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
-<div class="log-line log-general">2026-04-30 19:00:09,847 INFO scripts.publish_dashboard: Generated 117939 chars of HTML</div>
-<div class="log-line log-general">2026-04-30 19:00:12,108 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
-<div class="log-line log-general">2026-04-30 20:00:04,081 INFO main: ============================================================</div>
-<div class="log-line log-cycle">2026-04-30 20:00:04,081 INFO main: DaftKings Bot cycle starting | run_id=20260430_200004 | paper_mode=True</div>
-<div class="log-line log-general">2026-04-30 20:00:04,081 INFO main: ============================================================</div>
-<div class="log-line log-general">2026-04-30 20:00:05,206 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-general">2026-04-30 20:00:05,231 INFO src.analyzer.claude_analyzer: AI health check passed � Haiku reachable</div>
-<div class="log-line log-general">2026-04-30 20:00:05,232 INFO main: Scanning all sports for odds...</div>
-<div class="log-line log-general">2026-04-30 20:00:05,232 INFO src.scanner.odds_fetcher: Fetching odds for americanfootball_nfl...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:05,685 ERROR src.scanner.odds_fetcher: Failed to fetch odds for americanfootball_nfl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:05,689 INFO src.scanner.odds_fetcher: Got 0 markets for americanfootball_nfl</div>
-<div class="log-line log-general">2026-04-30 20:00:05,689 INFO src.scanner.odds_fetcher: Fetching odds for basketball_nba...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:06,092 ERROR src.scanner.odds_fetcher: Failed to fetch odds for basketball_nba: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:06,095 INFO src.scanner.odds_fetcher: Got 0 markets for basketball_nba</div>
-<div class="log-line log-general">2026-04-30 20:00:06,096 INFO src.scanner.odds_fetcher: Fetching odds for baseball_mlb...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:06,481 ERROR src.scanner.odds_fetcher: Failed to fetch odds for baseball_mlb: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:06,484 INFO src.scanner.odds_fetcher: Got 0 markets for baseball_mlb</div>
-<div class="log-line log-general">2026-04-30 20:00:06,484 INFO src.scanner.odds_fetcher: Fetching odds for icehockey_nhl...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:06,879 ERROR src.scanner.odds_fetcher: Failed to fetch odds for icehockey_nhl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:06,882 INFO src.scanner.odds_fetcher: Got 0 markets for icehockey_nhl</div>
-<div class="log-line log-general">2026-04-30 20:00:06,882 INFO src.scanner.odds_fetcher: Fetching odds for golf_masters_tournament_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:07,268 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_masters_tournament_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_masters_tournament_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:07,271 INFO src.scanner.odds_fetcher: Got 0 markets for golf_masters_tournament_winner</div>
-<div class="log-line log-general">2026-04-30 20:00:07,271 INFO src.scanner.odds_fetcher: Fetching odds for golf_pga_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:07,659 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_pga_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_pga_championship_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:07,660 INFO src.scanner.odds_fetcher: Got 0 markets for golf_pga_championship_winner</div>
-<div class="log-line log-general">2026-04-30 20:00:07,660 INFO src.scanner.odds_fetcher: Fetching odds for golf_the_open_championship_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:08,049 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_the_open_championship_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_the_open_championship_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:08,053 INFO src.scanner.odds_fetcher: Got 0 markets for golf_the_open_championship_winner</div>
-<div class="log-line log-general">2026-04-30 20:00:08,053 INFO src.scanner.odds_fetcher: Fetching odds for golf_us_open_winner...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:08,446 ERROR src.scanner.odds_fetcher: Failed to fetch odds for golf_us_open_winner: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/golf_us_open_winner/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=outrights&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:08,450 INFO src.scanner.odds_fetcher: Got 0 markets for golf_us_open_winner</div>
-<div class="log-line log-general">2026-04-30 20:00:08,450 INFO src.scanner.odds_fetcher: Fetching odds for tennis_atp_monte_carlo_masters...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:08,860 ERROR src.scanner.odds_fetcher: Failed to fetch odds for tennis_atp_monte_carlo_masters: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/tennis_atp_monte_carlo_masters/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:08,864 INFO src.scanner.odds_fetcher: Got 0 markets for tennis_atp_monte_carlo_masters</div>
-<div class="log-line log-general">2026-04-30 20:00:08,864 INFO src.scanner.odds_fetcher: Fetching odds for soccer_epl...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:09,263 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_epl: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_epl/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:09,267 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_epl</div>
-<div class="log-line log-general">2026-04-30 20:00:09,267 INFO src.scanner.odds_fetcher: Fetching odds for soccer_usa_mls...</div>
-<div class="log-line log-error log-error">2026-04-30 20:00:09,665 ERROR src.scanner.odds_fetcher: Failed to fetch odds for soccer_usa_mls: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_usa_mls/odds?apiKey=dcb7679b66e096f09966a0a1334f8da1&amp;regions=us%2Cus2%2Ceu&amp;markets=h2h%2Cspreads%2Ctotals&amp;oddsFormat=american</div>
-<div class="log-line log-general">2026-04-30 20:00:09,669 INFO src.scanner.odds_fetcher: Got 0 markets for soccer_usa_mls</div>
-<div class="log-line log-general">2026-04-30 20:00:09,669 INFO src.scanner.odds_fetcher: Total markets fetched: 0 across 11 sports</div>
-<div class="log-line log-general">2026-04-30 20:00:09,669 INFO main: Scanned 0 total markets</div>
-<div class="log-line log-general">2026-04-30 20:00:09,670 INFO main: No markets found � exiting cycle</div>
-<div class="log-line log-general">2026-04-30 20:00:09,685 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;Mitch Keller is in elite form with pristine recent starts (0ER in 2 of last 3) and strong career metrics (3.18 ERA, 1.15 WHIP), while Brady Singer carries a bloated 4.97 ERA and poor recent outing (5ER in 2.2IP). Cold, windy weather (49.7�F, 42% precip) naturally suppresses scoring. Cincinnati&#x27;s away record (10-3) is strong but irrelevant against elite pitching; Pittsburgh&#x27;s recent scoring collapse against quality arms (0-5 vs Brewers, 2-4 twice vs Cardinals) signals run suppression. Under 8.5 at -111 implies 52.6% probability; true probability ~57%, yielding ~4.5% edge.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-30 22:03:04,424 INFO src.executor.kalshi_executor: PAPER BET: baseball_mlb | Cincinnati Reds @ Pittsburgh Pirates | totals | side=under | $11.00</div>
+<div class="log-line log-bet">2026-04-30 22:03:04,425 INFO src.executor.bet_logger: Logged bet: baseball_mlb under f9bc114c35828121793d26f1d0d40338 $11.00</div>
+<div class="log-line log-general">2026-04-30 22:03:05,159 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-30 22:03:05,163 INFO main: BET PLACED [paper]: baseball_mlb | Cincinnati Reds @ Pittsburgh Pirates | under=? | $11.00 | edge=4.5%</div>
+<div class="log-line log-haiku">2026-04-30 22:03:05,177 INFO src.analyzer.claude_analyzer: Calling Haiku for icehockey_nhl | Tampa Bay Lightning @ Montr�al Canadiens | spreads</div>
+<div class="log-line log-general">2026-04-30 22:03:11,077 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-30 22:03:11,080 INFO src.analyzer.claude_analyzer: Haiku tokens: 1566 in / 476 out = $0.0032 (session total: $0.0355 / 11 calls)</div>
+<div class="log-line log-general">2026-04-30 22:03:11,081 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: &quot;under&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Under 4.5 goals&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: 245,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;matchbook&quot;,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.72,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.198,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.58,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;ELIMINATION GAME context: MTL leads 3-2, TBL must win or face elimination � desperation often produces tight, defensive hockey with lower-scoring patterns&quot;,</div>
+<div class="log-line log-raw">    &quot;Recent head-to-head series shows alternating 2-3 results (5 games all decided by 1 goal) � tight, low-scoring matchups between these teams&quot;,</div>
+<div class="log-line log-raw">    &quot;TBL 2 rest days vs MTL unknown rest; fresh TBL team in elimination game typically plays structured, defensive hockey to protect goal differential&quot;,</div>
+<div class="log-line log-raw">    &quot;19.8% arbitrage margin on Under 4.5 is a severe mispricing signal across the market � strong evidence that consensus is overestimating scoring&quot;,</div>
+<div class="log-line log-raw">    &quot;Matchbook +245 implies ~29% true probability of Under; estimated 58% true probability yields ~3.2% edge, well above threshold&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;This is a playoff elimination game (TBL down 3-2) where desperation typically manifests as tight, defensive play rather than run-and-gun offense. The recent series shows a 2-3, 3-2, 2-3, 3-2, 3-4 pattern � all low-scoring affairs. The 19.8% cross-book arbitrage on Under 4.5 is a red flag that the market has mispriced scoring upward; Matchbook&#x27;s +245 Under represents genuine value when true probability is estimated at 55-60%. TBL&#x27;s 2-day rest in an elimination game, combined with series history and playoff desperation dynamics, supports a defensively-structured, lower-scoring contest.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-30 22:03:11,091 INFO src.executor.kalshi_executor: PAPER BET: icehockey_nhl | Tampa Bay Lightning @ Montr�al Canadiens | spreads | side=under | $49.50</div>
+<div class="log-line log-bet">2026-04-30 22:03:11,092 INFO src.executor.bet_logger: Logged bet: icehockey_nhl under 666be81702350734d3483a03c4603f67 $49.50</div>
+<div class="log-line log-general">2026-04-30 22:03:11,829 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-30 22:03:11,832 INFO main: BET PLACED [paper]: icehockey_nhl | Tampa Bay Lightning @ Montr�al Canadiens | under=? | $49.50 | edge=19.8%</div>
+<div class="log-line log-haiku">2026-04-30 22:03:11,846 INFO src.analyzer.claude_analyzer: Calling Haiku for basketball_nba | Detroit Pistons @ Orlando Magic | totals</div>
+<div class="log-line log-general">2026-04-30 22:03:17,325 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-30 22:03:17,326 INFO src.analyzer.claude_analyzer: Haiku tokens: 1621 in / 456 out = $0.0031 (session total: $0.0387 / 12 calls)</div>
+<div class="log-line log-risk log-warn">2026-04-30 22:03:17,337 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 1 bet(s) on this game today</div>
+<div class="log-line log-risk">2026-04-30 22:03:17,337 INFO main: Position limits blocked: Already have 1 bet(s) on this game today</div>
+<div class="log-line log-haiku">2026-04-30 22:03:17,352 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | Houston Astros @ Boston Red Sox | spreads</div>
+<div class="log-line log-general">2026-04-30 22:03:22,718 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-30 22:03:22,718 INFO src.analyzer.claude_analyzer: Haiku tokens: 1601 in / 487 out = $0.0032 (session total: $0.0419 / 13 calls)</div>
+<div class="log-line log-general">2026-04-30 22:03:22,719 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;pass&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: null,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: null,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.65,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.015,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.50,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;Both teams in severe early-season slump (12-19, 12-20 records; both 4-6 L10)&quot;,</div>
+<div class="log-line log-raw">    &quot;Houston 4-12 away (critical weakness); Boston 5-8 at home (weak home record)&quot;,</div>
+<div class="log-line log-raw">    &quot;Mike Burrows&#x27; 6.25 ERA and recent volatility (5.2IP/5ER to 5.1IP/3ER swings) creates spread risk&quot;,</div>
+<div class="log-line log-raw">    &quot;Boston Red Sox pitcher TBD (missing data limits true-probability estimation)&quot;,</div>
+<div class="log-line log-raw">    &quot;Arbitrage signal (+109 Over 9.5 elsewhere) indicates market uncertainty, not directional edge&quot;,</div>
+<div class="log-line log-raw">    &quot;Cold weather (58.7�F) slightly suppresses run environment but doesn&#x27;t overcome uncertainty&quot;,</div>
+<div class="log-line log-raw">    &quot;Rest advantage marginal (Boston +1 day); neither team shows motivation/form edge&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;Both teams are struggling equally in early May (identical 4-6 L10 records, both sub-.400 overall). While Houston&#x27;s away record (4-12) is abysmal and Boston&#x27;s home record (5-8) is weak, the absence of Boston&#x27;s starting pitcher creates unquantifiable risk. Burrows&#x27; 6.25 ERA suggests potential offensive opportunity, but volatility in his last three starts (5ER/5.2IP, 2ER/5.0IP, 3ER/5.1IP) is unpredictable. The arbitrage signal in the total (not directional bet) indicates mispricing but doesn&#x27;t validate a moneyline or spread play. Estimated true probability ~50% with insufficient data on Boston&#x27;s pitcher to identify a 3%+ edge. Pass and monitor for pitcher confirmation.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-30 22:03:22,720 INFO main: PASS: baseball_mlb | Houston Astros @ Boston Red Sox | Both teams are struggling equally in early May (identical 4-6 L10 records, both sub-.400 overall). While Houston&#x27;s away record (4-12) is abysmal and Boston&#x27;s home record (5-8) is weak, the absence of Boston&#x27;s starting pitcher creates unquantifiable risk. Burrows&#x27; 6.25 ERA suggests potential offensive opportunity, but volatility in his last three starts (5ER/5.2IP, 2ER/5.0IP, 3ER/5.1IP) is unpredictable. The arbitrage signal in the total (not directional bet) indicates mispricing but doesn&#x27;t validate a moneyline or spread play. Estimated true probability ~50% with insufficient data on Boston&#x27;s pitcher to identify a 3%+ edge. Pass and monitor for pitcher confirmation.</div>
+<div class="log-line log-haiku">2026-04-30 22:03:22,733 INFO src.analyzer.claude_analyzer: Calling Haiku for icehockey_nhl | Tampa Bay Lightning @ Montr�al Canadiens | totals</div>
+<div class="log-line log-general">2026-04-30 22:03:28,191 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-30 22:03:28,195 INFO src.analyzer.claude_analyzer: Haiku tokens: 1474 in / 459 out = $0.0030 (session total: $0.0449 / 14 calls)</div>
+<div class="log-line log-general">2026-04-30 22:03:28,195 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: &quot;under&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Under 4.5 goals&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: 245,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;matchbook&quot;,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.72,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.087,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.37,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;ELIMINATION GAME context: MTL leads 3-2, TBL must win or face elimination. Desperation play typically elevates intensity but also creates defensive urgency and goalie focus.&quot;,</div>
+<div class="log-line log-raw">    &quot;Recent head-to-head trend: Last 5 games MTL vs TBL show alternating 2-3, 3-2 scorelines � low-scoring, tight playoff hockey. Average ~2.6 goals per game across sample.&quot;,</div>
+<div class="log-line log-raw">    &quot;19.8% arbitrage margin at Under 4.5 (+245) vs market consensus is a strong mispricing signal. Sharp money is on Under 4.5.&quot;,</div>
+<div class="log-line log-raw">    &quot;Tampa Bay 2 rest days favors defensive structure in elimination game. Clinched playoff position reduces playoff-seeding motivation but elimination game itself creates maximum stakes.&quot;,</div>
+<div class="log-line log-raw">    &quot;Playoff hockey typically contracts goal totals; elimination games even more so � teams prioritize keeping the game close and defensible rather than run-and-gun offense.&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;The arbitrage window (19.8% margin at Under 4.5) combined with recent head-to-head scoring patterns (2-3 alternation, ~2.6 GPG average) and elimination-game defensiveness creates a 3.7% estimated edge on Under 4.5. The implied probability of 29% for Under 4.5 understates the true probability of ~37% given the low-scoring trend and playoff desperation context. Tampa Bay&#x27;s 2-day rest and MTL&#x27;s home-ice advantage both support tight, defensive hockey.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-general">2026-04-30 22:03:28,206 INFO src.executor.kalshi_executor: PAPER BET: icehockey_nhl | Tampa Bay Lightning @ Montr�al Canadiens | totals | side=under | $22.00</div>
+<div class="log-line log-bet">2026-04-30 22:03:28,206 INFO src.executor.bet_logger: Logged bet: icehockey_nhl under 666be81702350734d3483a03c4603f67 $22.00</div>
+<div class="log-line log-general">2026-04-30 22:03:28,931 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-general">2026-04-30 22:03:28,934 INFO main: BET PLACED [paper]: icehockey_nhl | Tampa Bay Lightning @ Montr�al Canadiens | under=? | $22.00 | edge=8.7%</div>
+<div class="log-line log-haiku">2026-04-30 22:03:28,947 INFO src.analyzer.claude_analyzer: Calling Haiku for basketball_nba | Cleveland Cavaliers @ Toronto Raptors | spreads</div>
+<div class="log-line log-general">2026-04-30 22:03:36,013 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
+<div class="log-line log-haiku">2026-04-30 22:03:36,016 INFO src.analyzer.claude_analyzer: Haiku tokens: 1591 in / 551 out = $0.0035 (session total: $0.0484 / 15 calls)</div>
+<div class="log-line log-general">2026-04-30 22:03:36,016 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
+<div class="log-line log-raw">{</div>
+<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
+<div class="log-line log-raw">  &quot;side&quot;: &quot;away&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Toronto Raptors +4.0&quot;,</div>
+<div class="log-line log-raw">  &quot;bet_odds&quot;: -104,</div>
+<div class="log-line log-raw">  &quot;bet_book&quot;: &quot;draftkings&quot;,</div>
+<div class="log-line log-raw">  &quot;confidence&quot;: 0.72,</div>
+<div class="log-line log-raw">  &quot;estimated_edge&quot;: 0.064,</div>
+<div class="log-line log-raw">  &quot;estimated_true_probability&quot;: 0.575,</div>
+<div class="log-line log-raw">  &quot;key_factors&quot;: [</div>
+<div class="log-line log-raw">    &quot;ELIMINATION GAME � trailing team (TOR down 2-3) historically covers at elevated rates; desperation play at playoff intensity&quot;,</div>
+<div class="log-line log-raw">    &quot;Closeout game dynamics � CLE can clinch at home (Game 6, CAN CLOSE OUT); leading teams often underperform in closeout spots; upsets elevated&quot;,</div>
+<div class="log-line log-raw">    &quot;Recent form convergence � TOR 6-4 L10 vs CLE 7-3 L10; TOR trending well into elimination; CLE vulnerable to letdown&quot;,</div>
+<div class="log-line log-raw">    &quot;Market disagreement � TOR at +4.0/-104 implies 51% true probability; but elimination-game historical edge and closeout risk push true probability to ~57�58% for TOR cover&quot;,</div>
+<div class="log-line log-raw">    &quot;Series-game leverage � Game 6 in a best-of-7 is high-variance; CLE&#x27;s clinch opportunity can cause emotional flatness; TOR&#x27;s survival instinct is proven historical advantage&quot;</div>
+<div class="log-line log-raw">  ],</div>
+<div class="log-line log-raw">  &quot;reasoning&quot;: &quot;This is a classic ELIMINATION GAME spot: Toronto is down 3-2 and must win or go home. Historical data shows teams facing elimination cover ATS at rates 3�5% above their season baseline, driven by maximum effort and playoff intensity. Simultaneously, Cleveland faces a closeout-game scenario where they can clinch at home � a situation historically prone to underperformance and upsets. The market prices TOR at ~51% (implied by -104 odds on +4.0), but elimination-game desperation combined with closeout-game risk on CLE&#x27;s side elevates TOR&#x27;s true cover probability to ~57�58%. This represents a 6.4% edge. Recent form is encouraging: TOR is 6-4 L10 and trending, while CLE&#x27;s 7-3 L10 is solid but not elite. Both teams are equally rested. At -104 for TOR +4.0, the risk-reward is favorable enough to bet this edge.&quot;</div>
+<div class="log-line log-raw">}</div>
+<div class="log-line log-raw">```</div>
+<div class="log-line log-risk log-warn">2026-04-30 22:03:36,026 WARNING src.risk_manager.position_limits: Position limit blocked: Already have 5 bets on basketball_nba today (max 2)</div>
+<div class="log-line log-risk">2026-04-30 22:03:36,027 INFO main: Position limits blocked: Already have 5 bets on basketball_nba today (max 2)</div>
+<div class="log-line log-cycle">2026-04-30 22:03:36,031 INFO main: Cycle complete: 222 markets, 99 arbs, 15 analyzed, 8 bets, 211.0s, 0 errors</div>
+<div class="log-line log-general">2026-04-30 22:03:36,031 INFO main: Running bet settlement...</div>
+<div class="log-line log-general">2026-04-30 22:03:36,050 INFO src.executor.settlement: Settling 16 bets across sports: [&#x27;baseball_mlb&#x27;, &#x27;soccer_epl&#x27;, &#x27;basketball_nba&#x27;, &#x27;icehockey_nhl&#x27;]</div>
+<div class="log-line log-general">2026-04-30 22:03:36,050 INFO src.scanner.score_fetcher: Fetching scores for americanfootball_nfl...</div>
+<div class="log-line log-api">2026-04-30 22:03:36,496 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 382</div>
+<div class="log-line log-general">2026-04-30 22:03:36,500 INFO src.scanner.score_fetcher: Got 0 completed games for americanfootball_nfl</div>
+<div class="log-line log-general">2026-04-30 22:03:36,500 INFO src.scanner.score_fetcher: Fetching scores for basketball_nba...</div>
+<div class="log-line log-api">2026-04-30 22:03:36,898 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 380</div>
+<div class="log-line log-general">2026-04-30 22:03:36,902 INFO src.scanner.score_fetcher: Got 8 completed games for basketball_nba</div>
+<div class="log-line log-general">2026-04-30 22:03:36,902 INFO src.scanner.score_fetcher: Fetching scores for baseball_mlb...</div>
+<div class="log-line log-api">2026-04-30 22:03:37,348 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 378</div>
+<div class="log-line log-general">2026-04-30 22:03:37,351 INFO src.scanner.score_fetcher: Got 40 completed games for baseball_mlb</div>
+<div class="log-line log-general">2026-04-30 22:03:37,352 INFO src.scanner.score_fetcher: Fetching scores for icehockey_nhl...</div>
+<div class="log-line log-api">2026-04-30 22:03:37,771 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 376</div>
+<div class="log-line log-general">2026-04-30 22:03:37,775 INFO src.scanner.score_fetcher: Got 6 completed games for icehockey_nhl</div>
+<div class="log-line log-general">2026-04-30 22:03:37,775 INFO src.scanner.score_fetcher: Fetching scores for tennis_atp_monte_carlo_masters...</div>
+<div class="log-line log-api">2026-04-30 22:03:38,150 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 376</div>
+<div class="log-line log-general">2026-04-30 22:03:38,153 INFO src.scanner.score_fetcher: Got 0 completed games for tennis_atp_monte_carlo_masters</div>
+<div class="log-line log-general">2026-04-30 22:03:38,154 INFO src.scanner.score_fetcher: Fetching scores for soccer_epl...</div>
+<div class="log-line log-api">2026-04-30 22:03:38,556 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 374</div>
+<div class="log-line log-general">2026-04-30 22:03:38,559 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_epl</div>
+<div class="log-line log-general">2026-04-30 22:03:38,560 INFO src.scanner.score_fetcher: Fetching scores for soccer_usa_mls...</div>
+<div class="log-line log-api">2026-04-30 22:03:38,977 INFO src.scanner.score_fetcher: Odds API requests remaining (scores): 372</div>
+<div class="log-line log-general">2026-04-30 22:03:38,981 INFO src.scanner.score_fetcher: Got 0 completed games for soccer_usa_mls</div>
+<div class="log-line log-general">2026-04-30 22:03:38,981 INFO src.scanner.score_fetcher: Total completed games fetched: 54</div>
+<div class="log-line log-general">2026-04-30 22:03:38,981 INFO src.executor.settlement: Fetched 54 completed game scores</div>
+<div class="log-line log-warning log-warn">2026-04-30 22:03:38,983 WARNING src.executor.settlement: No odds available for payout calc � using even money</div>
+<div class="log-line log-settlement">2026-04-30 22:03:38,983 INFO src.executor.settlement: SETTLED: baseball_mlb | San Francisco Giants @ Philadelphia Phillies | totals | WIN | P&amp;L $+22.00 | Philadelphia Phillies 6 - San Francisco Giants 5</div>
+<div class="log-line log-general">2026-04-30 22:03:39,000 INFO src.executor.settlement: Updated 1 bets in bets_log.csv</div>
+<div class="log-line log-general">2026-04-30 22:03:39,688 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
+<div class="log-line log-settlement">2026-04-30 22:03:39,692 INFO main: SETTLED: baseball_mlb | Philadelphia Phillies vs San Francisco Giants | totals | WIN | P&amp;L $+22.00</div>
+<div class="log-line log-general">2026-04-30 22:03:39,692 INFO main: Settled 1 bets this cycle</div>
+<div class="log-line log-general">2026-04-30 22:03:40,461 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
