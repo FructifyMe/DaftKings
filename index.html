@@ -274,7 +274,7 @@
     <h1>DAFTKINGS</h1>
     <div>
         <span class="mode">PAPER MODE</span>
-        <span class="refresh">&nbsp; Updated 2026-05-02 09:00:13 &bull; auto-refreshes 30s</span>
+        <span class="refresh">&nbsp; Updated 2026-05-02 17:00:05 &bull; auto-refreshes 30s</span>
     </div>
 </div>
 
@@ -1303,11 +1303,21 @@
         </div>
     </div>
     <div class="section">
-        <h2>Run History <span class="count">211</span></h2>
+        <h2>Run History <span class="count">212</span></h2>
         <div style="max-height:400px;overflow-y:auto;">
         <table>
             <thead><tr><th>Time</th><th>Mkts</th><th>Arbs</th><th>Analyzed</th><th>Bets</th><th>Dur</th><th>Cost</th><th>Haiku</th><th>Status</th></tr></thead>
             <tbody><tr>
+                <td>2026-05-02T17:00:05</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0s</td>
+                <td>-</td>
+                <td>0</td>
+                <td><span class="status-ok">OK</span></td>
+            </tr><tr>
                 <td>2026-05-02T00:03:06</td>
                 <td>225</td>
                 <td>74</td>
@@ -1396,16 +1406,6 @@
                 <td>119s</td>
                 <td>$0.0063</td>
                 <td>2</td>
-                <td><span class="status-ok">OK</span></td>
-            </tr><tr>
-                <td>2026-04-30T23:02:14</td>
-                <td>222</td>
-                <td>81</td>
-                <td>6</td>
-                <td>0</td>
-                <td>129s</td>
-                <td>$0.0176</td>
-                <td>6</td>
                 <td><span class="status-ok">OK</span></td>
             </tr></tbody>
         </table>
@@ -1584,13 +1584,6 @@
         </div>
     </div>
     <div class="log-viewer" id="logViewer">
-<div class="log-line log-general">2026-05-02 00:02:51,300 INFO main: PASS: icehockey_nhl | Vegas Golden Knights @ Utah Mammoth | Data integrity is critically compromised�Utah Mammoth team record, L10, rest days, and injury status all missing (N/A), making true-probability estimation unreliable. Vegas is clinched with seeding locked (95 pts, 0 games left), a major late-season red flag; they may rest starters or coast, inflating under likelihood. Recent h2h shows 2-1 Vegas scoring edge but high volatility (4-5 goal games common). The arbitrage signal on Utah ML (+2500) suggests cross-book confusion rather than a clear totals edge. Under 4.5 at -111 is marginally underpriced (52.6% implied vs ~50-52% estimated true prob), but confidence is too low without Utah context. Edge is minimal (~1%) and well below the 3% threshold. Pass and await clearer data or sharper line movement.</div>
-<div class="log-line log-haiku">2026-05-02 00:02:51,314 INFO src.analyzer.claude_analyzer: Calling Haiku for baseball_mlb | Cleveland Guardians @ Athletics | spreads</div>
-<div class="log-line log-general">2026-05-02 00:02:56,788 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages &quot;HTTP/1.1 200 OK&quot;</div>
-<div class="log-line log-haiku">2026-05-02 00:02:56,791 INFO src.analyzer.claude_analyzer: Haiku tokens: 1628 in / 480 out = $0.0032 (session total: $0.0387 / 13 calls)</div>
-<div class="log-line log-general">2026-05-02 00:02:56,791 INFO src.analyzer.claude_analyzer: Haiku raw response: ```json</div>
-<div class="log-line log-raw">{</div>
-<div class="log-line log-raw">  &quot;recommendation&quot;: &quot;bet&quot;,</div>
 <div class="log-line log-raw">  &quot;side&quot;: &quot;away&quot;,</div>
 <div class="log-line log-raw">  &quot;bet_description&quot;: &quot;Cleveland Guardians -1.5&quot;,</div>
 <div class="log-line log-raw">  &quot;bet_odds&quot;: -625,</div>
@@ -1734,6 +1727,13 @@
 <div class="log-line log-general">2026-05-02 09:00:12,575 INFO src.alerting.telegram_bot: Telegram message sent successfully</div>
 <div class="log-line log-settlement">2026-05-02 09:00:12,576 INFO main: SETTLED: baseball_mlb | Los Angeles Angels vs New York Mets | spreads | LOSS | P&amp;L $-22.00</div>
 <div class="log-line log-general">2026-05-02 09:00:13,016 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
+<div class="log-line log-general">2026-05-02 09:00:13,115 INFO scripts.publish_dashboard: Generated 143677 chars of HTML</div>
+<div class="log-line log-general">2026-05-02 09:00:19,127 INFO scripts.publish_dashboard: Dashboard published to gh-pages successfully</div>
+<div class="log-line log-general">2026-05-02 17:00:05,123 INFO main: ============================================================</div>
+<div class="log-line log-cycle">2026-05-02 17:00:05,123 INFO main: DaftKings Bot cycle starting | run_id=20260502_170005 | paper_mode=True</div>
+<div class="log-line log-general">2026-05-02 17:00:05,123 INFO main: ============================================================</div>
+<div class="log-line log-risk">2026-05-02 17:00:05,155 INFO main: Kill switch active � skipping cycle. Stats: DailyStats(2026-05-02 | 15 bets | P&amp;L $-22.00 | DD 2.2% | KILLED)</div>
+<div class="log-line log-general">2026-05-02 17:00:05,198 INFO scripts.publish_dashboard: Generating dashboard HTML...</div>
 
     </div>
 </div>
